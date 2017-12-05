@@ -1,0 +1,16 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+section {}
+
+article {}
+
+aside {}
+
+main
+  background $white
+  transitions()
+  +mobile()
+    position relative
+    z-index 100
+

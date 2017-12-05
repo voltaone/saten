@@ -1,0 +1,94 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    .container
+        .row
+            .col-md-4
+                p(style='color: red; font-weight: 700; text-transform:uppercase') Text
+                h1 Header 1
+                h2 Header 2
+                h3 Header 3
+                h4 Header 4
+                h5 Header 5
+                h6 Header 6
+                p paragraph
+                blockquote
+                    p I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
+
+            .col-md-4
+                p(style='color: red; font-weight: 700; text-transform:uppercase') Links and Buttons
+                a(href='' title='') Regular Link
+                a(href='' title='').button Button
+
+                p(style='color: red; font-weight: 700; text-transform:uppercase') Audio and Video
+                audio(controls='')
+                    source(src='audio/horse.mp3', type='audio/mp3')
+                    |   Your browser does not support the audio tag.
+
+                video(controls='')
+                    source(src='video/movie.mp4', type='video/mp4')
+                    |   Your browser does not support the video tag.
+
+            .col-md-4
+                p(style='color: red; font-weight: 700; text-transform:uppercase') Forms
+                form
+                    input(type='text' placeholder='Name').error
+                    input(type='email' placeholder='Email')
+                    input(type='password' placeholder='Password')
+
+                    .radiocheck
+                        input#checkbox1(type='checkbox').error
+                        label(for='checkbox1') Checkbox
+
+                    .radiocheck
+                        input#radio1(type='radio' name="gender" value="One").error
+                        label(for='radio1') Radio Button 1
+
+                    .radiocheck
+                        input#radio2(type='radio' name="gender" value="Two")
+                        label(for='radio2') Radio Button 2
+
+                    .radiocheck
+                        input#radio3(type='radio' name="gender" value="Three")
+                        label(for='radio3') Radio Button 3
+
+                    .select-container
+                        select
+                            option One
+                            option Two
+                            option Three
+
+
+                    button(type='submit').button Submit
+
+            .col-md-4
+                p(style='color: red; font-weight: 700; text-transform:uppercase') Lists
+                ul.ul-regular
+                    li one
+                    li two
+                    li three
+                ol.ol-regular
+                    li one
+                    li two
+                    li three
+
+            .col-md-4
+                table
+                    caption Table
+                    tr
+                        th One
+                        th Two
+                        th Three
+                    tr
+                        td Four
+                        td Five
+                        td Six
+                    tr
+                        td Seven
+                        td Eight
+                        td Nine

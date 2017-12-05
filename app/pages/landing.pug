@@ -1,0 +1,335 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section#link1
+        .container
+            .row.justify-content-center
+                .col-md-6
+                    h1.text-center Jumbotron
+                    p.text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    a(href='' title='').button Order
+                        i.fa.fa-angle-left
+
+    section#link2
+        .container
+            .row.justify-content-center
+                .col-md-6
+                    h2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    hr
+                    form.form-subscribe
+                        input(type='email' placeholder='E-mail')
+                        button(type='submit').button Submit
+        .slider.slider-full
+            .slide
+                +img2('http://via.placeholder.com/1920x1000')
+            .slide
+                +img2('http://via.placeholder.com/1900x1080')
+            .slide
+                +img2('http://via.placeholder.com/1620x780')
+
+    section#link3
+        .container
+            .row
+                .col-md-6
+                    .slider.slider-full
+                        .slide
+                            +img2('http://via.placeholder.com/600x600')
+                        .slide
+                            +img2('http://via.placeholder.com/600x600')
+                        .slide
+                            +img2('http://via.placeholder.com/600x600')
+                        .slider-counter
+                .col-md-6
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+
+    section#link4
+        .container
+            .row
+                .col-md-8
+                    .slider.slider-two
+                        .slide
+                            +img2('http://via.placeholder.com/600x400')
+                        .slide
+                            +img2('http://via.placeholder.com/900x400')
+                        .slide
+                            +img2('http://via.placeholder.com/900x400')
+                        .slide
+                            +img2('http://via.placeholder.com/700x400')
+                .col-md-4
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+
+    section#link5
+        .container
+            .row
+                .col-md-4.order-2.order-md-1
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+                .col-md-8.order-1.order-md-2
+                    .slider.slider-three
+                        .slide
+                            +img2('http://via.placeholder.com/600x400')
+                        .slide
+                            +img2('http://via.placeholder.com/900x400')
+                        .slide
+                            +img2('http://via.placeholder.com/700x400')
+                        .slide
+                            +img2('http://via.placeholder.com/600x400')
+                        .slide
+                            +img2('http://via.placeholder.com/900x400')
+                        .slide
+                            +img2('http://via.placeholder.com/700x400')
+
+    section#link6
+        .container
+            .row
+                .col-md-4
+                    h4 Lorem
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+                    ul.ul-regular
+                        li Lorem
+                        li ipsum
+                        li pseudo-Latin
+                        li text
+                .col-md-4
+                    h4 Lorem
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+                .col-md-4
+                    h4 Lorem
+                    p Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.
+                    ol.ol-regular
+                        li Lorem
+                        li ipsum
+                        li pseudo-Latin
+                        li text
+
+    section#link7
+        .container
+            .row
+                .col-12
+                    ul.ul-filter
+                        li
+                            a(href='' title='').active Filter 1
+                        li
+                            a(href='' title='') Filter 2
+                        li
+                            a(href='' title='') Filter 3
+                        li
+                            a(href='' title='') Filter 4
+                    .gallery
+                        .gallery-item
+                            a(href='https://c1.staticflickr.com/9/8387/29155724700_a227577206_k.jpg', data-fancybox='images', data-width='2048', data-height='1365')
+                                img(src='https://c1.staticflickr.com/9/8387/29155724700_58c1cb71cf_m.jpg')
+                        .gallery-item
+                            a(href='https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg', data-fancybox='images')
+                                img(src='https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg')
+                        .gallery-item
+                            a(href='https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg', data-fancybox='images')
+                                img(src='https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg')
+                        .gallery-item
+                            a(href='https://c1.staticflickr.com/9/8387/29155724700_a227577206_k.jpg', data-fancybox='images', data-width='2048', data-height='1365')
+                                img(src='https://c1.staticflickr.com/9/8387/29155724700_58c1cb71cf_m.jpg')
+                        .gallery-item
+                            a(href='https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg', data-fancybox='images')
+                                img(src='https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg')
+                        .gallery-item
+                            a(href='https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg', data-fancybox='images')
+                                img(src='https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg')
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Main
+                        li
+                            a(href='' title='') Near
+                        li
+                            a(href='' title='').active This
+                    ul.pagination
+                        li
+                            a(href='' title='')
+                                i.fa.fa-angle-left
+                        li
+                            a(href='' title='').active 1
+                        li
+                            a(href='' title='') 2
+                        li
+                            a(href='' title='') ...
+                        li
+                            a(href='' title='') 6
+                        li
+                            a(href='' title='')
+                                i.fa.fa-angle-right
+
+    section#link8
+        .container
+            .row
+                .col-md-6
+                    video(controls='')
+                        source(src='media/video/movie.mp4', type='video/mp4')
+                        |   Your browser does not support the video tag.
+
+                    audio(controls='')
+                        source(src='media/audio/audio.mp3', type='audio/mp3')
+                        |   Your browser does not support the audio tag.
+
+                .col-md-6
+                    iframe(src='https://www.youtube.com/embed/Hd8Wq7xpSc4', frameborder='0', allowfullscreen='').video-youtube
+
+                .col-md-6
+                    include partials/_snazzymap
+                    #map
+
+                .col-md-6
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6252.403513645248!2d30.521333087753135!3d50.41626928038592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b4919178bd27417!2sVolta+Digital!5e0!3m2!1suk!2sua!4v1509023866858', frameborder='0', style='border:0', allowfullscreen='').map
+
+
+    section#link9
+        .container
+            .row
+                .col-12
+                    form.form-half-input
+                        input(type='text' placeholder='Name')
+                        input(type='email' placeholder='E-mail')
+                        textarea(placeholder='Message')
+                        button(type='submit').button Submit
+            .row
+                .col-md-6
+                    blockquote
+                        p I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
+                    p.text-center I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.
+                    form
+                        input(type='text' placeholder='Name')
+                        select.chosen-select
+                            option One
+                            option Two
+                            option Three
+                        button(type='submit').button Submit
+
+                .col-md-6
+                    table
+                        caption Table
+                        tr
+                            th One
+                            th Two
+                            th Three
+                        tr
+                            td Four
+                            td Five
+                            td Six
+                        tr
+                            td Seven
+                            td Eight
+                            td Nine
+    section#link10
+        .container
+            .row
+                .col-md-3
+                    a(title='' data-fancybox data-src="#hidden-modal" href="javascript:;").button MODAL CONTENT
+                .col-md-3
+                    a(title='' data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0").button MODAL YOUTUBE
+                .col-md-3
+                    a(title='' data-fancybox data-src="#hidden-modal" href="javascript:;").button MODAL
+                .col-md-3
+                    a(title='' data-fancybox data-src="#hidden-modal" href="javascript:;").button MODAL
+            .row
+                .col-md-6
+                    #tabs
+                        ul
+                            li
+                                a(href="#tabs-1") Nunc tincidunt
+                            li
+                                a(href="#tabs-2") Proin dolor
+                            li
+                                a(href="#tabs-3") Aenean lacinia
+                        #tabs-1
+                            p
+                                | Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                        #tabs-2
+                            p
+                                | Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+                        #tabs-3
+                            p
+                                | Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+                            p
+                                | Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+                .col-md-6
+                    #accordion
+                        h3 Section 1
+                        div
+                            p
+                                | Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                | ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                | amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                | odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        h3 Section 2
+                        div
+                            p
+                                | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                | suscipit faucibus urna.
+                        h3 Section 3
+                        div
+                            p
+                                | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            ul
+                                li List item one
+                                li List item two
+                                li List item three
+                        h3 Section 4
+                        div
+                            p
+                                | Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                | et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                | faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                | mauris vel est.
+                            p
+                                | Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                | Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                | inceptos himenaeos.
+
+
+
+
+
+    #hidden-modal(style='display:none')
+        .container
+            .row.justify-content-center
+                .col-md-6
+                    form
+                        input(type='text' placeholder='Name').error
+                        input(type='email' placeholder='Email')
+                        input(type='password' placeholder='Password')
+
+                        .radiocheck
+                            input#checkbox1(type='checkbox').error
+                            label(for='checkbox1') Checkbox
+
+                        .radiocheck
+                            input#radio1(type='radio' name="gender" value="One").error
+                            label(for='radio1') Radio Button 1
+
+                        .radiocheck
+                            input#radio2(type='radio' name="gender" value="Two")
+                            label(for='radio2') Radio Button 2
+
+                        .radiocheck
+                            input#radio3(type='radio' name="gender" value="Three")
+                            label(for='radio3') Radio Button 3
+
+                        .select-container
+                            select
+                                option One
+                                option Two
+                                option Three
+
+                        button(type='submit').button Submit
+
+

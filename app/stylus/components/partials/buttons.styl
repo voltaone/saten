@@ -1,0 +1,27 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+button
+  border none
+  cursor pointer
+  transitions()
+  &:focus
+    outline none
+
+.button
+  display block
+  max-width 290px
+  width 100%
+  text-align center
+
+  background $black
+  color $white
+
+  padding-top 11px
+  padding-bottom 12px
+
+  margin-bottom 1rem
+
+  &:hover
+    color $black
+    background $gray
