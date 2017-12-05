@@ -90,8 +90,8 @@ gulp.task("scripts2", function () {
 //js concat custom
 gulp.task("scripts3", function () {
     return gulp.src([
-        // "app/libs/rew-downnav/downnav.js",
-        "app/libs/rew-sidenav/sidenav.js",
+        "app/libs/rew-downnav/downnav.js",
+        // "app/libs/rew-sidenav/sidenav.js",
         "app/js/scripts/mail.js",
         "app/js/scripts/scripts.js"
     ])

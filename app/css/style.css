@@ -161,7 +161,7 @@ body {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	background: #fff;
 }
@@ -230,7 +230,7 @@ h1 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 2.5rem;
 }
@@ -238,7 +238,7 @@ h2 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 2rem;
 	font-weight: 800;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 2rem;
 }
@@ -246,7 +246,7 @@ h3 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1.75rem;
 	font-weight: 700;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 1.875rem;
 }
@@ -254,7 +254,7 @@ h4 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 1.75rem;
 }
@@ -262,7 +262,7 @@ h5 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 500;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 1.5rem;
 }
@@ -270,7 +270,7 @@ h6 {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 400;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 1.25rem;
 }
@@ -278,24 +278,24 @@ p {
 	font-family: 'Proxima Nova', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
-	color: #000;
+	color: #353535;
 	line-height: normal;
 	margin-bottom: 1rem;
 }
 hr {
 	border: 0;
 	height: 1px;
-	background: #000;
+	background: #353535;
 	margin: 1em 0;
 }
 .black {
-	color: #000;
+	color: #353535;
 }
 .white {
 	color: #fff;
 }
 .gray {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 blockquote {
 	padding: 1rem;
@@ -375,18 +375,18 @@ button:focus {
 	max-width: 290px;
 	width: 100%;
 	text-align: center;
-	background: #000;
+	background: #353535;
 	color: #fff;
 	padding-top: 11px;
 	padding-bottom: 12px;
 	margin-bottom: 1rem;
 }
 .button:hover {
-	color: #000;
-	background: #a9a9a9;
+	color: #353535;
+	background: #e2e2e2;
 }
 table, tr, th, td {
-	border: 1px solid #000;
+	border: 1px solid #353535;
 }
 table {
 	width: 100%;
@@ -424,7 +424,7 @@ ol {
 	position: absolute;
 	width: 8px;
 	height: 2px;
-	background: #000;
+	background: #353535;
 	top: 9px;
 	left: 0;
 }
@@ -449,16 +449,16 @@ ol {
 }
 .ul-filter li a {
 	padding: 1rem;
-	background: #000;
+	background: #353535;
 	color: #fff;
 }
 .ul-filter li a:hover {
-	color: #000;
-	background: #a9a9a9;
+	color: #353535;
+	background: #e2e2e2;
 }
 .ul-filter li .active {
-	color: #000;
-	background: #a9a9a9;
+	color: #353535;
+	background: #e2e2e2;
 }
 .ol-regular {
 	margin-left: 1rem;
@@ -504,7 +504,7 @@ input {
 	-webkit-appearance: none;
 	width: 100%;
 	margin-bottom: 1rem;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	padding: 11px 15px 12px;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
@@ -519,16 +519,16 @@ input:-webkit-autofill {
 	-webkit-text-fill-color: #999 !important;
 }
 input:-moz-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 input::-moz-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 input:-ms-input-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 input::-webkit-input-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 textarea {
 	-webkit-appearance: none;
@@ -539,16 +539,16 @@ textarea {
 	padding: 11px 15px 12px;
 }
 textarea:-moz-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 textarea::-moz-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 textarea:-ms-input-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 textarea::-webkit-input-placeholder {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 textarea:focus {
 	outline: none;
@@ -575,7 +575,7 @@ textarea:focus {
 	left: 0;
 	width: 15px;
 	height: 15px;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	opacity: 1;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
@@ -589,8 +589,8 @@ textarea:focus {
 	left: 0;
 	width: 15px;
 	height: 15px;
-	background: #a9a9a9;
-	border: 1px solid #a9a9a9;
+	background: #e2e2e2;
+	border: 1px solid #e2e2e2;
 	opacity: 0;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
@@ -610,7 +610,7 @@ select {
 	   -moz-appearance: none;
 	width: 100%;
 	background: #fff;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	border-radius: 0;
 	display: block;
 	padding: 11px 15px 12px;
@@ -638,7 +638,7 @@ select:focus {
 	height: 0;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	border-top: 6px solid #000;
+	border-top: 6px solid #353535;
 	top: calc(50% - 3px);
 	right: 15px;
 }
@@ -655,7 +655,7 @@ select:focus {
 	height: 0;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	border-top: 6px solid #000;
+	border-top: 6px solid #353535;
 	top: calc(50% - 3px);
 	right: 15px;
 	-webkit-transition: all .4s ease;
@@ -669,7 +669,7 @@ select:focus {
 	padding: 11px 15px 12px;
 	height: 45px;
 	border-radius: 0;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	background: none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
@@ -694,12 +694,12 @@ select:focus {
 .chosen-container.chosen-container-active .chosen-single {
 	-webkit-box-shadow: none;
 	        box-shadow: none;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	background: none;
 }
 .chosen-container-single .chosen-drop {
 	border-radius: 0;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	border-top: 0;
 	padding: 0;
 	-webkit-box-shadow: none;
@@ -715,7 +715,7 @@ select:focus {
 	padding: 11px 15px 12px;
 }
 .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted {
-	background: #a9a9a9;
+	background: #e2e2e2;
 }
 .chosen-container-single .chosen-single div b {
 	display: none;
@@ -967,7 +967,7 @@ nav {
 	display: block;
 }
 .menu li .selected {
-	color: #000;
+	color: #353535;
 }
 .nav-mobile {
 	display: none;
@@ -996,7 +996,7 @@ nav {
 	position: absolute;
 	height: 3px;
 	width: 100%;
-	background: #000;
+	background: #353535;
 	border-radius: 2px;
 	opacity: 1;
 	left: 0;
@@ -1061,7 +1061,7 @@ nav {
 	top: 0;
 	height: 100%;
 	width: 1px;
-	background: #000;
+	background: #353535;
 	-webkit-transform: rotate(25deg);
 	    -ms-transform: rotate(25deg);
 	        transform: rotate(25deg);
@@ -1071,15 +1071,15 @@ nav {
 }
 .breadcrumbs li a {
 	display: block;
-	color: #000;
+	color: #353535;
 }
 .breadcrumbs li a:hover {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 .breadcrumbs li .active {
 	cursor: default;
 	pointer-events: none;
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 .pagination {
 	display: -webkit-box;
@@ -1100,14 +1100,14 @@ nav {
 }
 .pagination li a {
 	display: block;
-	color: #000;
+	color: #353535;
 	font-size: 1.25em;
 }
 .pagination li a:hover {
-	color: #a9a9a9;
+	color: #e2e2e2;
 }
 .pagination li .active {
-	color: #a9a9a9;
+	color: #e2e2e2;
 	cursor: default;
 	pointer-events: none;
 }
@@ -1196,15 +1196,15 @@ nav {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background: #a9a9a9;
+	background: #e2e2e2;
 	color: transparent;
 }
 .slider .slick-dots li button:hover {
-	background: #000;
+	background: #353535;
 	opacity: .6;
 }
 .slider .slick-dots .slick-active button {
-	background: #000;
+	background: #353535;
 }
 .fancybox-slide > div {
 	width: 100%;
@@ -1249,18 +1249,18 @@ nav {
 .ui-tabs .ui-tabs-nav li a {
 	padding: 1rem;
 	display: block;
-	color: #000;
+	color: #353535;
 }
 .ui-tabs .ui-tabs-nav li a:hover {
-	background: #a9a9a9;
+	background: #e2e2e2;
 }
 .ui-tabs .ui-tabs-nav .ui-tabs-active.ui-state-active a {
-	background: #000;
+	background: #353535;
 	color: #fff;
 }
 .ui-accordion .ui-accordion-header {
-	background: #a9a9a9;
-	color: #000;
+	background: #e2e2e2;
+	color: #353535;
 	cursor: pointer;
 	padding: 1rem;
 	-webkit-transition: all .4s ease;
@@ -1271,11 +1271,11 @@ nav {
 	outline: none;
 }
 .ui-accordion .ui-accordion-header:hover {
-	background: #000;
+	background: #353535;
 	color: #fff;
 }
 .ui-accordion .ui-state-active {
-	background: #000;
+	background: #353535;
 	color: #fff;
 }
 .ui-accordion .ui-accordion-content {
@@ -1352,7 +1352,7 @@ section {
 }
 .form-subscribe .button {
 	border-radius: 0;
-	border: 1px solid #000;
+	border: 1px solid #353535;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 1 38%;
 	    -ms-flex: 1 1 38%;
