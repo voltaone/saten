@@ -1,7 +1,57 @@
 footer
     .container
         .row
+            .col-md-6.col-lg-3
+                span.footer-line
+                ul.footer-nav
+                    li
+                        a(href='' title='')
+                            span
+                            | О нас
+                    li
+                        a(href='' title='')
+                            span
+                            | Бренды
+                    li
+                        a(href='' title='')
+                            span
+                            | Доставка и оплата
+                    li
+                        a(href='' title='')
+                            span
+                            | Контакты
+            .col-md-6.col-lg-3
+                span.footer-line
+                h4 График работы
+                ul.footer-list
+                    li Пн - Пт: 9:00 - 19:00
+                    li Сб: 10:00 - 18:00
+                    li Вс: 10:00 - 17:00
+            .col-md-6.col-lg-3
+                span.footer-line
+                h4 Контакты
+                ul.footer-contacts
+                    li
+                        a(href='tel:' title='') (044) 238-86-10
+                    li
+                        a(href='mailto:' title='') info@saten.ua
+                ul.footer-social
+                    li
+                        a(href='//facebook.com' title='')
+                            +fb-sq
+                    li
+                        a(href='//google.com' title='')
+                            i.fa.fa-google-plus-square
+            .col-md-6.col-lg-3
+                span.footer-line
+                h4 Перезвоните мне
+                form.form-footer
+                    input(type='text' placeholder='Введите имя')
+                    input(type='tel:' placeholder='Номер телефона')
+                    button(type='submit').button Отправить
+        .row.footer-copyright
             .col-6
+                p © 2013-2017, интернет-магазин "SATEN"
             .col-6
                 a(href='//volta.one' title='Volta Agency' target='_blank').volta
                     span.volta--text created by

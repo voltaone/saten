@@ -1,5 +1,11 @@
 $(document).ready(function () {
     "use strict";
+    // ----- MENU -----
+
+    $('#menu-trigger').click(function (e) {
+        e.preventDefault();
+        $('.menu-panel').toggleClass('open');
+    });
 
     //  ----- SLIDER -----
 

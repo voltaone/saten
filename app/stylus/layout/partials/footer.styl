@@ -1,4 +1,105 @@
 @import "../../utilities/vars"
 @import "../../utilities/mixins"
 
-footer {}
+footer
+  background $black-footer
+  padding-top 70px
+
+.footer-line
+  width: 20px;
+  height: 2px;
+  background $black-line
+  display block
+  margin-bottom 35px
+
+.footer-nav
+  list-flex(col)
+  +portrait()
+    margin-bottom 2rem
+  li
+    margin-bottom 13px
+    a
+      font-size: $s18
+      font-weight: 500;
+      color $white
+      line-height: 1.5;
+      letter-spacing: .8px;
+      position relative
+      display block
+      span
+        display block
+        position absolute
+        width 0
+        height 2px
+        background $blue
+        top 13px
+        left 0
+        opacity 0
+        transitions()
+        &:before, &:after
+          pseudo(block, absolute)
+          height 2px
+          width 7px
+          background $blue
+          right -1px
+        &:before
+          top -2px
+          transform rotate(45deg)
+        &:after
+          bottom -2px
+          transform rotate(-45deg)
+      &:hover
+        padding-left 37px
+        span
+          width 23px
+          opacity 1
+
+.footer-list
+  list-flex(col)
+  +portrait()
+    margin-bottom 2rem
+  li
+    line-height: 2.86;
+    letter-spacing: 0.7px;
+    color $white
+    font-size $s14
+
+.footer-contacts
+  list-flex(col)
+  margin-bottom .388rem
+  li
+    a
+      line-height: 2.86;
+      letter-spacing: 0.7px;
+      color $white
+      font-size $s14
+
+.footer-social
+  list-flex(row)
+  li
+    margin-right $s22
+    a
+      letter-spacing: 0.7px;
+      color $white
+      font-size 1.638rem
+
+.footer-copyright
+  border-top 2px solid $black-line
+  margin-top 64px
+  position relative
+  padding-top $s18
+  padding-bottom 6px
+  &:before, &:after
+    pseudo(block, absolute)
+    width 15px
+    height 2px
+    background $black-footer
+    top -2px
+  &:before
+    left 0
+  &:after
+    right 0
+  p
+    font-size: $s12
+    letter-spacing: 0.6px
+    color $black-copy

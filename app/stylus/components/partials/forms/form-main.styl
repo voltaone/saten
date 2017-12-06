@@ -1,0 +1,43 @@
+form {}
+
+.form-half-input
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content space-between
+  input
+    flex 1 1 calc(50% - .5rem)
+    max-width calc(50% - .5rem)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+
+
+.form-nav
+  display flex
+  height 100%
+  input
+    border none
+    width calc(100% - 60px)
+    height 100%
+    margin 0
+    padding 0
+    +portrait()
+      padding-right: 20px;
+  button
+    width: 60px;
+    height: 54px;
+    background $aqua-back
+    color $white
+    font-size $s26
+
+.form-footer
+  input
+    line-height: 2.95;
+    letter-spacing: 0.7px;
+    font-size .875rem
+    padding 0
+    color $white
+    margin 0
+    +placeholder()
+      color $white

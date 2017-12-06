@@ -1,45 +1,223 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-@import "../libs/rew-sidenav/sidenav.styl"
+//@import "../libs/rew-sidenav/sidenav.styl"
 //@import "../libs/rew-downnav/downnav.styl"
 
 nav
   background $white
+  //background $red
   transitions()
 
-.menu
+.nav-top
+  padding 14px 0 9px
+
+.nav-bottom
+  padding 5px 0 0
+
+.menu-user
   list-flex(row)
-  justify-content flex-end
+  justify-content space-between
   align-items center
   height 100%
-  +mobile()
-    flex-direction column
-    justify-content flex-start
-    align-items flex-start
   li
-    margin 0 4px
-    +mobile()
-      margin 0
-    &:last-child
-      margin-right 0
+    flex 1 1 calc(50% - 15px)
+    max-width calc(50% - 15px)
+    height 100%
+    text-align center
     a
-      display block
-    .selected
+      justify-content center
+      display inline-flex
+      align-items center
+      height 100%
+      font-size: $s14;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color $black-text
+      padding: 0 5px
+      +tablet()
+        padding-left 0
+      svg
+        margin 0 10px 0
+
+.menu-nav
+  list-flex(row)
+  justify-content space-between
+  align-items center
+  height 100%
+  margin-right 12px
+  +portrait()
+    flex-wrap wrap
+  li
+    +portrait()
+      flex 1 1 50%
+      max-width 50%
+
+    a
+      letter-spacing: 1px;
+      font-weight 500
+      font-size $s14
       color $black
+  &--dropdown
+    position relative
+    height: 100%;
+    display: flex;
+    align-items: center
+    +portrait()
+      height auto
+    &-link
+      height: 100%;
+      line-height: 54px;
+      padding-bottom 10px
+      +portrait()
+        line-height 1
+        height auto
+    &-menu
+      position absolute
+      background $aqua-back
+      z-index -1
+      width: 195px
+      left 0
+      top 64px
+      height calc(100vh - 85px)
+      opacity 0
+      visibility hidden
+      transition .2s all linear
+      +portrait()
+        display none
+      &:before
+        triangle($aqua-back, up, 12px)
+        top -10px
+        left 10px
+      li
+        a
+          padding 15px
+          display block
+          color $aqua-text2
+          &:hover
+            background $aqua-link
 
-.nav-mobile
-  display none
-  +mobile()
+.menu-nav--dropdown:hover .menu-nav--dropdown-menu
+  opacity 1
+  visibility visible
+  z-index 1000
+
+
+.menu-panel
+  position relative
+  &:after
+    pseudo(block, absolute)
+    top 0
+    right 0
+    bottom 0
+    background $black
+    opacity 0
+    transitions()
+    width 522px
+    z-index 1
+    +tablet()
+      width: 475px;
+    +portrait()
+      width 435px
+
+  &--container
+    position relative
+    z-index 2
+    display flex
+    transitions()
+    &-block
+      &:first-child
+        flex 1 1 64%
+        max-width 64%
+      &:last-child
+        flex 1 1 36%
+        max-width 36%
+  &--nav
+    position absolute
+    background $black
+    width: 522px;
+    right: 0;
+    padding-left 14%
+    padding-top 76px
+    padding-bottom 96px
+    display flex
+    border-top 1px solid $black-line2
+    transitions()
+
+    opacity 0
+    visibility hidden
+    z-index -1
+
+    +tablet()
+      width: 475px;
+      padding-left: 7%;
+    +portrait()
+      width 435px
+
+
+    &:before, &:after
+      pseudo(block, absolute)
+      width 20px
+      height 1px
+      background $black
+      top -1px
+    &:before
+      left 0
+    &:after
+      right 0
+    &-links
+      list-flex(col)
+      flex 1 1 50%
+      max-width 50%
+      li
+        margin-bottom $s29
+        a
+          color $white
+          font-size: $s18;
+          font-weight: 500;
+          display inline-block
+          &:hover
+            color $blue
+    &-social
+      flex 1 1 50%
+      max-width 50%
+      list-flex(col)
+      padding-left 5px
+      li
+        margin-bottom 26px
+        a
+          font-size: $s18
+          font-weight: 500;
+          color $aqua-link2
+          display inline-block
+          .fa
+            font-size 21px
+            position relative
+            top 3px
+            margin-right 25px
+
+.menu-sub
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white
+  font-weight: 500;
+  font-size: .875rem;
+  background $black
+  padding 0 15px 0 25px
+  &--hidden
+    display none
+  &--visible
     display block
-
+  &:hover
+    color $white
 
 
 .nav-icon
-  width 30px
+  width 36px
   height 22px
   position relative
-  margin 14px 0
+  margin 16px 0
   cursor pointer
   transitions()
   transform rotate(0deg)
@@ -47,9 +225,9 @@ nav
   span
     display block
     position absolute
-    height 3px
+    height 2px
     width 100%
-    background $black
+    background $white
     border-radius 2px
     opacity 1
     left 0
@@ -58,21 +236,41 @@ nav
     &:nth-child(1)
       top 0px
     &:nth-child(2), &:nth-child(3)
-      top 9px
+      top 10px
     &:nth-child(4)
-      top 18px
+      top 20px
 
-.nav-icon.open
-  span
-    &:nth-child(1)
-      top 18px
-      width 0%
-      left 50%
-    &:nth-child(2)
-      transform rotate(45deg)
-    &:nth-child(3)
-      transform rotate(-45deg)
-    &:nth-child(4)
-      top 18px
-      width 0%
-      left 50%
+.menu-panel.open
+  &:after
+    opacity 1
+  input
+    color $white
+    +placeholder()
+      color $aqua-link2
+  button
+    background  $black-line2
+  .menu-sub
+    &--hidden
+      display block
+    &--visible
+      display none
+  .menu-panel--nav
+    opacity 1
+    visibility visible
+    z-index 1000
+
+
+  .nav-icon
+    span
+      &:nth-child(1)
+        top 18px
+        width 0%
+        left 50%
+      &:nth-child(2)
+        transform rotate(45deg)
+      &:nth-child(3)
+        transform rotate(-45deg)
+      &:nth-child(4)
+        top 18px
+        width 0%
+        left 50%

@@ -1,18 +1,144 @@
 nav
     .container
-        .row
-            .col-6.col-md-2
+        .row.nav-top
+            .col-xl-3.col-lg-3.col-md-4
                 a(href='index.html' title='').link-logo
-                    img(src='img/logo/logo.png' title='' alt='')
+                    img(src='img/logo/logo-img.svg' title='' alt='' onerror='this.src="img/logo/logo-img.png"').link-logo--img
+                    img(src='img/logo/logo-text.svg' title='' alt='' onerror='this.src="img/logo/logo-text.png"').link-logo--text
 
-            .col-6.nav-mobile
-                .nav-icon#menu-trigger
-                    span
-                    span
-                    span
-                    span
+            .offset-xl-4.col-xl-3.offset-lg-3.col-lg-4.offset-md-1.col-md-4
+                a(href='tel:+38(044)2388610' title='').link-phone-nav (044) 238-86-10
 
-            .col-md-10.nav-panel
+            .col-xl-2.col-lg-2.col-md-3
+                ul.menu-user
+                    li
+                        a(href='' title='')
+                            span Вход
+                            include ../svgs/login.svg
+                    li
+                        a(href='' title='')
+                            include ../svgs/baket.svg
+        .row.nav-bottom.justify-content-between
+            .col-xl-6.col-lg-6.col-md-5
+                ul.menu-nav
+                    li.menu-nav--dropdown
+                        a(href='' title='').menu-nav--dropdown-link Плитка
+                        ul.menu-nav--dropdown-menu
+                            li
+                                a(href='' title='') Напольная плитка
+                            li
+                                a(href='' title='') Облицовочная плитка
+                            li
+                                a(href='' title='') Керамогранит
+                            li
+                                a(href='' title='') Мозаика
+                            li
+                                a(href='' title='') Декор
+                            li
+                                a(href='' title='') Фризы
+                            li
+                                a(href='' title='') Ступени
+                            li
+                                a(href='' title='') Смеси и Клеи
+                    li.menu-nav--dropdown
+                        a(href='' title='').menu-nav--dropdown-link Сантехника
+                        ul.menu-nav--dropdown-menu
+                            li
+                                a(href='' title='') Напольная плитка
+                            li
+                                a(href='' title='') Облицовочная плитка
+                            li
+                                a(href='' title='') Керамогранит
+                            li
+                                a(href='' title='') Мозаика
+                            li
+                                a(href='' title='') Декор
+                            li
+                                a(href='' title='') Фризы
+                            li
+                                a(href='' title='') Ступени
+                            li
+                                a(href='' title='') Смеси и Клеи
+                    li.menu-nav--dropdown
+                        a(href='' title='').menu-nav--dropdown-link Напольные покрытия
+                        ul.menu-nav--dropdown-menu
+                            li
+                                a(href='' title='') Напольная плитка
+                            li
+                                a(href='' title='') Облицовочная плитка
+                            li
+                                a(href='' title='') Керамогранит
+                            li
+                                a(href='' title='') Мозаика
+                            li
+                                a(href='' title='') Декор
+                            li
+                                a(href='' title='') Фризы
+                            li
+                                a(href='' title='') Ступени
+                            li
+                                a(href='' title='') Смеси и Клеи
+                    li.menu-nav--dropdown
+                        a(href='' title='').menu-nav--dropdown-link Теплый пол
+                        ul.menu-nav--dropdown-menu
+                            li
+                                a(href='' title='') Напольная плитка
+                            li
+                                a(href='' title='') Облицовочная плитка
+                            li
+                                a(href='' title='') Керамогранит
+                            li
+                                a(href='' title='') Мозаика
+                            li
+                                a(href='' title='') Декор
+                            li
+                                a(href='' title='') Фризы
+                            li
+                                a(href='' title='') Ступени
+                            li
+                                a(href='' title='') Смеси и Клеи
+            .col-xl-5.col-lg-6.col-md-7
+                .menu-panel
+                    .menu-panel--container
+                        .menu-panel--container-block
+                            form.form-nav
+                                input(type='text' placeholder='Поиск по названию / артикулу')
+                                button(type='submit')
+                                    i.fa.fa-search
+                        .menu-panel--container-block
+                            a(href='' title='').menu-sub#menu-trigger
+                                span.menu-sub--visible Меню
+                                span.menu-sub--hidden Закрыть
+                                .nav-icon
+                                    span
+                                    span
+                                    span
+                                    span
+                    .menu-panel--nav
+                        ul.menu-panel--nav-links
+                            li
+                                a(href='' title='') О компании
+                            li
+                                a(href='' title='') Бренды
+                            li
+                                a(href='' title='') Гарантия и сервис
+                            li
+                                a(href='' title='') Оплата и доставка
+                            li
+                                a(href='' title='') Контакты
+                        ul.menu-panel--nav-social
+                            li
+                                a(href='' title='')
+                                    i.fa.fa-facebook-official
+                                    | Facebook
+                            li
+                                a(href='' title='')
+                                    i.fa.fa-google-plus-square
+                                    | Google +
+
+
+
+            //.col-md-10.nav-panel
                 ul.menu
                     li.dropdown
                         a(href='' title='').dropdown-link Link 1
