@@ -85,8 +85,16 @@
   padding-bottom 26px
   .arrow.left
     left calc((100% - 1170px + 30px) / 2)
+    +tablet()
+      left calc((100% - 960px + 30px) / 2)
+    +portrait()
+      left calc((100% - 720px + 30px) / 2)
   .arrow.right
     left calc((100% - 1170px + 266px + 30px) / 2)
+    +tablet()
+      left calc((100% - 960px + 266px + 30px) / 2)
+    +portrait()
+      left calc((100% - 720px + 266px + 30px) / 2)
   .slide
     position relative
     height 556px
@@ -103,7 +111,11 @@
       justify-content center
       z-index -1
       img
-        width 100%
+        min-width 100%
+        +tablet()
+          min-width unset
+        +portrait()
+          min-width unset
 
 .slider-four
   overflow visible

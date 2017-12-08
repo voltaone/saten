@@ -88,17 +88,21 @@ $(document).ready(function () {
         nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
         responsive: [
             {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 1
                 }
             }
         ],
