@@ -1,0 +1,18 @@
+.preview
+  display flex
+  justify-content space-between
+  &-block
+    flex 1 1 calc(50% - 15px)
+    max-width calc(50% - 15px)
+    display block
+    &--image
+      background $white
+      display flex
+      align-items center
+      justify-content center
+      height: 155px;
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+      overflow hidden
+      margin-bottom 15px
+      img
+        max-height 100%

@@ -24,8 +24,15 @@
     z-index 100
     top 41%
     cursor pointer
+    max-width 130px
+    height 60px
+    width 100%
+    background $black
+    color $white
+    top auto
+    bottom 0px
     .fa
-      font-size 2rem
+      font-size 3.5rem
 
   .arrow.left
     left 0
@@ -38,9 +45,9 @@
     align-items center
     height 100%
     overflow hidden
-    margin 0 15px
     &:focus
       outline none
+
 
   .slider-counter
     position absolute
@@ -73,3 +80,61 @@
     .slick-active
       button
         background $black
+
+.slider-main
+  padding-bottom 26px
+  .arrow.left
+    left calc((100% - 1170px + 30px) / 2)
+  .arrow.right
+    left calc((100% - 1170px + 266px + 30px) / 2)
+  .slide
+    position relative
+    height 556px
+    &-text
+      padding-top 63px
+    &-img
+      position absolute
+      top 0
+      left 0
+      bottom 0
+      right 0
+      display flex
+      align-items center
+      justify-content center
+      z-index -1
+      img
+        width 100%
+
+.slider-four
+  overflow visible
+  padding-bottom 125px
+  .slick-list
+    overflow visible
+    z-index 200
+    position relative
+  .goods-block
+    margin: 15px;
+  .arrow
+    bottom 16px
+    z-index 3
+  .arrow.left
+    left auto
+    right 148px
+  .arrow.right
+    left auto
+    right 15px
+
+.slider-container
+  position relative
+  overflow hidden
+
+.slider-four + .slider-counter
+  position absolute
+  font-size: 3.750rem
+  font-weight: 700;
+  line-height: 0.5;
+  letter-spacing: 2.7px;
+  color: $aqua-back;
+  right 300px
+  bottom 48px
+  z-index 100

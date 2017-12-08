@@ -6,40 +6,283 @@ block title
 
 block content
 
-    .container(style='background:aqua')
-        .row
-            .col-12
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
-                p 1
+    header.header-slider
+        .slider.slider-full.slider-main
+            .slide
+                .slide-text
+                    .container
+                        .row
+                            .col-4
+                                h2.slider-header Ванная комната Devit
+                .slide-img
+                    img(src='img/slider-main/slide1.png')
+            .slide
+                .slide-text
+                    .container
+                        .row
+                            .col-4
+                                h2.slider-header Ванная комната Devit
+                .slide-img
+                    img(src='img/slider-main/slide1.png')
+        .container.header-slider--container
+            .row.justify-content-end
+                .col-md-4
+                    .preview
+                        a(href='' title='').preview-block
+                            .preview-block--image
+                                img(src='img/preview/preview1.png')
+                            .preview-block--description
+                                h5 Унитаз Devit Aurora 2.0 3130128
+                        a(href='' title='').preview-block
+                            .preview-block--image
+                                img(src='img/preview/preview2.png')
+                            .preview-block--description
+                                h5 Плитка Caesar Slab Black 60 Ret *
+
+    section.section-back
+        .container.container-1200
+            .row
+                .col-12
+                    h2.slider-header--before Популярные товары
+                    .slider-container
+                        .slider.slider-four
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods1.png')
+                                    .goods-block--visible-description
+                                        h4 Плитка Ape Ceramica Motive Crema
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods2.png')
+                                    .goods-block--visible-description
+                                        h4 Клей Atis A-15 Wite Flex 10кг
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods3.png')
+                                    .goods-block--visible-description
+                                        h4 Смеситель Axor Carlton 17135090 д/раковины
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods4.png')
+                                    .goods-block--visible-description
+                                        h4 Ванна Ravak BeHappy 150 x 75 L C121000000
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods1.png')
+                                    .goods-block--visible-description
+                                        h4 Клей Atis A-15 Wite Flex 10кг
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                        .slider-counter
+        .advantage
+            .container
+                .row
+                    .col-md-3
+                        .advantage-block.advantage-block1
+                            .advantage-block--image
+                                include svgs/advantage/advantage1.svg
+                            .advantage-block--description
+                                h4 Самый большой выбор товаров для ремонта
+                            .advantage-block--heading
+                                h3 150 000
+                    .col-md-3
+                        .advantage-block.advantage-block2
+                            .advantage-block--image
+                                include svgs/advantage/advantage2.svg
+                            .advantage-block--description
+                                h4 Лучшие цены на рынке Украины
+                            .advantage-block--heading
+                                h3 - 30 %
+                    .col-md-3
+                        .advantage-block.advantage-block3
+                            .advantage-block--image
+                                include svgs/advantage/advantage3.svg
+                            .advantage-block--description
+                                h4 Проверенны на качество производители
+                            .advantage-block--heading
+                                h3 548
+                    .col-md-3
+                        .advantage-block.advantage-block4
+                            .advantage-block--image
+                                include svgs/advantage/advantage4.svg
+                            .advantage-block--description
+                                h4 Актуальное наличие товара на складе
+                            .advantage-block--heading
+                                h3 89 %
+
+    section
+        .container
+            .row
+                .col-12
+                    h2 Акционные предложения
+                .col-md-6
+                    a(href='' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount1.png' title='' alt='')
+                        .discount-block--description
+                            h3 Распродажа коллекции плитки
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-md-6
+                    a(href='' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount2.png' title='' alt='')
+                        .discount-block--description
+                            h3 Скидка на ванны ARKTIK -50%
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-12
+                    a(href='' title='').button.button-big Все акции
+
+    section.section-brand
+        .container
+            .row
+                .col-12
+                    h2 Бренды
+        .section-brand--back
+            .container
+                .row
+                    .col-md-9.section-brand--back-left
+                        .row
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand1.png' title='')
+                                    .brand-block--description
+                                        p Сантехника Cersanit поставляется на рынок Украины одним из наиболее уважаемых, востребованных изготовителей и поставщиков Польши.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand2.png' title='')
+                                    .brand-block--description
+                                        p Уже более 125 лет польская компания Opoczno разрабатывает и создает уникальные коллекции керамической плитки.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand3.png' title='')
+                                    .brand-block--description
+                                        p Уже более 125 лет польская компания Opoczno разрабатывает и создает уникальные коллекции керамической плитки.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand4.png' title='')
+                                    .brand-block--description
+                                        p Сантехника Cersanit поставляется на рынок Украины одним из наиболее уважаемых, востребованных изготовителей и поставщиков Польши.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand5.png' title='')
+                                    .brand-block--description
+                                        p Уже более 125 лет польская компания Opoczno разрабатывает и создает уникальные коллекции керамической плитки.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+                            .col-md-4
+                                a(href='' title='').brand-block
+                                    .brand-block--image
+                                        img(src='img/brand/brand6.png' title='')
+                                    .brand-block--description
+                                        p Уже более 125 лет польская компания Opoczno разрабатывает и создает уникальные коллекции керамической плитки.
+                                    .brand-block--more
+                                        span.link-more
+                                            span.link-more--text Товары
+                                            span.link-more--arrow
+
+
+                    .col-md-3.section-brand--back-right
+                        a(href='' title='').link-brand
+                            p Еще 500 брендов
+                            include svgs/arrow-right-white.svg
+

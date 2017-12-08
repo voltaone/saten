@@ -1,0 +1,47 @@
+.brand-block
+  margin-bottom 50px
+  display block
+  &--image
+    height 66px
+    align-items flex-start
+    justify-content center
+    display flex
+    position relative
+    max-width 165px
+    margin-bottom 20px
+    &:after
+      pseudo(block, absolute)
+      bottom 0
+      left 0
+      right 0
+      height 40px
+      background $white
+      z-index: 2
+    img
+      position: absolute;
+      z-index: 5;
+      bottom: 21px;
+  &--description
+    height 80px
+    overflow hidden
+    margin-bottom 29px
+    p
+      font-size: $s12
+      line-height: 1.67;
+  &--more
+    .link-more
+      max-width 170px
+      width 70px
+      &--text
+        font-size 1rem
+      &--arrow
+        width 70px
+
+  &:hover
+    .link-more
+      width 100%
+      .link-more--text
+        opacity 1
+      .link-more--arrow
+        &:before, &:after
+          opacity 1

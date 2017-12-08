@@ -6,14 +6,10 @@
 
 nav
   background $white
-  //background $red
   transitions()
-
-.nav-top
-  padding 14px 0 9px
-
-.nav-bottom
-  padding 5px 0 0
+  padding-top 14px
+  +portrait()
+    padding-bottom 14px
 
 .menu-user
   list-flex(row)
@@ -25,6 +21,8 @@ nav
     max-width calc(50% - 15px)
     height 100%
     text-align center
+    &:empty
+      display none
     a
       justify-content center
       display inline-flex
@@ -46,6 +44,7 @@ nav
   align-items center
   height 100%
   margin-right 12px
+  margin-top 14px
   +portrait()
     flex-wrap wrap
   li
@@ -105,6 +104,7 @@ nav
 
 .menu-panel
   position relative
+  margin-top: 14px;
   &:after
     pseudo(block, absolute)
     top 0
@@ -140,7 +140,6 @@ nav
     padding-left 14%
     padding-top 76px
     padding-bottom 96px
-    display flex
     border-top 1px solid $black-line2
     transitions()
 
@@ -167,8 +166,6 @@ nav
       right 0
     &-links
       list-flex(col)
-      flex 1 1 50%
-      max-width 50%
       li
         margin-bottom $s29
         a
@@ -179,8 +176,6 @@ nav
           &:hover
             color $blue
     &-social
-      flex 1 1 50%
-      max-width 50%
       list-flex(col)
       padding-left 5px
       li
@@ -212,7 +207,6 @@ nav
   &:hover
     color $white
 
-
 .nav-icon
   width 36px
   height 22px
@@ -240,6 +234,165 @@ nav
     &:nth-child(4)
       top 20px
 
+
+//MOBILE NAV
++mobile()
+  nav
+    padding-top 0
+    .container
+      max-width 100%
+    .link-logo
+      max-width 130px
+      max-height unset
+      padding: 17px 0;
+    .link-logo--text
+      max-width 101px
+    .link-logo--img
+      width 18px
+      height 18px
+      margin-right: 11px;
+    #bucket
+      svg
+        width 24px
+        height 24px
+    .menu-panel
+      margin-top 0
+      .menu-sub
+        padding 1px 0px
+        width 54px
+        height 56px
+        float right
+        &--hidden, &--visible
+          display none
+      &:after
+        display none
+
+    #fourth
+      padding-right 0
+    .menu-panel--container
+      display block
+    .menu-panel--container-block:last-child
+      max-width 100%
+    .nav-icon
+      width 24px
+      margin-left auto
+      margin-right auto
+      span
+        height 3px
+    .menu-panel--nav
+      width 100vw
+      padding 0
+      border-top 0
+      top: 56px;
+    .menu-panel--container-block:empty
+      display none
+    .form-nav button
+      width 54px
+      height 56px
+      background $trans
+    .form-nav
+      border-bottom 1px solid $black-line2
+      input
+        width: calc(100% - 54px)
+        padding 0 15px
+    .menu-panel--nav:before, .menu-panel--nav:after
+      display none
+
+    .menu-nav
+      flex-wrap wrap
+      flex-direction column
+      justify-content flex-start
+      align-items flex-start
+      margin 0
+      padding-top 25px
+      padding-left 15px
+      padding-right 15px
+      padding-bottom 22px
+      li
+        height auto
+        a
+          color $white
+          font-size 1.125rem
+
+    .menu-panel--nav-links
+      padding-top 35px
+      padding-left 15px
+      padding-right 15px
+      padding-bottom 0
+      li
+        a
+          color $gray-text
+
+    .menu-panel--nav-social
+      padding-top 0
+      padding-left 15px
+      padding-right 15px
+      flex-direction row
+
+    .menu-panel--nav-social li a
+      .fa
+        font-size 2rem
+      span
+        display none
+
+    .link-phone-nav
+      display block
+      text-align center
+      margin 20px 0 30px
+
+    .menu-nav--dropdown-link
+      height auto
+      line-height normal
+      padding-bottom 0
+    .menu-nav--dropdown
+      margin-bottom: 1.813rem;
+
+    #mob-nav-bottom
+      background $black-line2
+      padding-bottom 71px
+      position relative
+
+    #login
+      position absolute
+      right 30px
+      top 35px
+      display flex
+      align-items center
+      color $white
+      font-size 1.125rem
+      svg
+        order -1
+        width 23px
+        height 29px
+        margin-right 10px
+        g
+          fill $white
+
+    .link-call
+      position static
+      margin 0 15px
+      max-width calc(100% - 30px)
+      display flex
+      align-items center
+      justify-content center
+      font-size 1.125rem
+      span
+        display inline
+      .fa
+        font-size 32px
+        margin-right 20px
+
+    .menu-panel.open
+      button
+        background $trans
+      .menu-sub
+        &--hidden, &--visible
+          display none
+
+    #panel-2
+      padding-right 0
+
+
 .menu-panel.open
   &:after
     opacity 1
@@ -258,8 +411,6 @@ nav
     opacity 1
     visibility visible
     z-index 1000
-
-
   .nav-icon
     span
       &:nth-child(1)

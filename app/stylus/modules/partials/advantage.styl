@@ -1,0 +1,62 @@
+.advantage
+  padding-top 166px
+
+.advantage-block
+  position relative
+  z-index 10
+  padding-top 27px
+  padding-left 23px
+  padding-right 23px
+  padding-bottom 8px
+  &:before
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+  &--image
+    text-align center
+
+    height 100px
+  &--description
+    padding-top 14px
+    h4
+      line-height: 1.44;
+      font-size 1.125rem
+      color $white
+      letter-spacing normal
+  &--heading
+    position relative
+    bottom -51px
+    h3
+      text-align center
+
+.advantage-block1
+  background $gray-ad1
+  &:before
+    background $gray-ad2
+    height: 100px
+    z-index -1
+
+.advantage-block2
+  background $blue-ad1
+  top 28px
+  &:before
+    background $blue
+    height 72px
+    z-index -1
+
+.advantage-block3
+  background $aqua-ad2
+  top -28px
+  &:before
+    background $aqua-ad1
+    height 128px
+    z-index -1
+
+.advantage-block4
+  background $blue-ad2
+  top 0
+  &:before
+    background $blue-ad3
+    height 100px
+    z-index -1

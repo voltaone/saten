@@ -58,6 +58,8 @@ footer
   list-flex(col)
   +portrait()
     margin-bottom 2rem
+  +mobile()
+    margin-bottom $s30
   li
     line-height: 2.86;
     letter-spacing: 0.7px;
@@ -76,19 +78,27 @@ footer
 
 .footer-social
   list-flex(row)
+  +mobile()
+    margin-bottom 40px
   li
     margin-right $s22
     a
       letter-spacing: 0.7px;
       color $white
       font-size 1.638rem
+      .fa
+        +mobile()
+          color $black
+          font-size 30px
 
 .footer-copyright
   border-top 2px solid $black-line
   margin-top 64px
   position relative
   padding-top $s18
-  padding-bottom 6px
+  padding-bottom 7px
+  +mobile()
+    margin-top 44px
   &:before, &:after
     pseudo(block, absolute)
     width 15px
@@ -103,3 +113,9 @@ footer
     font-size: $s12
     letter-spacing: 0.6px
     color $black-copy
+    br
+      display none
+    +mobile()
+      font-size $s10
+      br
+        display inline

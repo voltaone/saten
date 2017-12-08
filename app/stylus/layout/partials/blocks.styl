@@ -1,7 +1,8 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-section {}
+section
+  margin-bottom 207px
 
 article {}
 
@@ -13,4 +14,27 @@ main
   +mobile()
     position relative
     z-index 100
+
+.section-back
+  position relative
+  &:after
+    pseudo(block, absolute)
+    left 0
+    right 0
+    background $gray-back
+    top 208px
+    height 643px
+    z-index 1
+
+
+.section-brand
+  margin-bottom 0
+  &--back
+    background $gray-back
+    padding-bottom 139px
+    &-left
+      background transparent
+      padding-top 66px
+
+
 

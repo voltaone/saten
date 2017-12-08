@@ -20,9 +20,10 @@ $(document).ready(function () {
         // slide: ".slide",
         prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
         nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        dots: true
-
+        dots: false
     });
+
+
 
     $(".slider-two").slick({
         // slide: ".slide",
@@ -56,6 +57,37 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+
+
+    });
+
+    $('.slider-four').on('init reInit afterChange', function (event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.slider-counter').text(i + '/' + slick.slideCount);
+    });
+
+    $(".slider-four").slick({
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
+        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -134,13 +166,23 @@ $(document).ready(function () {
 
 // !!! RESPONSIVE SCRIPTS !!!
 
-// $(window).on('load resize', function() {
-//     'use strict';
-//     if (window.matchMedia("(max-width: 767px)").matches) {
-//
-//     } else if (window.matchMedia("(min-width: 768px)").matches) {
-//
-//     }
-// });
+$(window).on('load resize', function() {
+    'use strict';
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        // MENU
+        $('#first, #login').appendTo('#mob-nav-bottom');
+        $('#button-call').appendTo('#first');
+        $('#third').appendTo('#mob-nav-top .col-12');
+        $('#second').appendTo('#mob-nav-top');
+
+
+    } else if (window.matchMedia("(min-width: 768px)").matches) {
+        // MENU
+        $('#first').insertAfter('#logo');
+        $('#second').insertAfter('#panel');
+        $('#third').appendTo('#fourth');
+        $('#login').appendTo('#login-here');
+    }
+});
 
 

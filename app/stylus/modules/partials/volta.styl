@@ -2,15 +2,22 @@
   float right
   display block
   position relative
+  +mobile()
+    padding 3px 0
   &--text
     font-size 0.625em
     color #bebebe
     position relative
     top -3px
     margin-right 5px
+    +mobile()
+      display none
   &--visible
     svg
       width 62px
+      +mobile()
+        width 75px
+        height 17px
       g
         fill #BEBEBE
   &--hidden
@@ -22,6 +29,9 @@
     transitions()
     svg
       width 62px
+      +mobile()
+        width 75px
+        height 17px
       g
         fill #7521E1
   &:hover

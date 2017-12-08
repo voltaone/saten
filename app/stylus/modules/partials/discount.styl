@@ -1,0 +1,52 @@
+.discount-block
+  display: block
+  margin-bottom 51px
+  &--image
+    width 100%
+    height 220px
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 34px
+    img
+      min-height 100%
+  &--description
+    height 160px
+    padding-bottom 40px
+    overflow hidden
+    h3
+      color $black-text
+      font-size: $s24
+      font-weight: 700;
+      line-height: 1.25
+      letter-spacing normal
+      margin-bottom 1.688rem
+    p
+      font-size: $s14
+      font-weight: 500;
+      line-height: 1.86;
+  &--about
+    border-top 1px solid $aqua-back
+    display flex
+    justify-content space-between
+    padding-top 13px
+    transitions()
+    opacity 0
+    &-date
+      p
+        color $aqua-back
+        line-height: 1.63;
+    &-more
+      max-width 242px
+      width 100%
+      padding-top 2px
+  &:hover
+    .discount-block--about
+      opacity 1
+    .link-more
+      width 100%
+      .link-more--text
+        opacity 1
+      .link-more--arrow
+        &:before, &:after
+          opacity 1
