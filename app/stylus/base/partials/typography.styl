@@ -11,9 +11,11 @@ h2
   margin-bottom 2.75rem
   letter-spacing: 1px;
   text-align center
+  +mobile()
+    font-size: $s24
+    text-align left
 
 h2.slider-header--before
-  font($s28, $black, 500, normal)
   margin-bottom 1.750rem
   letter-spacing: 1px;
   text-align center
@@ -24,6 +26,8 @@ h2.slider-header
   margin-bottom 2rem
   letter-spacing: 1px;
   text-align left
+  position relative
+  z-index: 3
 
 h3
   font(2.875rem, $black, 700, 0.65)

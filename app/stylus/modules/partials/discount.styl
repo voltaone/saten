@@ -9,11 +9,18 @@
     align-items center
     margin-bottom 34px
     overflow hidden
+
+    +mobile()
+      height 127px
+      margin-bottom 21px
+
     img
       min-height 100%
+      +mobile()
+        width  100%
   &--description
     height 160px
-    padding-bottom 40px
+    margin-bottom 30px
     overflow hidden
     h3
       color $black-text
@@ -22,6 +29,10 @@
       line-height: 1.25
       letter-spacing normal
       margin-bottom 1.688rem
+
+      +mobile()
+        font-size $s18
+
     p
       font-size: $s14
       font-weight: 500;
@@ -33,14 +44,45 @@
     padding-top 13px
     transitions()
     opacity 0
+
+    +mobile()
+      opacity 1
+
     &-date
       p
         color $aqua-back
         line-height: 1.63;
+
+        +mobile()
+          font-size $s12
+
+      +mobile()
+        flex 1 1 50%
+        max-width 50%
+
     &-more
       max-width 242px
       width 100%
       padding-top 2px
+
+      +mobile()
+        flex 1 1 50%
+        max-width 50%
+        .link-more
+          max-width 100%
+          width 100%
+          top -3px
+          &--arrow
+            width 25px
+            &:after, &:before
+              display none
+
+          &--text
+            opacity 1
+            font-size $s14
+
+
+
   &:hover
     .discount-block--about
       opacity 1

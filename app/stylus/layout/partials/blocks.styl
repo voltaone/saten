@@ -1,8 +1,11 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
+
 section
   margin-bottom 207px
+  +mobile()
+    margin-bottom 57px
 
 article {}
 
@@ -17,6 +20,9 @@ main
 
 .section-back
   position relative
+  +mobile()
+    background $gray-back
+    padding-top 47px
   &:after
     pseudo(block, absolute)
     left 0
@@ -25,16 +31,27 @@ main
     top 208px
     height 643px
     z-index 1
+    +mobile()
+      display none
 
 
 .section-brand
   margin-bottom 0
+  +mobile()
+    background $gray-back
+    padding-top 47px
   &--back
     background $gray-back
     padding-bottom 139px
+
+    +mobile()
+      padding-bottom 0
+
     &-left
       background transparent
       padding-top 66px
+      +mobile()
+        padding-top 0
 
 
 

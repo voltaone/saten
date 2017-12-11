@@ -16,6 +16,8 @@ nav
   justify-content space-between
   align-items center
   height 100%
+  +mobile()
+    float: right;
   li
     flex 1 1 calc(50% - 15px)
     max-width calc(50% - 15px)
@@ -426,3 +428,13 @@ nav
         top 18px
         width 0%
         left 50%
+
+
+.nav-panel--mobile
+  margin-bottom 45px
+  display block
+  img
+    margin-bottom 15px
+    width 100%
+  h4
+    line-height normal

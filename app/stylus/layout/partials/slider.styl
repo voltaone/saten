@@ -31,8 +31,13 @@
     color $white
     top auto
     bottom 0px
+    +mobile()
+      max-width 104px
+      height 50px
     .fa
       font-size 3.5rem
+      +mobile()
+        font-size: 3rem;
 
   .arrow.left
     left 0
@@ -83,21 +88,32 @@
 
 .slider-main
   padding-bottom 26px
+  +mobile()
+    padding-bottom 0
+    .arrow
+      bottom 51px
   .arrow.left
     left calc((100% - 1170px + 30px) / 2)
     +tablet()
       left calc((100% - 960px + 30px) / 2)
     +portrait()
       left calc((100% - 720px + 30px) / 2)
+    +mobile()
+      left 15px
   .arrow.right
     left calc((100% - 1170px + 266px + 30px) / 2)
     +tablet()
       left calc((100% - 960px + 266px + 30px) / 2)
     +portrait()
       left calc((100% - 720px + 266px + 30px) / 2)
+    +mobile()
+      left calc(15px + 107px)
+
   .slide
     position relative
     height 556px
+    +mobile()
+      height 448px
     &-text
       padding-top 63px
     &-img
@@ -109,17 +125,25 @@
       display flex
       align-items center
       justify-content center
-      z-index -1
+      z-index 1
+      //svg
+      //  position absolute
+      //  bottom: 72px;
+      //  left: 31.8%;
       img
         min-width 100%
         +tablet()
           min-width unset
         +portrait()
           min-width unset
+        +mobile()
+          min-width unset
 
 .slider-four
   overflow visible
   padding-bottom 125px
+  +mobile()
+    margin-bottom 50px
   .slick-list
     overflow visible
     z-index 200
@@ -132,6 +156,8 @@
   .arrow.left
     left auto
     right 148px
+    +mobile()
+      right calc(15px + 104px + 3px)
   .arrow.right
     left auto
     right 15px
@@ -139,6 +165,8 @@
 .slider-container
   position relative
   overflow hidden
+  +mobile()
+    margin: 0 -15px;
 
 .slider-four + .slider-counter
   position absolute
@@ -150,3 +178,9 @@
   right 300px
   bottom 48px
   z-index 100
+  +mobile()
+    line-height: 0.83;
+    letter-spacing: 1.6px;
+    font-size 2.250rem
+    right calc(15px + 208px + 3px + 11px)
+    bottom 75px

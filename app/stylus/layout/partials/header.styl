@@ -6,8 +6,13 @@ header {}
 .header-slider
   position relative
   margin-bottom 225px
+  +mobile()
+    margin-bottom 300px
+
   &--container
     position absolute
     left 0
     right 0
     bottom -65px
+    +mobile()
+      bottom -210px

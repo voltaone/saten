@@ -4,13 +4,14 @@
   width 100%
   position relative
 
-
   transitions()
 
+  +mobile()
+    max-width calc(100% - 30px)
+
   &--visible
+    display block
     &-image
-      width: 263px;
-      height: 263px;
       background $white
       box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
@@ -20,12 +21,38 @@
 
       transitions()
 
+      position relative
+      width 100%
+
+      &:before
+        content: "";
+        padding-top: 100%;
+        float: left;
+
+      img
+        position absolute
+        +mobile()
+          max-height: calc(100% - 20px);
+          max-width: calc(100% - 20px);
+
+
+
     &-description
       padding: 22px 19px 7px
       transitions()
       height 89px
 
       overflow hidden
+
+      +mobile()
+        padding-left 0
+        padding-right 0
+        padding-top 13px
+        padding-bottom 14px
+        height 82px
+        h4
+          font-size $s14
+          line-height normal
 
   &--hidden
     position absolute
@@ -41,6 +68,14 @@
     z-index -1
     visibility hidden
 
+    +mobile()
+      opacity 1
+      z-index 1
+      visibility visible
+      position static
+      background $trans
+      box-shadow none
+
     &-price
       display flex
       justify-content space-between
@@ -48,6 +83,10 @@
       height 100%
       position relative
       overflow hidden
+
+      +mobile()
+        flex-wrap wrap
+        justify-content flex-end
 
       &:before, &:after
         pseudo(block, absolute)
@@ -65,6 +104,15 @@
 
       &--number
         padding-left 19px
+
+        padding-top 12px
+        padding-bottom 12px
+
+        +mobile()
+          padding-left 0
+          flex 1 1 100%
+          max-width 100%
+
         p
           color $blue
           font-size: $s22
@@ -72,6 +120,10 @@
           line-height: 1.36;
           letter-spacing: 1px;
           margin-bottom 0
+
+          +mobile()
+            font-size $s14
+
       &--button
         background $blue
         width: 68px;
@@ -81,6 +133,14 @@
         align-items center
         position relative
         z-index 20
+
+        +mobile()
+          float right
+          height 36px
+          width 52px
+          svg
+            max-width 26px
+
       &--hidden
         position absolute
         top 0
@@ -94,6 +154,16 @@
         transform translateX(100%)
         z-index 10
         transitions()
+
+        +mobile()
+          max-height: 36px;
+          top: auto;
+          padding-left 15px
+          height: 100%;
+          transform none
+          max-width 100%
+          width 100%
+
         p
           color $white
           font-size: $s22
@@ -104,18 +174,36 @@
           opacity 0
           transitions()
 
+          +mobile()
+            opacity 1
+            font-size $s14
+            font-weight 500
+
     &-more
       padding: 24px 19px 23px;
       display block
 
+      +mobile()
+        display none
+
+
+
+
 .goods-block:hover
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+  +mobile()
+    box-shadow none
 
   .goods-block--visible-description
     background $white
+    +mobile()
+      background $trans
 
   .goods-block--visible-image
     box-shadow none
+    +mobile()
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+
   .goods-block--hidden
     opacity 1
     z-index 10

@@ -1,13 +1,13 @@
 .advantage
   padding-top 166px
+  +mobile()
+    background $white
+    padding-top 69px
 
 .advantage-block
   position relative
   z-index 10
-  padding-top 27px
-  padding-left 23px
-  padding-right 23px
-  padding-bottom 8px
+  padding 27px 23px 8px
   &:before
     pseudo(block, absolute)
     top 0
@@ -62,3 +62,55 @@
     background $blue-ad3
     height 100px
     z-index -1
+
++portrait()
+  .advantage-block
+    margin-bottom 34px
+  .advantage-block1, .advantage-block2, .advantage-block3, .advantage-block4
+    background $trans
+    top 0
+    &:before
+      height 150px
+    .advantage-block--description
+      padding-top 60px
+      h4
+        color $black
+    .advantage-block--heading
+      position absolute
+      top 135px
+      left 15px
+      bottom auto
+
++mobile()
+  .advantage-block
+    margin-bottom 34px
+    padding-left 0
+    padding-right 0
+    padding-top 0
+  .advantage-block1, .advantage-block2, .advantage-block3, .advantage-block4
+    background $trans
+    top 0
+    &:before
+      height 68px
+    .advantage-block--description
+      padding-top 40px
+      h4
+        color $black
+        font-size $s14
+    .advantage-block--heading
+      position absolute
+      top 60px
+      left 0
+      bottom auto
+      h3
+        text-align left
+        font-size: $s24
+        letter-spacing: 1.1px;
+    .advantage-block--image
+      text-align right
+      height auto
+      padding-right 10px
+      padding-top 10px
+      svg
+        max-height 44px
+        max-width 44px

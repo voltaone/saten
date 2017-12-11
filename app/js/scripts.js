@@ -83,7 +83,7 @@ $(document).ready(function () {
     $(".slider-four").slick({
         dots: false,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
         nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
         responsive: [
@@ -96,13 +96,15 @@ $(document).ready(function () {
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 568,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             }
         ],
@@ -182,6 +184,7 @@ $(window).on('load resize', function() {
         $('#button-call').appendTo('#first');
         $('#third').appendTo('#mob-nav-top .col-12');
         $('#second').appendTo('#mob-nav-top');
+        $('.menu-user').appendTo('#panel-2');
 
 
     } else if (window.matchMedia("(min-width: 768px)").matches) {
@@ -190,6 +193,7 @@ $(window).on('load resize', function() {
         $('#second').insertAfter('#panel');
         $('#third').appendTo('#fourth');
         $('#login').appendTo('#login-here');
+        $('.menu-user').appendTo('#panel');
     }
 });
 

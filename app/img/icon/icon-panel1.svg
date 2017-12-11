@@ -1,0 +1,22 @@
+<svg width="130" height="68" viewBox="0 0 130 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 22</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(20866 -9722)">
+<g id="Group 22">
+<g id="XMLID 5.1">
+<use xlink:href="#path0_fill" transform="translate(-20866 9722)"/>
+</g>
+<g id="XMLID 4.1">
+<use xlink:href="#path1_fill" transform="matrix(0.913099 -0.407802 0.407798 0.913101 -20845.2 9747.6)" fill="#FFFFFF"/>
+</g>
+<g id="XMLID 3.1">
+<use xlink:href="#path2_fill" transform="matrix(0.3573 -0.934 0.934 0.3573 -20843.1 9770.6)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 130 0L 0 0L 0 68L 130 68L 130 0Z"/>
+<path id="path1_fill" d="M 33.2629 0L 0 0L 0 33.2629L 33.2629 33.2629L 33.2629 0Z"/>
+<path id="path2_fill" d="M 40.0199 0L 0 0L 0 2.73351L 40.0199 2.73351L 40.0199 0Z"/>
+</defs>
+</svg>

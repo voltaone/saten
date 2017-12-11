@@ -58,12 +58,31 @@ a
   flex-direction column
   justify-content center
   padding-left 35px
+
+  +mobile()
+    padding-left 15px
+    height 104px
+
   p
     color $white
     font-size $s20
     font-weight: 500;
     line-height: 1.3;
     letter-spacing: 1.1px;
+    margin-bottom $s14
+
+    +mobile()
+      font-size $s14
+      letter-spacing .8px
+      margin-bottom 0
+
+  +mobile()
+    svg
+      position absolute
+      right 0
+      top 40%
+      max-width 110px
+
   &:after
     pseudo(block, absolute)
     background $blue
@@ -73,6 +92,14 @@ a
     width 50vw
     z-index -1
     transitions()
+
+    +mobile()
+      width 100vw
+      left -15px
+
+    +landscape()
+      left calc((-100vw + 510px) / 2)
+
   &:hover
     background $black
     &:after
