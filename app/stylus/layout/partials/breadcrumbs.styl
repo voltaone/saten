@@ -6,22 +6,25 @@
   margin-bottom 1rem
   li
     position relative
-    padding-right 1rem
-    margin-right 1rem
+    padding-right 7px
+    margin-right 7px
     &:after
       pseudo(block, absolute)
       right 0
-      top 0
-      height 100%
+      top 7px
+      height 12px
       width 1px
-      background $black
+      background $aqua-text
       transform rotate(25deg)
     &:last-child
       &:after
         display none
     a
       display block
-      color $black
+      font-size: $s14
+      font-weight: 500;
+      line-height: 1.86;
+      color: $aqua-text;
       &:hover
         color $gray
     .active

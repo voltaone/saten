@@ -6,6 +6,8 @@
 
   transitions()
 
+  transition box-shadow 0s ease
+
   +mobile()
     max-width calc(100% - 30px)
 
@@ -20,6 +22,8 @@
       align-items center
 
       transitions()
+
+      transition box-shadow 0s ease
 
       position relative
       width 100%
@@ -127,7 +131,7 @@
       &--button
         background $blue
         width: 68px;
-        height: 52px
+        height: 53px
         display flex
         justify-content center
         align-items center

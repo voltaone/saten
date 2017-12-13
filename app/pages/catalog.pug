@@ -1,0 +1,187 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-breadcrumbs
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Каталог
+
+    section
+        .container
+            .row
+                .col-md-3
+                    h2 Плитка (5399)
+                    ul
+                        li
+                            a(href='' tutle='') Напольная плитка
+                        li
+                            a(href='' tutle='') Облицовочная плитка
+                        li
+                            a(href='' tutle='') Керамогранит
+                        li
+                            a(href='' tutle='') Мозаика
+                        li
+                            a(href='' tutle='') Декор
+                        li
+                            a(href='' tutle='') Фризы
+                        li
+                            a(href='' tutle='') Ступени
+                        li
+                            a(href='' tutle='') Смеси и Клеи
+                        li
+                            a(href='' title='') Распродажа (1)
+                    h3 Фильтры
+                    form
+                        p Цена (грн)
+                        p
+                            label(for="amount") Price range:
+                            input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+
+                        #slider-range
+                        p Цвет
+                        ul
+                            li
+                                a(href='' title='')
+                            li
+                                a(href='' title='')
+                            li
+                                a(href='' title='')
+                            li
+                                a(href='' title='')
+                            li
+                                a(href='' title='')
+
+                        div
+                            div
+                                p Размеры
+                            div
+                                p Ширина (мм)
+                                input(type='')
+                                span -
+                                input(type='')
+                                p Высота (мм)
+                                input(type='')
+                                span -
+                                input(type='')
+                                button.button Применить
+
+
+                        div
+                            div
+                                p  Бренд
+                            div
+                                ul
+                                    li
+                                        a(href='' title='') Cersanit
+                                    li
+                                        a(href='' title='') Opoczno
+                                    li
+                                        a(href='' title='') APE
+                                    li
+                                        a(href='' title='') Baldocer
+                                    li
+                                        a(href='' title='') Mega gres
+
+                        div
+                            | +   Коллекция
+                            | +   Страна
+                            | +   Тип стиля
+                            | +   Форма плитки
+                            | +   Истираемость
+                            | +   Доп. характеристики
+
+                    h3 Популярные бренды
+
+                    ul
+                        li
+                            a(href='' title='')
+                                img(src='' title='')
+
+                .col-md-9
+                    .row
+                        .col-md-4
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods1.png')
+                                    .goods-block--visible-description
+                                        h4 Плитка Ape Ceramica Motive Crema
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                        .col-md-4
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods1.png')
+                                    .goods-block--visible-description
+                                        h4 Плитка Ape Ceramica Motive Crema
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+                        .col-md-4
+                            .goods-block
+                                a(href='' title='').goods-block--visible
+                                    .goods-block--visible-image
+                                        img(src='img/goods/goods1.png')
+                                    .goods-block--visible-description
+                                        h4 Плитка Ape Ceramica Motive Crema
+                                .goods-block--hidden
+                                    a(href='' title='').goods-block--hidden-price
+                                        .goods-block--hidden-price--number
+                                            p 164 грн
+                                        .goods-block--hidden-price--button
+                                            include svgs/bucket-small.svg
+                                        .goods-block--hidden-price--hidden
+                                            p Купить
+                                    a(href='' title='').goods-block--hidden-more
+                                        span.link-more
+                                            span.link-more--text Подробнее
+                                            span.link-more--arrow
+
+
+    section
+        .container
+            .row
+                .col-12
+                    ul.pagination
+                        li
+                            a(href='')
+                                i.fa.fa-angle-left
+                        li
+                            a(href='') 1
+                            a(href='') 2
+                            a(href='') 3
+                            a(href='') ...
+                            a(href='') 10
+                        li
+                            a(href='')
+                                i.fa.fa-angle-right

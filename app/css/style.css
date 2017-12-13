@@ -1313,6 +1313,7 @@ nav {
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
 	padding-top: 14px;
+	border-bottom: 1px solid #dee8eb;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	nav {
@@ -2012,6 +2013,9 @@ nav {
 		bottom: -210px;
 	}
 }
+.header-breadcrumbs {
+	padding-top: 20px;
+}
 footer {
 	background: #2b3135;
 	padding-top: 70px;
@@ -2229,18 +2233,18 @@ footer {
 }
 .breadcrumbs li {
 	position: relative;
-	padding-right: 1rem;
-	margin-right: 1rem;
+	padding-right: 7px;
+	margin-right: 7px;
 }
 .breadcrumbs li:after {
 	content: '';
 	display: block;
 	position: absolute;
 	right: 0;
-	top: 0;
-	height: 100%;
+	top: 7px;
+	height: 12px;
 	width: 1px;
-	background: #000;
+	background: #c0d3d8;
 	-webkit-transform: rotate(25deg);
 	    -ms-transform: rotate(25deg);
 	        transform: rotate(25deg);
@@ -2250,7 +2254,10 @@ footer {
 }
 .breadcrumbs li a {
 	display: block;
-	color: #000;
+	font-size: .875rem;
+	font-weight: 500;
+	line-height: 1.86;
+	color: #c0d3d8;
 }
 .breadcrumbs li a:hover {
 	color: #e2e2e2;
@@ -2744,6 +2751,11 @@ footer {
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
+	-webkit-transition: -webkit-box-shadow 0s ease;
+	        transition: -webkit-box-shadow 0s ease;
+	     -o-transition:         box-shadow 0s ease;
+	        transition:         box-shadow 0s ease;
+	        transition:         box-shadow 0s ease, -webkit-box-shadow 0s ease;
 }
 @media (max-width: 767px) {
 	.goods-block {
@@ -2772,6 +2784,11 @@ footer {
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
+	-webkit-transition: -webkit-box-shadow 0s ease;
+	        transition: -webkit-box-shadow 0s ease;
+	     -o-transition:         box-shadow 0s ease;
+	        transition:         box-shadow 0s ease;
+	        transition:         box-shadow 0s ease, -webkit-box-shadow 0s ease;
 	position: relative;
 	width: 100%;
 }
@@ -2912,7 +2929,7 @@ footer {
 .goods-block--hidden-price--button {
 	background: #17b3ed;
 	width: 68px;
-	height: 52px;
+	height: 53px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
