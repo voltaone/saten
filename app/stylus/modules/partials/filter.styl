@@ -1,0 +1,95 @@
+.filter-top
+  position relative
+  z-index 5
+  padding-top 22px
+  padding-bottom: 13px
+  h2
+    font-size $s24
+    text-align left
+    letter-spacing: 2px
+    margin-bottom: 28px;
+  &--main
+    list-flex(col)
+    margin-bottom 42px
+    li
+      margin-bottom 14px
+      a
+        position relative
+        color $black
+        letter-spacing: 1px;
+        display inline-block
+        font-size $s14
+        font-weight 400
+
+        &:before, &:after
+          pseudo(block, absolute)
+          height 2px
+          width 9px
+          left -1px
+          background $blue
+          transitions()
+          opacity 0
+        &:before
+          top 5px
+          transform rotate(45deg)
+        &:after
+          top 11px
+          transform rotate(-45deg)
+        &:hover
+          padding-left 18px
+          color $blue
+          &:before, &:after
+            opacity 1
+      a.active
+        padding-left 18px
+        color $blue
+        font-weight 500
+        &:before, &:after
+          opacity 1
+
+    li.filter-top--main-sale
+      margin 14px 0
+      a
+        color $red-text
+        font-size: $s16
+        letter-spacing: 1.1px;
+        font-weight 500
+        &:before, &:after
+          background $red-text
+
+.filter-bottom
+  position relative
+  z-index 5
+  h3
+    color $aqua-text
+    font-size: $s22
+    font-weight: 500
+    line-height: 1.55;
+    letter-spacing: 1.1px;
+    margin-bottom: 30px;
+  h6
+    font-size: 1rem
+    font-weight: 500;
+    line-height: 2.12;
+    letter-spacing: 1.1px;
+    color $black
+    margin-bottom 7px
+  .filter-colors
+    list-flex(row)
+    flex-wrap wrap
+    max-width 168px
+    li
+      margin-bottom 10px
+      margin-right 4px
+      a
+        width: 24px;
+        height: 24px;
+        background-color: #ead6ba;
+        display block
+
+.filter-accordion
+  &--group
+    &-heading
+      position relative
+    &-panel
+      display none

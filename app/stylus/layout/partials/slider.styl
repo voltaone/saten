@@ -126,10 +126,6 @@
       align-items center
       justify-content center
       z-index 1
-      //svg
-      //  position absolute
-      //  bottom: 72px;
-      //  left: 31.8%;
       img
         min-width 100%
         +tablet()
@@ -148,8 +144,10 @@
     overflow visible
     z-index 200
     position relative
-  .goods-block
+  .goods-block.goods-block-small
     margin: 15px;
+    +mobile()
+      max-width calc(100% - 30px)
   .arrow
     bottom 16px
     z-index 3
@@ -184,3 +182,4 @@
     font-size 2.250rem
     right calc(15px + 208px + 3px + 11px)
     bottom 75px
+

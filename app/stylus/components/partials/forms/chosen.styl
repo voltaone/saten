@@ -1,11 +1,10 @@
 .chosen-container
   width 100%
-  margin-bottom 1rem
   font-size 1em
   &:after
-    triangle($black, down, 6px)
-    top calc(50% - 3px)
-    right 15px
+    triangle($black, down, 4px)
+    top: calc(50% - 2px);
+    right: 19px;
     transitions()
   &:focus
     outline none
@@ -38,8 +37,7 @@
 
 .chosen-container-single .chosen-drop
   border-radius 0
-  border 1px solid $black
-  border-top 0
+  border 0
   padding 0
   box-shadow none
   .chosen-results
@@ -47,11 +45,29 @@
     margin 0
     box-shadow none
     .active-result
-      padding 11px 15px 12px
+      transitions()
+      font-size $s12
+      font-weight 500
+      padding 8px 30px
+      letter-spacing: 0.9px;
+      color $black
     .active-result.highlighted
-      background $gray
-
+      background $white
+      color $aqua-text
 
 
 .chosen-container-single .chosen-single div b
   display none
+
+//
+.chosen-container .chosen-single
+  font-size: $s12
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  background $white
+  padding 2px 30px
+  height: 31px;
+
+.chosen-container .chosen-single, .chosen-container.chosen-container-active .chosen-single
+  border none
+  background $white

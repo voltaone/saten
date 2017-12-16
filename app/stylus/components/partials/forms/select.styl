@@ -19,10 +19,12 @@ select
 .select-container
   display block
   position relative
-  margin-bottom 1rem
   width 100%
-  max-width unset
+  max-width 263px
   &:after
     triangle($black, down, 6px)
     top calc(50% - 3px)
     right 15px
+    display none
+    +mobile()
+      display block

@@ -4,6 +4,13 @@
 
 $(document).ready(function () {
     "use strict";
+
+    // ----- FILTER ACCORDION -----
+    $('.filter-accordion--group-heading').click(function(e){
+        e.preventDefault();
+       $(this).siblings('.filter-accordion--group-panel').slideToggle('active');
+    });
+
     // ----- MENU -----
 
     $('#menu-trigger').click(function (e) {
@@ -14,10 +21,10 @@ $(document).ready(function () {
     //  ----- SLIDER -----
 
     // SLICK SLIDER COUNTER
-    $('#link3 .slider').on('init reInit afterChange', function (event, slick, currentSlide) {
-        var i = (currentSlide ? currentSlide : 0) + 1;
-        $('.slider-counter').text(i + '/' + slick.slideCount);
-    });
+    // $('#link3 .slider').on('init reInit afterChange', function (event, slick, currentSlide) {
+    //     var i = (currentSlide ? currentSlide : 0) + 1;
+    //     $('.slider-counter').text(i + '/' + slick.slideCount);
+    // });
 
     // SLICK SLIDER
     $(".slider-full").slick({
@@ -28,51 +35,49 @@ $(document).ready(function () {
     });
 
 
-    $(".slider-two").slick({
-        // slide: ".slide",
-        dots: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-
-
-    $(".slider-three").slick({
-        // slide: ".slide",
-        dots: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ],
-
-
-    });
+    // $(".slider-two").slick({
+    //     // slide: ".slide",
+    //     dots: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 2,
+    //     prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
+    //     nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
+    //     responsive: [
+    //         {
+    //             breakpoint: 991,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //     ]
+    // });
+    //
+    //
+    // $(".slider-three").slick({
+    //     // slide: ".slide",
+    //     dots: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
+    //     nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
+    //     responsive: [
+    //         {
+    //             breakpoint: 991,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 767,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
+    //     ],
+    // });
 
     $('.slider-four').on('init reInit afterChange', function (event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
@@ -89,18 +94,19 @@ $(document).ready(function () {
             {
                 breakpoint: 1199,
                 settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
             },
             {
-                breakpoint: 568,
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -112,19 +118,98 @@ $(document).ready(function () {
     });
 
     // ----- RANGE SLIDER -----
-    $( function() {
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [ 75, 300 ],
-            slide: function( event, ui ) {
-                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+
+    var keypressSlider = document.getElementById('range-slider');
+    var input0 = document.getElementById('range-slider-input0');
+    var input1 = document.getElementById('range-slider-input1');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [12, 18416],
+        connect: true,
+        direction: 'ltr',
+        range: {
+            'min': [0],
+            'max': 20000
+        },
+        format: wNumb({
+            decimals: 0,
+        })
+    });
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+
+    function setSliderHandle(i, value) {
+        var r = [null, null];
+        r[i] = value;
+        keypressSlider.noUiSlider.set(r);
+    }
+
+// Listen to keydown events on the input field.
+    inputs.forEach(function (input, handle) {
+
+        input.addEventListener('change', function () {
+            setSliderHandle(handle, this.value);
+        });
+
+        input.addEventListener('keydown', function (e) {
+
+            var values = keypressSlider.noUiSlider.get();
+            var value = Number(values[handle]);
+
+            // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+            var steps = keypressSlider.noUiSlider.steps();
+
+            // [down, up]
+            var step = steps[handle];
+
+            var position;
+
+            // 13 is enter,
+            // 38 is key up,
+            // 40 is key down.
+            switch (e.which) {
+
+                case 13:
+                    setSliderHandle(handle, this.value);
+                    break;
+
+                case 38:
+
+                    // Get step to go increase slider value (up)
+                    position = step[1];
+
+                    // false = no step is set
+                    if (position === false) {
+                        position = 1;
+                    }
+
+                    // null = edge of slider
+                    if (position !== null) {
+                        setSliderHandle(handle, value + position);
+                    }
+
+                    break;
+
+                case 40:
+
+                    position = step[0];
+
+                    if (position === false) {
+                        position = 1;
+                    }
+
+                    if (position !== null) {
+                        setSliderHandle(handle, value - position);
+                    }
+
+                    break;
             }
         });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    } );
+    });
+
 
     // ----- SELECT -----
 
@@ -190,7 +275,7 @@ $(document).ready(function () {
 
 // !!! RESPONSIVE SCRIPTS !!!
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     'use strict';
     if (window.matchMedia("(max-width: 767px)").matches) {
         // MENU

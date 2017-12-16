@@ -5,25 +5,44 @@
   position relative
 
   transitions()
-
   transition box-shadow 0s ease
 
-  +mobile()
-    max-width calc(100% - 30px)
+  margin-bottom 39px
+
+  &:after
+    pseudo(none,absolute)
+    top 0
+    left 0
+    right 0
+    height 558px
+    z-index 10
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
   &--visible
     display block
+    position relative
+
+    z-index 12
+
+    transitions()
+
+    &-description
+      padding: 25px 19px 7px
+      transitions()
+
+      h4
+        font-size $s14
+        line-height: 1.43;
+        height 44px
+        overflow hidden
+
     &-image
       background $white
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
       display flex
       justify-content center
       align-items center
-
-      transitions()
-
-      transition box-shadow 0s ease
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
       position relative
       width 100%
@@ -35,50 +54,15 @@
 
       img
         position absolute
-        +mobile()
-          max-height: calc(100% - 20px);
-          max-width: calc(100% - 20px);
+        max-height: calc(100% - 20px);
+        max-width: calc(100% - 20px);
 
+  &--panel
+    position relative
 
-
-    &-description
-      padding: 22px 19px 7px
-      transitions()
-      height 89px
-
-      overflow hidden
-
-      +mobile()
-        padding-left 0
-        padding-right 0
-        padding-top 13px
-        padding-bottom 14px
-        height 82px
-        h4
-          font-size $s14
-          line-height normal
-
-  &--hidden
-    position absolute
-    top 100%
-    left 0
-    right 0
-    background $white
-    z-index 400
-    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15)
+    z-index 15
 
     transitions()
-    opacity 0
-    z-index -1
-    visibility hidden
-
-    +mobile()
-      opacity 1
-      z-index 1
-      visibility visible
-      position static
-      background $trans
-      box-shadow none
 
     &-price
       display flex
@@ -87,10 +71,6 @@
       height 100%
       position relative
       overflow hidden
-
-      +mobile()
-        flex-wrap wrap
-        justify-content flex-end
 
       &:before, &:after
         pseudo(block, absolute)
@@ -105,17 +85,14 @@
         top 0
       &:after
         bottom 0
+        opacity 0
+        transitions()
 
       &--number
         padding-left 19px
 
-        padding-top 12px
+        padding-top 10px
         padding-bottom 12px
-
-        +mobile()
-          padding-left 0
-          flex 1 1 100%
-          max-width 100%
 
         p
           color $blue
@@ -125,25 +102,21 @@
           letter-spacing: 1px;
           margin-bottom 0
 
-          +mobile()
-            font-size $s14
-
       &--button
-        background $blue
+        background $trans
         width: 68px;
-        height: 53px
+        height: 52px
         display flex
         justify-content center
         align-items center
         position relative
         z-index 20
+        transitions()
 
-        +mobile()
-          float right
-          height 36px
-          width 52px
-          svg
-            max-width 26px
+        svg
+          g
+            fill $aqua-text
+            transitions()
 
       &--hidden
         position absolute
@@ -159,15 +132,7 @@
         z-index 10
         transitions()
 
-        +mobile()
-          max-height: 36px;
-          top: auto;
-          padding-left 15px
-          height: 100%;
-          transform none
-          max-width 100%
-          width 100%
-
+        opacity 0
         p
           color $white
           font-size: $s22
@@ -175,55 +140,175 @@
           line-height: 1.36;
           letter-spacing: 1px;
           margin-bottom 0
-          opacity 0
           transitions()
 
-          +mobile()
-            opacity 1
-            font-size $s14
-            font-weight 500
+    &-hidden
+      position absolute
+      width 100%
 
-    &-more
-      padding: 24px 19px 23px;
-      display block
+      transitions()
 
-      +mobile()
-        display none
+      opacity 0
+      z-index -1
+      visibility hidden
 
+      &--more
+        padding: 14px 19px 19px;
+        display block
 
+      &--content
+        padding-left: 20px;
+        padding-top: 10px;
 
+        &-available
+          font-size $s18
+          font-weight 500
+          line-height: 1.44;
+          letter-spacing: 1px
+          margin-bottom 9px
+          .true
+            color $green-text
+          .false
+            color $red
+            display none
+        &-code
+          font-size $s14
+          margin-bottom 0
+          .line
+            display block
+            color $aqua-text
+            margin-bottom 4px
+            span
+              color $black
 
+//
 .goods-block:hover
-  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
-  +mobile()
-    box-shadow none
-
-  .goods-block--visible-description
+  z-index 20
+  &:after
+    display block
+    +mobile()
+      display none
+  .goods-block--visible
     background $white
     +mobile()
       background $trans
-
   .goods-block--visible-image
     box-shadow none
     +mobile()
       box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+  .goods-block--panel
+    background $white
+    +mobile()
+      background $trans
+  .goods-block--panel-price:after
+      opacity 1
+  .goods-block--panel-hidden
+    opacity 1
+    z-index 1
+    visibility visible
+    background $white
+    +mobile()
+      background $trans
+  .goods-block--panel-price--button
+    background $blue
+    svg
+      g
+        fill $white
+  .link-more
+    width 100%
+    .link-more--text
+      color $blue
+    .link-more--arrow
+      &:before, &:after
+        background $blue
 
-  .goods-block--hidden
+
+//
+.goods-block--panel-price:hover
+  .goods-block--panel-price--hidden
+    transform none
+    opacity 1
+
+.goods-block.goods-block-small
+  &:after
+    height 476px
+  .goods-block--panel-hidden--content
+    display none
+  .goods-block--panel
+    position absolute
+    width 100%
+
+    opacity 0
+    z-index -1
+    visibility hidden
+
+  .goods-block--visible-description
+    padding-top 21px
+    height 88px
+    h4
+      font-size 1.125rem
+      line-height: 1.67
+      height 52px
+  .goods-block--panel-hidden--more
+    padding: 24px 19px 23px
+
+.goods-block.goods-block-small:hover
+  &:after
+    display block
+    +mobile()
+      display none
+  .goods-block--panel
     opacity 1
     z-index 10
     visibility visible
 
-  .link-more
-    width 100%
-    .link-more--text
++mobile()
+  .goods-block, .goods-block.goods-block-small
+    margin-bottom 60px
+    .goods-block--visible
+      .goods-block--visible-description
+        padding 14px 0
+        h4
+          font-size $s14
+          line-height normal
+          height 54px
+    .goods-block--panel
       opacity 1
-    .link-more--arrow
-      &:before, &:after
-        opacity 1
+      z-index 10
+      visibility visible
+      position static
+      .goods-block--panel-price
+        flex-wrap wrap
+        .goods-block--panel-price--number
+          padding-left 0
+          flex 1 1 100%
+          max-width 100%
+          padding-top 12px
+          padding-bottom 12px
+          p
+            font-size $s14
+        .goods-block--panel-price--button
+          background $blue
+          padding 11px 13px
+          width 52px
+          height 35px
+          svg
+            width 26px
+            height auto
+            g
+              fill $white
+        .goods-block--panel-price--hidden
+          position static
+          transform none
+          opacity 1
+          padding-left 11px
+          max-width calc(100% - 52px)
+          flex 1 1 calc(100% - 52px)
+          height 35px
+          p
+            opacity 1
+            font-size $s14
+            font-weight 500
+      .goods-block--panel-hidden
+        display none
 
-.goods-block--hidden-price:hover
-  .goods-block--hidden-price--hidden
-    transform none
-    z-index 20
-    p
-      opacity 1

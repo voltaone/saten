@@ -1,0 +1,44 @@
+.delimiter-input
+  margin 0 6px 0 10px
+  display inline-block
+
+#range-slider
+  max-width 140px
+  border 0
+  box-shadow none
+  background $aqua-text
+  border-radius 0
+  height 2px
+  left 17px
+  margin-bottom: 42px
+  &:after
+    pseudo(block, absolute)
+    height 2px
+    background $aqua-text
+    width calc(100% + 24px)
+    left -17px
+    top 0
+
+.noUi-handle
+  box-shadow none
+  border none
+  background $black
+  border-radius 0
+
+
+  &:before, &:after
+    display none
+  &:focus
+    outline none
+
+.noUi-horizontal .noUi-handle
+  width: 25px;
+  height: 14px;
+
+
+.noUi-connect
+  background $blue
+  border 0
+  border-radius 0
+  box-shadow none
+  height 2px

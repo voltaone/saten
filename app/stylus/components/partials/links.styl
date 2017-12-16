@@ -112,13 +112,12 @@ a
   display block
   transitions()
   &--text
-    color $blue
+    color transparent
     font-size: $s18
     font-weight: 500;
     line-height: 1.44;
     letter-spacing: 1px;
     transitions()
-    opacity 0
   &--arrow
     background $blue
     width 77px
@@ -131,9 +130,9 @@ a
       pseudo(block, absolute)
       height 2px
       width 10px
-      background $blue
+
       right -2px
-      opacity 0
+      background transparent
       transitions()
     &:before
       top -3px
@@ -144,10 +143,10 @@ a
   &:hover
     width 100%
     .link-more--text
-      opacity 1
+      color $blue
     .link-more--arrow
       &:before, &:after
-        opacity 1
+        background $blue
 
 //.link-up
 //  position fixed
