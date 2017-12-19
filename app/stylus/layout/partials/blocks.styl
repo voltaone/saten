@@ -9,7 +9,18 @@ section
 
 article {}
 
-aside {}
+aside
+  h2
+    font-size $s24
+    text-align left
+    letter-spacing: 2px
+    margin-bottom: 28px;
+    margin-top 24px
+    +mobile()
+      margin-top 0
+      font-size: $s18
+      letter-spacing: 1.5px
+      margin-bottom 30px
 
 main
   background $white
@@ -52,6 +63,19 @@ main
       padding-top 66px
       +mobile()
         padding-top 0
+
+
+.border-bottom
+  position relative
+  padding-bottom 72px
+  margin-bottom 46px
+  &:after
+    pseudo(block, absolute)
+    left 15px
+    right 15px
+    bottom 0
+    height 1px
+    background $aqua-back
 
 
 

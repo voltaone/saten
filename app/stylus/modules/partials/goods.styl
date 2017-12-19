@@ -54,8 +54,11 @@
 
       img
         position absolute
-        max-height: calc(100% - 20px);
-        max-width: calc(100% - 20px);
+        max-height: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        +mobile()
+          max-height: calc(100% - 20px);
+          max-width: calc(100% - 20px);
 
   &--panel
     position relative
@@ -230,6 +233,8 @@
     opacity 1
 
 .goods-block.goods-block-small
+  +portrait()
+    max-width: 200px;
   &:after
     height 476px
   .goods-block--panel-hidden--content

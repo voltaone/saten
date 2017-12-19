@@ -8,7 +8,8 @@ $(document).ready(function () {
     // ----- FILTER ACCORDION -----
     $('.filter-accordion--group-heading').click(function(e){
         e.preventDefault();
-       $(this).siblings('.filter-accordion--group-panel').slideToggle('active');
+       $(this).siblings('.filter-accordion--group-panel').slideToggle();
+       $(this).parent().toggleClass('active');
     });
 
     // ----- MENU -----
@@ -101,8 +102,8 @@ $(document).ready(function () {
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {

@@ -1,13 +1,8 @@
 .filter-top
   position relative
   z-index 5
-  padding-top 22px
-  padding-bottom: 13px
-  h2
-    font-size $s24
-    text-align left
-    letter-spacing: 2px
-    margin-bottom: 28px;
+  +mobile()
+    display none
   &--main
     list-flex(col)
     margin-bottom 42px
@@ -60,6 +55,10 @@
 .filter-bottom
   position relative
   z-index 5
+  //
+  +mobile()
+    display none
+  //
   h3
     color $aqua-text
     font-size: $s22
@@ -67,6 +66,7 @@
     line-height: 1.55;
     letter-spacing: 1.1px;
     margin-bottom: 30px;
+    max-width 165px
   h6
     font-size: 1rem
     font-weight: 500;
@@ -74,10 +74,12 @@
     letter-spacing: 1.1px;
     color $black
     margin-bottom 7px
+
   .filter-colors
     list-flex(row)
     flex-wrap wrap
     max-width 168px
+    margin-bottom 55px
     li
       margin-bottom 10px
       margin-right 4px
@@ -88,8 +90,94 @@
         display block
 
 .filter-accordion
+  max-width 212px
+  padding-bottom 18px
   &--group
+    transitions()
     &-heading
       position relative
+      cursor pointer
+      border-bottom 2px solid $white
+      padding-top: 6px;
+      padding-bottom: 2px;
+      padding-left 25px
+      &:after, &:before
+        pseudo(block, absolute)
+        width 9px
+        height 2px
+        background $black
+        top 23px
+        left 0
+        transitions()
+      &:after
+        transform rotate(90deg)
+
     &-panel
       display none
+
+      padding-bottom 14px
+      p
+        font-size: $s14
+        font-weight: 500;
+        line-height: 2.43;
+        letter-spacing: 1px
+        margin-bottom: 2px;
+      .button
+        margin-top 10px
+      ul
+        margin-left 25px
+        li
+          margin-bottom 10px
+          a
+            opacity .4
+            color $black
+            font-size: $s16
+            font-weight: 500;
+            line-height: 2.4;
+            letter-spacing: 1px;
+
+
+  .filter-accordion--group.filter-accordion--group-withback
+    position relative
+    &:after
+      pseudo(block, absolute)
+      background $trans
+      top 0
+      left -15px
+      bottom 0
+      right -15px
+      z-index -1
+      transitions()
+    .filter-accordion--group-panel
+      padding-top 16px
+
+  .filter-accordion--group.active
+    .filter-accordion--group-heading:after, .filter-accordion--group-heading:before
+      transform rotate(180deg)
+
+  .filter-accordion--group.filter-accordion--group-withback.active
+    margin-bottom: 50px;
+    &:after
+      background $gray-back
+
+
+
+.filter-brands
+  list-flex(col)
+  align-items center
+  max-width 160px
+  li
+    margin-bottom 20px
+    margin-top 10px
+    a
+      display inline-block
+      img
+        max-width 98px
+        max-height 34px
+
+
+
+#filter-trigger
+  display block
+
+

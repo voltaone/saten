@@ -4,16 +4,23 @@
 .pagination
   list-flex(row)
   justify-content space-between
-  max-width 25%
   margin 0 auto
+  max-width 291px
   li
     a
       display block
-      color $black
-      font-size 1.25em
+      color $aqua-text
+      font-size: $s18
+      font-weight: 500;
+      line-height: 1.44;
       &:hover
-        color $gray
+        color $blue
     .active
-      color $gray
+      color $blue
+      font-weight 700
       cursor default
       pointer-events: none;
+  .pagination-arrow.left
+    margin-right 25px
+  .pagination-arrow.right
+    margin-left 25px

@@ -6,6 +6,9 @@
   &--header
     height: 263px
     position relative
+    +mobile()
+      width: calc(100% + 30px);
+      left: -15px;
     &-image
       position absolute
       top 0
@@ -16,6 +19,7 @@
       display flex
       align-items center
       justify-content center
+      overflow hidden
       img
         min-height 100%
     &-text
@@ -30,6 +34,10 @@
         letter-spacing: 1px
         color $white
         margin-bottom 0
+        +mobile()
+          font-size: $s26
+          line-height: 1.15;
+          letter-spacing: 0.7px;
   &--footer
     display flex
     justify-content space-between

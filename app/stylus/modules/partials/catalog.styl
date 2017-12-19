@@ -1,4 +1,6 @@
 .catalog-back
+  +mobile()
+    background $gray-back
   &:after
     pseudo(block, absolute)
     background $gray-back
@@ -7,3 +9,5 @@
     top 0
     left -49px
     z-index 1
+    +mobile()
+      display none
