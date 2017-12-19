@@ -18,7 +18,7 @@ block content
                         li
                             a(href='' title='') Плитка
 
-    section
+    section.catalog
         .container.border-bottom
             .row
                 aside.col-lg-3.col-md-4
@@ -44,7 +44,7 @@ block content
                             li.filter-top--main-sale
                                 a(href='' title='') Распродажа (1)
                         hr
-                    .filter-bottom
+                    .filter-bottom#filter
                         h3 Фильтры
                         form
                             h6 Цена (грн)
@@ -222,26 +222,26 @@ block content
                                                 a(href='' title='') Baldocer
                                             li
                                                 a(href='' title='') Mega gres
+                        .filter-brands
+                            hr
+                            h3 Популярные бренды
 
-                        hr
-                        h3 Популярные бренды
-
-                        ul.filter-brands
-                            li
-                                a(href='' title='')
-                                    img(src='img/brand/brand1.png' title='')
-                            li
-                                a(href='' title='')
-                                    img(src='img/brand/brand2.png' title='')
-                            li
-                                a(href='' title='')
-                                    img(src='img/brand/brand3.png' title='')
-                            li
-                                a(href='' title='')
-                                    img(src='img/brand/brand4.png' title='')
-                            li
-                                a(href='' title='')
-                                    img(src='img/brand/brand5.png' title='')
+                            ul.filter-brands--ul
+                                li
+                                    a(href='' title='')
+                                        img(src='img/brand/brand1.png' title='')
+                                li
+                                    a(href='' title='')
+                                        img(src='img/brand/brand2.png' title='')
+                                li
+                                    a(href='' title='')
+                                        img(src='img/brand/brand3.png' title='')
+                                li
+                                    a(href='' title='')
+                                        img(src='img/brand/brand4.png' title='')
+                                li
+                                    a(href='' title='')
+                                        img(src='img/brand/brand5.png' title='')
 
                 .col-md-8.col-lg-9.catalog-back
                     .row.justify-content-end
@@ -249,7 +249,7 @@ block content
                         .col-xl-6.col-md-8
                             .sort
                                 .sort--filter
-                                    a(href='' title='')#filter-trigger
+                                    a(title='' data-fancybox data-src="#filter" href="javascript:;")#filter-trigger
                                         include svgs/filter.svg
                                 .sort--heading
                                     | Сортировать по:

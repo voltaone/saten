@@ -210,7 +210,7 @@
           </div>
         </div>
       </header>
-      <section>
+      <section class="catalog">
         <div class="container border-bottom">
           <div class="row">
             <aside class="col-lg-3 col-md-4">
@@ -229,7 +229,7 @@
                 </ul>
                 <hr>
               </div>
-              <div class="filter-bottom">
+              <div class="filter-bottom" id="filter">
                 <h3>Фильтры</h3>
                 <form>
                   <h6>Цена (грн)</h6>
@@ -372,22 +372,24 @@
                     </div>
                   </div>
                 </form>
-                <hr>
-                <h3>Популярные бренды</h3>
-                <ul class="filter-brands">
-                  <li><a href="" title=""><img src="img/brand/brand1.png" title=""></a></li>
-                  <li><a href="" title=""><img src="img/brand/brand2.png" title=""></a></li>
-                  <li><a href="" title=""><img src="img/brand/brand3.png" title=""></a></li>
-                  <li><a href="" title=""><img src="img/brand/brand4.png" title=""></a></li>
-                  <li><a href="" title=""><img src="img/brand/brand5.png" title=""></a></li>
-                </ul>
+                <div class="filter-brands">
+                  <hr>
+                  <h3>Популярные бренды</h3>
+                  <ul class="filter-brands--ul">
+                    <li><a href="" title=""><img src="img/brand/brand1.png" title=""></a></li>
+                    <li><a href="" title=""><img src="img/brand/brand2.png" title=""></a></li>
+                    <li><a href="" title=""><img src="img/brand/brand3.png" title=""></a></li>
+                    <li><a href="" title=""><img src="img/brand/brand4.png" title=""></a></li>
+                    <li><a href="" title=""><img src="img/brand/brand5.png" title=""></a></li>
+                  </ul>
+                </div>
               </div>
             </aside>
             <div class="col-md-8 col-lg-9 catalog-back">
               <div class="row justify-content-end">
                 <div class="col-xl-6 col-md-8">
                   <div class="sort">
-                    <div class="sort--filter"><a href="" title="" id="filter-trigger"><svg width="26" height="24" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <div class="sort--filter"><a title="" data-fancybox data-src="#filter" href="javascript:;" id="filter-trigger"><svg width="26" height="24" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Group 22</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(19002 -9181)">

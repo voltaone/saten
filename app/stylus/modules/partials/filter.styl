@@ -67,6 +67,18 @@
     letter-spacing: 1.1px;
     margin-bottom: 30px;
     max-width 165px
+    +mobile()
+      max-width unset
+      position: relative
+      padding-bottom 11px
+      margin-bottom 17px
+      &:after
+        pseudo(block, absolute)
+        bottom 0
+        left -15px
+        right -15px
+        height 1px
+        background $aqua-back
   h6
     font-size: 1rem
     font-weight: 500;
@@ -74,24 +86,39 @@
     letter-spacing: 1.1px;
     color $black
     margin-bottom 7px
+    +mobile()
+      margin-bottom 11px
 
   .filter-colors
     list-flex(row)
     flex-wrap wrap
     max-width 168px
     margin-bottom 55px
+    +mobile()
+      max-width unset
+      margin-bottom 48px
     li
       margin-bottom 10px
       margin-right 4px
+      +mobile()
+        margin-right 6px
+        margin-bottom 17px
       a
         width: 24px;
         height: 24px;
         background-color: #ead6ba;
         display block
+        +mobile()
+          width 42px
+          height 42px
+
 
 .filter-accordion
   max-width 212px
   padding-bottom 18px
+  +mobile()
+    margin: 0 15px;
+    max-width unset
   &--group
     transitions()
     &-heading
@@ -148,8 +175,15 @@
       right -15px
       z-index -1
       transitions()
+
     .filter-accordion--group-panel
       padding-top 16px
+      +mobile()
+        padding-bottom 34px
+        .input-number.input-number-big
+          margin-bottom 16px
+        .button
+          display none
 
   .filter-accordion--group.active
     .filter-accordion--group-heading:after, .filter-accordion--group-heading:before
@@ -157,12 +191,16 @@
 
   .filter-accordion--group.filter-accordion--group-withback.active
     margin-bottom: 50px;
+    +mobile()
+      margin-bottom 45px
     &:after
       background $gray-back
 
-
-
 .filter-brands
+  +mobile()
+    display none
+
+.filter-brands--ul
   list-flex(col)
   align-items center
   max-width 160px
@@ -174,8 +212,6 @@
       img
         max-width 98px
         max-height 34px
-
-
 
 #filter-trigger
   display block

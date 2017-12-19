@@ -4,12 +4,36 @@
 .fancybox-slide > div
   width 100%
   max-width 1170px
-  padding 2rem 0
   +tablet()
     max-width 960px
   +portrait()
     max-width 720px
-  +fablet()
-    max-width 540px
   +mobile()
-    max-width calc(100% - 30px)
+    margin 0
+
++mobile()
+  .fancybox-slide > div.filter-bottom
+    padding 18px 15px 82px
+
+.fancybox-close-small
+  width 22px
+  height 22px
+  top 21px
+  right 15px
+  background $trans
+  &:hover
+    &:before, &:after
+      background $black
+  &:before, &:after
+    pseudo(block, absolute)
+    width 29px
+    height 2px
+    top: 10px;
+    right: -3px;
+    background $black
+    border-radius 0
+  &:before
+    transform rotate(45deg)
+  &:after
+    transform rotate(-45deg)
+

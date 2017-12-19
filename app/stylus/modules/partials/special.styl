@@ -44,8 +44,16 @@
     align-items center
     padding-top: 24px
     padding-bottom: 24px
+    +mobile()
+      flex-wrap wrap
+      padding-top 12px
+      padding-bottom 12px
     &-left
       padding-left 19px
+      +mobile()
+        padding-left 0
+        flex 1 1 100%
+        max-width 100%
       h4
         font-size: $s24
         font-weight: 700;
@@ -53,9 +61,15 @@
         text-align: left;
         color: $black1
         margin-bottom 0
+        +mobile()
+          font-size $s18
+          margin-bottom 20px
     &-right
       flex 1 1 242px
       max-width 242px
+      +mobile()
+        flex 1 1 100%
+        max-width 100%
       .link-more
         width 100%
         .link-more--text

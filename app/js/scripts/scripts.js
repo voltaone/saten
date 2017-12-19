@@ -282,6 +282,9 @@ $(window).on('load resize', function () {
         $('#second').appendTo('#mob-nav-top');
         $('.menu-user').appendTo('#panel-2');
 
+        // FILTER
+        // $('.filter-bottom').insertBefore('nav');
+
 
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         // MENU
@@ -290,6 +293,9 @@ $(window).on('load resize', function () {
         $('#third').appendTo('#fourth');
         $('#login').appendTo('#login-here');
         $('.menu-user').appendTo('#panel');
+
+        // FILTER
+        // $('.filter-bottom').insertAfter('.filter-top');
     }
 });
 
