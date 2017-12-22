@@ -2,11 +2,11 @@
 extend layouts/_layout.pug
 
 block title
-    | Каталог
+    | Продукт
 
 block content
 
-    header.header-breadcrumbs
+    header.header-breadcrumbs.back-gray
         .container
             .row
                 .col-12
@@ -14,14 +14,40 @@ block content
                         li
                             a(href='' title='') Главная
                         li
-                            a(href='' title='') Каталог
-                        li
                             a(href='' title='') Плитка
+                        li
+                            a(href='' title='') Напольная плитка
+                        li
+                            a(href='' title='') Плитка Ape Ceramica
 
-    section.catalog
+    section.back-gray
         .container.border-bottom
+            .row.product-heading
+                .col-8
+                    h1 Плитка Ape Ceramica Motive Crema
+                    p.product-varanty Официальная гарантия | Обмен / возврат в течении 14 дней
+                .col-4
+                    .sort.product-code
+                        .sort--heading
+                            | Код товара:
+                        .sort--code
+                            | ЦЦ-367-235509
             .row
                 aside.col-lg-3.col-md-4
+                    .product-filter
+                        .product-filter--brand
+                            a(href='' title='')
+                                img(src='img/brand/brand5.png' title='')
+                        .quantity
+                            .quantity-button.quantity-button--minus -
+                            input(type='number').quantity-input
+                            .quantity-button.quantity-button--plus +
+
+
+
+
+
+
                     h2 Плитка (5399)
                     .filter-top
                         ul.filter-top--main
@@ -243,25 +269,7 @@ block content
                                     a(href='' title='')
                                         img(src='img/brand/brand5.png' title='')
 
-                .col-md-8.col-lg-9.catalog-back
-                    .row.justify-content-end
-
-                        .col-xl-6.col-md-8
-                            .sort
-                                .sort--filter
-                                    a(title='' data-fancybox data-src="#filter" href="javascript:;")#filter-trigger
-                                        include svgs/filter.svg
-                                .sort--heading
-                                    | Сортировать по:
-                                .sort--form
-                                    form.form-sort
-                                        .select-container
-                                            select.chosen-select
-                                                option От дорогих к дешевым1
-                                                option От дорогих к дешевым2
-                                                option От дорогих к дешевым3
-
-
+                .col-md-8.col-lg-9.catalog-back.catalog-back-product
                     .row
                         .col-lg-4.col-6
                             .goods-block

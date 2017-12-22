@@ -14,14 +14,14 @@ nav
 
 .menu-user
   list-flex(row)
-  justify-content space-between
+  justify-content flex-end
   align-items center
   height 100%
   +mobile()
     float: right;
+
   li
-    flex 1 1 calc(50% - 15px)
-    max-width calc(50% - 15px)
+    margin: 0 8px;
     height 100%
     text-align center
     &:empty
@@ -35,11 +35,56 @@ nav
       font-weight: 500;
       letter-spacing: 1px;
       color $black-text
-      padding: 0 5px
       +tablet()
         padding-left 0
-      svg
-        margin 0 10px 0
+      
+    #bucket
+      padding: 0 17px;
+      position relative
+      span
+        position absolute
+        right: 7px;
+        bottom: -8px;
+        background $blue
+        color: $white
+        width: 20px;
+        height: 20px;
+        border-radius 50%
+        font-weight 500
+        font-size $s15
+        text-align center
+        line-height 20px
+        &:empty
+          display none
+      +portrait()
+        padding 0 14px
+      
+      
+  #login-here
+    max-width: 128px;
+
+.login.login-in
+  margin-right 24px
+  display inline-flex
+  svg
+    margin-left 11px
+
+
+.login.login-out
+  display none
+  +portrait()
+    padding-left 18px
+  span
+    white-space: nowrap;
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width 97px
+  svg
+    margin-right 18px
+    +portrait()
+      margin-right 15px
+
+
 
 .menu-nav
   list-flex(row)
@@ -239,6 +284,7 @@ nav
       top 20px
 
 
+
 //MOBILE NAV
 +mobile()
   nav
@@ -356,11 +402,11 @@ nav
       padding-bottom 71px
       position relative
 
-    #login
+    .login
       position absolute
       right 30px
       top 35px
-      display flex
+      //display flex
       align-items center
       color $white
       font-size 1.125rem
@@ -371,6 +417,8 @@ nav
         margin-right 10px
         g
           fill $white
+
+
 
     .link-call
       position static

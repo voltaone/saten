@@ -3,6 +3,19 @@
     background $gray-back
     padding-bottom 57px
     margin-bottom 0
+  aside
+    background $white
+    h2
+      font-size $s24
+      text-align left
+      letter-spacing: 2px
+      margin-bottom: 28px;
+      margin-top 24px
+      +mobile()
+        margin-top 0
+        font-size: $s18
+        letter-spacing: 1.5px
+        margin-bottom 30px
 
 .catalog-back
   +mobile()
@@ -17,3 +30,8 @@
     z-index 1
     +mobile()
       display none
+
+.catalog-back.catalog-back-product
+  &:after
+    background $white
+    top: -114px;

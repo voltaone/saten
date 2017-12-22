@@ -276,26 +276,22 @@ $(window).on('load resize', function () {
     'use strict';
     if (window.matchMedia("(max-width: 767px)").matches) {
         // MENU
-        $('#first, #login').appendTo('#mob-nav-bottom');
+        $('#first, .login').appendTo('#mob-nav-bottom');
         $('#button-call').appendTo('#first');
         $('#third').appendTo('#mob-nav-top .col-12');
         $('#second').appendTo('#mob-nav-top');
         $('.menu-user').appendTo('#panel-2');
 
-        // FILTER
-        // $('.filter-bottom').insertBefore('nav');
-
 
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         // MENU
-        $('#first').insertAfter('#logo');
+        $('#first').prependTo('#panel .row');
+        $('#button-call').appendTo('body');
         $('#second').insertAfter('#panel');
         $('#third').appendTo('#fourth');
-        $('#login').appendTo('#login-here');
-        $('.menu-user').appendTo('#panel');
+        $('.login').appendTo('#login-here');
+        $('.menu-user').appendTo('#panel .col-6');
 
-        // FILTER
-        // $('.filter-bottom').insertAfter('.filter-top');
     }
 });
 
