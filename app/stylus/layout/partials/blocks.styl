@@ -64,9 +64,48 @@ main
       +mobile()
         padding-top 0
 
+.section-product--heading
+  margin-bottom 0
+  background $gray-back
+  +mobile()
+    background $white
+
+.section-product--content
+  background $gray-back
+  margin-bottom 0
+  padding-bottom 167px
+  +mobile()
+    padding-bottom 71px
+    aside
+      border-bottom 1px solid $aqua-text
+      padding-bottom 62px
+      margin-bottom 49px
+
+.section-collection
+  position relative
+  margin-bottom: 90px;
+  &:before
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    background $gray-back
+    height 236px
+  +mobile()
+    padding-top 41px
+    margin-bottom 0
+    &:before
+      display none
+    .slider-four
+      padding-bottom 110px
+
+.section-choice
+  margin-bottom: 143px
+  +mobile()
+    margin-bottom 40px
+
 .back-gray
   background $gray-back
-
 
 .border-bottom
   position relative

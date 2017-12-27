@@ -6,14 +6,49 @@
     display flex
     flex-direction row
     justify-content space-between
+    margin-bottom 60px
     li
+      max-width 168px
+      width 100%
+      +tablet()
+        max-width: 135px;
+      +portrait()
+        max-width: 135px;
       a
-        padding 1rem
-        display block
+        padding 0
+        display flex
+        align-items center
+        justify-content center
         color $black
+        height: 60px;
+        font-weight: 500;
+        line-height: 1.25;
+        position relative
+        background $aqua-back
+        text-align center
+        &:after
+          triangle($black, down, 12px)
+          left calc(50% - 12px)
+          bottom -12px
+          opacity 0
         &:hover
-          background $gray
+          background $black
+          color $white
+        +tablet()
+          padding 0 5px
+        +portrait()
+          padding 0 5px
     .ui-tabs-active.ui-state-active
       a
         background $black
         color $white
+        &:after
+          opacity 1
+
+  .ui-tabs-panel
+    p, ul li
+      line-height 2
+
++mobile()
+  .tabs-nav
+    display none

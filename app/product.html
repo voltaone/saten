@@ -212,7 +212,7 @@
     </nav>
     <main>
       <!--include ../partials/_header.pug-->
-      <header class="header-breadcrumbs back-gray">
+      <header class="header-breadcrumbs back-gray header-product">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -226,877 +226,569 @@
           </div>
         </div>
       </header>
-      <section class="back-gray">
-        <div class="container border-bottom">
+      <section class="section-product--heading">
+        <div class="container">
           <div class="row product-heading">
-            <div class="col-8">
+            <div class="col-md-8">
               <h1>Плитка Ape Ceramica Motive Crema</h1>
-              <p class="product-varanty">Официальная гарантия | Обмен / возврат в течении 14 дней</p>
+              <p class="product-warranty">Официальная гарантия | Обмен / возврат в течении 14 дней</p>
             </div>
-            <div class="col-4">
+            <div class="col-6 visible-xs" id="productBrand"></div>
+            <div class="col-md-4 col-6">
               <div class="sort product-code">
                 <div class="sort--heading">Код товара:</div>
                 <div class="sort--code">ЦЦ-367-235509</div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="section-product--content">
+        <div class="container">
           <div class="row">
-            <aside class="col-lg-3 col-md-4">
+            <aside class="col-lg-3 col-md-4 order-md-1 order-2">
               <div class="product-filter">
                 <div class="product-filter--brand"><a href="" title=""><img src="img/brand/brand5.png" title=""></a></div>
                 <div class="quantity">
-                  <div class="quantity-button quantity-button--minus">-</div>
-                  <input class="quantity-input" type="number">
+                  <div class="quantity-button quantity-button--minus">—</div>
+                  <input class="quantity-input" type="number" value="1" min="1" step="1" pattern=" [0-9]+([.][0-9]+)?">
                   <div class="quantity-button quantity-button--plus">+</div>
                 </div>
-              </div>
-              <h2>Плитка (5399)</h2>
-              <div class="filter-top">
-                <ul class="filter-top--main">
-                  <li><a class="active" href="" tutle="">Напольная плитка</a></li>
-                  <li><a href="" tutle="">Облицовочная плитка</a></li>
-                  <li><a href="" tutle="">Керамогранит</a></li>
-                  <li><a href="" tutle="">Мозаика</a></li>
-                  <li><a href="" tutle="">Декор</a></li>
-                  <li><a href="" tutle="">Фризы</a></li>
-                  <li><a href="" tutle="">Ступени</a></li>
-                  <li><a href="" tutle="">Смеси и Клеи</a></li>
-                  <li class="filter-top--main-sale"><a href="" title="">Распродажа (1)</a></li>
+                <ul class="type">
+                  <li>ул</li>
+                  <li class="active">м<sup>2</sup></li>
+                  <li>шт</li>
                 </ul>
-                <hr>
-              </div>
-              <div class="filter-bottom" id="filter">
-                <h3>Фильтры</h3>
-                <form>
-                  <h6>Цена (грн)</h6>
-                  <input class="input-number" type="number" id="range-slider-input0"><span class="delimiter-input">—</span>
-                  <input class="input-number" type="number" id="range-slider-input1">
-                  <div id="range-slider"></div>
-                  <div id="slider-range"></div>
-                  <h6>Цвет</h6>
-                  <ul class="filter-colors">
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                    <li><a href="" title=""></a></li>
-                  </ul>
-                  <div class="filter-accordion">
-                    <div class="filter-accordion--group filter-accordion--group-withback">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Размеры</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <p>Ширина (мм)</p>
-                        <input class="input-number input-number-big" type="number"><span class="delimiter-input">—</span>
-                        <input class="input-number input-number-big" type="number">
-                        <p>Высота (мм)</p>
-                        <input class="input-number input-number-big" type="number"><span class="delimiter-input">—</span>
-                        <input class="input-number input-number-big" type="number">
-                        <button class="button">Применить</button>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Бренд</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Коллекция</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Страна</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Тип стиля</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Форма плитки</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Истираемость</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="filter-accordion--group">
-                      <div class="filter-accordion--group-heading">
-                        <h6>Доп. характеристики</h6>
-                      </div>
-                      <div class="filter-accordion--group-panel">
-                        <ul>
-                          <li><a href="" title="">Cersanit</a></li>
-                          <li><a href="" title="">Opoczno</a></li>
-                          <li><a href="" title="">APE</a></li>
-                          <li><a href="" title="">Baldocer</a></li>
-                          <li><a href="" title="">Mega gres</a></li>
-                        </ul>
-                      </div>
-                    </div>
+                <p class="available"><span class="true">Есть в наличии</span><span class="false">Нет в наличии</span></p>
+                <p class="product-price">100 450 грн</p><a class="button button-blue" href="">Заказать</a><a class="button button-fast" href="">Быстрый заказ</a>
+                <div class="credit">
+                  <div class="credit-heading">Кредит</div>
+                  <div class="credit-dropdown">
+                    <p class="credit-dropdown--heading">Цена в кредит:</p>
+                    <p class="credit-dropdown--price">4500 грн/мес</p>
+                    <p class="credit-dropdown--heading">Срок кредита (мес):</p>
+                    <ul class="type">
+                      <li>3</li>
+                      <li class="active">6</li>
+                      <li>12</li>
+                    </ul><a class="button button-blue" href="">Оформить</a>
                   </div>
-                </form>
-                <div class="filter-brands">
-                  <hr>
-                  <h3>Популярные бренды</h3>
-                  <ul class="filter-brands--ul">
-                    <li><a href="" title=""><img src="img/brand/brand1.png" title=""></a></li>
-                    <li><a href="" title=""><img src="img/brand/brand2.png" title=""></a></li>
-                    <li><a href="" title=""><img src="img/brand/brand3.png" title=""></a></li>
-                    <li><a href="" title=""><img src="img/brand/brand4.png" title=""></a></li>
-                    <li><a href="" title=""><img src="img/brand/brand5.png" title=""></a></li>
-                  </ul>
                 </div>
               </div>
             </aside>
-            <div class="col-md-8 col-lg-9 catalog-back catalog-back-white">
-              <div class="row">
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+            <div class="order-md-2 order-1 col-md-8 col-lg-9 catalog-back catalog-back-product">
+              <div class="row product-description">
+                <div class="col col-product-1">
+                  <div class="product-slider-container">
+                    <div class="slider slider-full slider-product">
+                      <div class="slide">
+                        <div class="slider-product--image"><img src="img/goods/goods1.png" title="" alt=""></div>
+                      </div>
+                      <div class="slide">
+                        <div class="slider-product--image"><img src="img/goods/goods2.png" title="" alt=""></div>
+                      </div>
+                      <div class="slide">
+                        <div class="slider-product--image"><img src="img/goods/goods2.png" title="" alt=""></div>
                       </div>
                     </div>
+                    <div class="slider-product-counter slider-counter"></div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col col-product-2">
+                  <table class="table-product table-heading">
+                    <tr>
+                      <td>Бренд:</td>
+                      <td><a href="" title="">Alfobel</a></td>
+                    </tr>
+                    <tr>
+                      <td>Коллекция:</td>
+                      <td><a href="" title="">Burgos</a></td>
+                    </tr>
+                  </table>
+                  <hr>
+                  <table class="table-product">
+                    <tr>
+                      <td>Ширина:</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>Высота:</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Страна производитель:</td>
+                      <td>Испания</td>
+                    </tr>
+                    <tr>
+                      <td>Тип поверхности:</td>
+                      <td>Матовая</td>
+                    </tr>
+                    <tr>
+                      <td>Назначение плитки:</td>
+                      <td>Облицовочная</td>
+                    </tr>
+                    <tr>
+                      <td>Основание:</td>
+                      <td>Красная глина</td>
+                    </tr>
+                    <tr>
+                      <td>Тип стиля:</td>
+                      <td>Моноколор</td>
+                    </tr>
+                    <tr>
+                      <td>Форма плитки:</td>
+                      <td>Квадратный</td>
+                    </tr>
+                    <tr>
+                      <td>Цвет:</td>
+                      <td>Бежевый</td>
+                    </tr>
+                    <tr>
+                      <td>Толщина:</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>Количество м.кв в уп.:</td>
+                      <td>1.08</td>
+                    </tr>
+                    <tr>
+                      <td>Вес упаковки, кг:</td>
+                      <td>18.68</td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-lg-3 col-lg-9">
+              <div id="tabs">
+                <ul class="tabs-nav">
+                  <li><a href="#tabs-1">Описание товара</a></li>
+                  <li><a href="#tabs-2">Продукция Devit</a></li>
+                  <li><a href="#tabs-3">Гарантия и сервис</a></li>
+                  <li><a href="#tabs-4">Доставка</a></li>
+                  <li><a href="#tabs-5">Возврат товара</a></li>
+                </ul>
+                <div id="accordion">
+                  <div class="accordion-button">Описание товара</div>
+                  <div id="tabs-1">
+                    <p>Напольное биде Devit Charlestone 2010142 отличается прекрасным европейским качеством и очень доступной ценой. Биде удобно в эксплуатации, универсальные размеры подойдут в любую ванную комнату. Вы также можете выбрать унитаз, раковину на нашем сайте в одном элегантном стиле коллекции Charlestone.</p>
                   </div>
-                </div>
-                <div class="col-12"><a class="special" href="" title="">
-                    <div class="special--header">
-                      <div class="special--header-image"><img src="img/special/special1.png" title=""></div>
-                      <div class="special--header-text">
-                        <h3>Акция</h3>
-                      </div>
-                    </div>
-                    <div class="special--footer">
-                      <div class="special--footer-left">
-                        <h4>Распродажа коллекции плитки</h4>
-                      </div>
-                      <div class="special--footer-right"><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></div>
-                    </div></a></div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
+                  <div class="accordion-button">Продукция Devit</div>
+                  <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
                   </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
+                  <div class="accordion-button">Гарантия и сервис</div>
+                  <div id="tabs-3">
+                    <p>
+                      Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia
+                      nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+                    </p>
+                    <p>
+                      Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                      magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum
+                    </p>
                   </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
+                  <div class="accordion-button">Доставка</div>
+                  <div id="tabs-4">
+                    <p>
+                      Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor
+                      ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
+                    </p>
                   </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
-                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
-                      <div class="goods-block--visible-description">
-                        <h4>Плитка Ape Ceramica Motive Crema</h4>
-                      </div></a>
-                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
-                        <div class="goods-block--panel-price--number">
-                          <p>164 грн</p>
-                        </div>
-                        <div class="goods-block--panel-price--hidden">
-                          <p>Купить</p>
-                        </div>
-                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
-<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 17</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
-            <g id="Group-17" transform="translate(199.000000, 352.000000)">
-                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
-                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
-                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
-                </g>
-                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
-                        </div></a>
-                      <div class="goods-block--panel-hidden">
-                        <div class="goods-block--panel-hidden--content">
-                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
-                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
-                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
-                      </div>
-                    </div>
+                  <div class="accordion-button">Возврат товара</div>
+                  <div id="tabs-5">
+                    <p>
+                      Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.
+                      Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat
+                      volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="section-collection">
+        <div class="container container-1200">
+          <div class="row">
+            <div class="col-12">
+              <h2>Товары из этой же коллекции</h2>
+              <div class="slider-container">
+                <div class="slider slider-four">
+                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
+                      <div class="goods-block--visible-description">
+                        <h4>Плитка Ape Ceramica Motive Crema</h4>
+                      </div></a>
+                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                        <div class="goods-block--panel-price--number">
+                          <p>164 грн</p>
+                        </div>
+                        <div class="goods-block--panel-price--hidden">
+                          <p>Купить</p>
+                        </div>
+                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div></a>
+                      <div class="goods-block--panel-hidden">
+                        <div class="goods-block--panel-hidden--content">
+                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
+                      <div class="goods-block--visible-description">
+                        <h4>Плитка Ape Ceramica Motive Crema</h4>
+                      </div></a>
+                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                        <div class="goods-block--panel-price--number">
+                          <p>164 грн</p>
+                        </div>
+                        <div class="goods-block--panel-price--hidden">
+                          <p>Купить</p>
+                        </div>
+                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div></a>
+                      <div class="goods-block--panel-hidden">
+                        <div class="goods-block--panel-hidden--content">
+                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
+                      <div class="goods-block--visible-description">
+                        <h4>Плитка Ape Ceramica Motive Crema</h4>
+                      </div></a>
+                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                        <div class="goods-block--panel-price--number">
+                          <p>164 грн</p>
+                        </div>
+                        <div class="goods-block--panel-price--hidden">
+                          <p>Купить</p>
+                        </div>
+                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div></a>
+                      <div class="goods-block--panel-hidden">
+                        <div class="goods-block--panel-hidden--content">
+                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
+                      <div class="goods-block--visible-description">
+                        <h4>Плитка Ape Ceramica Motive Crema</h4>
+                      </div></a>
+                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                        <div class="goods-block--panel-price--number">
+                          <p>164 грн</p>
+                        </div>
+                        <div class="goods-block--panel-price--hidden">
+                          <p>Купить</p>
+                        </div>
+                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div></a>
+                      <div class="goods-block--panel-hidden">
+                        <div class="goods-block--panel-hidden--content">
+                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                      <div class="goods-block--visible-image"><img src="img/goods/goods1.png"></div>
+                      <div class="goods-block--visible-description">
+                        <h4>Плитка Ape Ceramica Motive Crema</h4>
+                      </div></a>
+                    <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                        <div class="goods-block--panel-price--number">
+                          <p>164 грн</p>
+                        </div>
+                        <div class="goods-block--panel-price--hidden">
+                          <p>Купить</p>
+                        </div>
+                        <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                        </div></a>
+                      <div class="goods-block--panel-hidden">
+                        <div class="goods-block--panel-hidden--content">
+                          <p class="goods-block--panel-hidden--content-available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                          <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                        </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-counter slider-four-counter"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-choice">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <ul class="pagination">
-                <li class="pagination-arrow left"><a href=""><?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="14px" viewBox="0 0 48 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <h2>C этим товаром выбирают</h2>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                  <div class="goods-block--visible-image"><img src="img/goods/goods2.png"></div>
+                  <div class="goods-block--visible-description">
+                    <h4>Плитка Ape Ceramica Motive Crema</h4>
+                  </div></a>
+                <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                    <div class="goods-block--panel-price--number">
+                      <p>164 грн</p>
+                    </div>
+                    <div class="goods-block--panel-price--hidden">
+                      <p>Купить</p>
+                    </div>
+                    <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Combined Shape Copy 4</title>
+    <title>Group 17</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Saten_Catalog" transform="translate(-554.000000, -2947.000000)" fill="#17B3ED">
-            <g id="Product" transform="translate(129.000000, 275.000000)">
-                <g id="Hower" transform="translate(0.000000, 9.000000)">
-                    <path d="M470.35123,2670.6726 L425,2670.6726 L425,2669.30151 L470.305995,2669.30151 L465.016411,2663.98863 L466.005043,2663 L472.992731,2669.95854 L472.961554,2669.98852 L472.981645,2670.00777 L465.982006,2677.00205 L465.001086,2676.02113 L470.35123,2670.6726 Z" id="Combined-Shape-Copy-4" transform="translate(448.996365, 2670.001023) scale(-1, 1) translate(-448.996365, -2670.001023) "></path>
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
                 </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
             </g>
         </g>
     </g>
-</svg></a></li>
-                <li><a href="">1</a></li>
-                <li><a class="active" href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">...</a></li>
-                <li class="pagination-arrow right"><a href=""><?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="14px" viewBox="0 0 48 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</svg>
+                    </div></a>
+                  <div class="goods-block--panel-hidden">
+                    <div class="goods-block--panel-hidden--content">
+                      <p class="available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                      <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                    </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                  <div class="goods-block--visible-image"><img src="img/goods/goods3.png"></div>
+                  <div class="goods-block--visible-description">
+                    <h4>Плитка Ape Ceramica Motive Crema</h4>
+                  </div></a>
+                <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                    <div class="goods-block--panel-price--number">
+                      <p>164 грн</p>
+                    </div>
+                    <div class="goods-block--panel-price--hidden">
+                      <p>Купить</p>
+                    </div>
+                    <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Combined Shape Copy 2</title>
+    <title>Group 17</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Saten_Catalog" transform="translate(-797.000000, -2947.000000)" fill="#17B3ED">
-            <g id="Product" transform="translate(129.000000, 275.000000)">
-                <g id="Hower" transform="translate(0.000000, 9.000000)">
-                    <path d="M713.35123,2670.6726 L668,2670.6726 L668,2669.30151 L713.305995,2669.30151 L708.016411,2663.98863 L709.005043,2663 L715.992731,2669.95854 L715.961554,2669.98852 L715.981645,2670.00777 L708.982006,2677.00205 L708.001086,2676.02113 L713.35123,2670.6726 Z" id="Combined-Shape-Copy-2"></path>
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
                 </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
             </g>
         </g>
     </g>
-</svg></a></li>
-              </ul>
+</svg>
+                    </div></a>
+                  <div class="goods-block--panel-hidden">
+                    <div class="goods-block--panel-hidden--content">
+                      <p class="available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                      <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                    </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                  <div class="goods-block--visible-image"><img src="img/goods/goods2.png"></div>
+                  <div class="goods-block--visible-description">
+                    <h4>Плитка Ape Ceramica Motive Crema</h4>
+                  </div></a>
+                <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                    <div class="goods-block--panel-price--number">
+                      <p>164 грн</p>
+                    </div>
+                    <div class="goods-block--panel-price--hidden">
+                      <p>Купить</p>
+                    </div>
+                    <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </div></a>
+                  <div class="goods-block--panel-hidden">
+                    <div class="goods-block--panel-hidden--content">
+                      <p class="available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                      <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                    </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="goods-block"><a class="goods-block--visible" href="" title="">
+                  <div class="goods-block--visible-image"><img src="img/goods/goods3.png"></div>
+                  <div class="goods-block--visible-description">
+                    <h4>Плитка Ape Ceramica Motive Crema</h4>
+                  </div></a>
+                <div class="goods-block--panel"><a class="goods-block--panel-price" href="" title="">
+                    <div class="goods-block--panel-price--number">
+                      <p>164 грн</p>
+                    </div>
+                    <div class="goods-block--panel-price--hidden">
+                      <p>Купить</p>
+                    </div>
+                    <div class="goods-block--panel-price--button"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(-199.000000, -352.000000)" fill="#FFFFFF">
+            <g id="Group-17" transform="translate(199.000000, 352.000000)">
+                <g id="noun_953736_cc-copy" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M16.8542821,9.36363636 L3.1457179,9.36363636 L4.91037564,17.6363636 L15.0896244,17.6363636 L16.8542821,9.36363636 Z M2.77303359,20 L0,7 L20,7 L17.2269664,20 L2.77303359,20 Z" id="Shape"></path>
+                    <polygon id="Shape" points="8.59997559 0 8.59997559 11 11.5999756 11 11.5999756 0"></polygon>
+                </g>
+                <polygon id="+" points="4.84 8.84 4.84 4 7.084 4 7.084 8.84 11.924 8.84 11.924 11.084 7.084 11.084 7.084 15.924 4.84 15.924 4.84 11.084 0 11.084 0 8.84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </div></a>
+                  <div class="goods-block--panel-hidden">
+                    <div class="goods-block--panel-hidden--content">
+                      <p class="available"><span class="true">есть в наличии</span><span class="false">нет в наличии</span></p>
+                      <p class="goods-block--panel-hidden--content-code"><span class="line">Код товара:<span> ГЧ-565-279905</span></span><span class="line">Бренд:<span> Atis</span></span><span class="line">Производитель:<span> Украина</span></span></p>
+                    </div><a class="goods-block--panel-hidden--more" href="" title=""><span class="link-more"><span class="link-more--text">Подробнее</span><span class="link-more--arrow"></span></span></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

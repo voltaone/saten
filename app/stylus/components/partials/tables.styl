@@ -2,16 +2,40 @@
 @import '../../utilities/mixins'
 
 table, tr, th, td
-  border 1px solid $black
+  border 0
 
 table
   width 100%
-  margin-bottom 1rem
   caption
     caption-side top
     text-align right
   tr {}
   th
-    padding 5px
+    padding 0
   td
-    padding 5px
+    padding 0
+
+.table-product
+  width 100%
+  tr
+    td
+      font-size: $s14
+      font-weight: 500;
+      line-height: 2;
+
+      margin-bottom 5px
+      &:first-child
+        width 54%
+      &:last-child(2)
+        width 46%
+      a
+        text-decoration underline
+        color $blue
+
+.table-product.table-heading
+  tr
+    td
+      line-height: 1.86;
+      letter-spacing: 1px;
+      &:first-child
+        font-weight 600

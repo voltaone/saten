@@ -24,14 +24,19 @@
     pseudo(block, absolute)
     background $gray-back
     width 100vw
-    height 632px
+    height: 632px;
     top 0
     left -49px
     z-index 1
     +mobile()
       display none
+    +tablet()
+      left: -25px;
+    +portrait()
+      left: -25px;
+      height: 675px;
 
 .catalog-back.catalog-back-product
   &:after
     background $white
-    top: -114px;
+    top: -106px;

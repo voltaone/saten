@@ -1,0 +1,79 @@
+.quantity
+  display flex
+  max-width 165px
+  height 50px
+  align-items center
+  justify-content center
+  margin-bottom 2px
+  +mobile()
+    max-width unset
+    margin-bottom 14px
+  &-button
+    flex 1 1 50px
+    max-width 50px
+    text-align center
+    cursor pointer
+    color $aqua-text
+    font-size $s30
+    user-select: none;
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    background $white
+    +mobile()
+      flex 1 1 61px
+      max-width 61px
+  &-input
+    margin 0
+    border 0
+    text-align center
+    font-size: $s24
+    font-weight: 500
+    letter-spacing: 2px
+    padding 5px 0
+    flex 1 1 calc(100% - 100px)
+    height 100%
+    background $white
+    +mobile()
+      margin 0 4px
+
+.type
+  display flex
+  align-items center
+  justify-content center
+
+  max-width: 165px;
+  height: 34px
+  margin-bottom 10px
+  +mobile()
+    max-width unset
+    height 50px
+    margin-bottom 30px
+  li
+    font-size: $s18
+    font-weight: 500
+    color $aqua-text
+    flex 1 1 33.3333%
+    max-width 33.3333%
+    text-align center
+    user-select none
+    cursor pointer
+    background $white
+    height 100%
+    display flex
+    align-items center
+    justify-content center
+    sup
+      font-size $s14
+    +mobile()
+      color $black
+      &:nth-child(2)
+        margin 0 4px
+  .active
+    font-size: $s22
+    color $black
+    cursor auto
+    +mobile()
+      color $white
+      background $blue

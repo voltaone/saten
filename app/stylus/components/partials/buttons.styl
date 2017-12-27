@@ -28,6 +28,9 @@ button
     color $black
     background $gray
 
+  +mobile()
+    max-width unset
+
 .button-big
   max-width: 359px;
   margin 0 auto
@@ -38,3 +41,25 @@ button
   padding: 14px 0 21px;
   +mobile()
     font-size $s14
+
+.button-blue
+  color $white
+  background $blue
+  font-size: $s18
+  font-weight: 500;
+  line-height: 1.89;
+  letter-spacing: 1.3px
+  padding-top: 7px;
+  padding-bottom: 9px;
+  margin-bottom 0
+
+.button-fast
+  font-weight: 500;
+  line-height: 2.12;
+  letter-spacing: 1.1px;
+  background $trans
+  border-bottom 2px solid $blue
+  color $black
+  padding-top 7px
+  padding-bottom 8px
+  margin-bottom 62px

@@ -3,11 +3,24 @@
 
 .ui-accordion
   .ui-accordion-header
-    background $gray
+    background $aqua-back
     color $black
     cursor pointer
     padding 1rem
     transitions()
+    font-size: $s18
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 1.3px;
+    text-align center
+    position relative
+    margin-bottom 3px
+    &:after
+      triangle($black, down, 12px)
+      left calc(50% - 12px)
+      bottom -12px
+      opacity 0
+      transitions()
     &:focus
       outline none
     &:hover
@@ -16,5 +29,18 @@
   .ui-state-active
     background $black
     color $white
+    &:after
+      opacity 1
   .ui-accordion-content
-    padding-bottom 1rem
+    padding 2rem 0
+    p, ul li
+      font-size 1rem
+      line-height 1.66
+
+#accordion
+  .accordion-button
+    display none
+
+
+    +mobile()
+      display block

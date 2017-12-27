@@ -11,16 +11,12 @@
   src: url('../fonts/slick/slick.eot');
   src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick/slick.woff') format('woff'), url('../fonts/slick/slick.ttf') format('truetype'), url('../fonts/slick/slick.svg#slick') format('svg');
 
-
-
-
 .slider
   position relative
   overflow hidden
   margin-bottom 1rem
   .arrow
     position absolute
-    text-align center
     z-index 100
     top 41%
     cursor pointer
@@ -31,6 +27,11 @@
     color $white
     top auto
     bottom 0px
+
+    display flex
+    align-items center
+    justify-content center
+
     +mobile()
       max-width 104px
       height 50px
@@ -54,13 +55,20 @@
       outline none
 
 
-  .slider-counter
-    position absolute
-    z-index 100
-    right 0
-    bottom 0
-    font-size 3em
-
+.slider-counter
+  position absolute
+  right 0
+  bottom 0
+  font-size: 3.750rem
+  font-weight: 700;
+  letter-spacing: 2.7px;
+  color: $aqua-back;
+  z-index 190
+  display inline-block
+  +mobile()
+    line-height: 0.83;
+    letter-spacing: 1.6px;
+    font-size 2.250rem
 
   .slick-dots
     bottom 0
@@ -137,19 +145,23 @@
 
 .slider-four
   overflow visible
-  padding-bottom 125px
+  padding-bottom 141px
+  margin-bottom 0
   +mobile()
     margin-bottom 50px
+    padding-bottom: 70px;
   .slick-list
     overflow visible
     z-index 200
     position relative
-  .goods-block.goods-block-small
+  .goods-block
     margin: 15px;
     +mobile()
       max-width calc(100% - 30px)
+    +portrait()
+      max-width: 200px;
   .arrow
-    bottom 16px
+    bottom: 32px;
     z-index 3
   .arrow.left
     left auto
@@ -163,23 +175,85 @@
 .slider-container
   position relative
   overflow hidden
+  padding-bottom 35px
   +mobile()
     margin: 0 -15px;
 
+.slider-container-index
+    padding-bottom 0
+    .slider-four + .slider-counter
+      bottom 26px
+      +mobile()
+        bottom: 93px
+
 .slider-four + .slider-counter
   position absolute
-  font-size: 3.750rem
-  font-weight: 700;
-  line-height: 0.5;
-  letter-spacing: 2.7px;
-  color: $aqua-back;
+
   right 300px
-  bottom 48px
-  z-index 100
+  bottom: 61px;
+
   +mobile()
+    right calc(15px + 208px + 3px + 11px)
+    bottom 125px
+
+.slider-product
+  margin -20px -22px 0
+  padding-bottom 78px
+  height 100%
+  .slide
+    overflow visible
+    padding 20px
+  .arrow
+    width: 78px;
+    height: 54px
+    +mobile()
+      width 104px
+      height 50px
+    .fa
+      font-size 3rem
+  .arrow.right
+    right 22px
+    +mobile()
+      right 20px
+  .arrow.left
+    right calc(22px + 78px + 3px)
+    left auto
+    +mobile()
+      right calc(20px + 104px + 3px)
+
+.slider-product + .slider-counter
+  font-size: 2.125rem
+  font-weight: 400;
+  letter-spacing: 2.3px;
+  left 0
+  right auto
+  bottom: 24px
+  color $gray-counter
+  +mobile()
+    font-size: 2.250rem
+    font-weight: 600
     line-height: 0.83;
     letter-spacing: 1.6px;
-    font-size 2.250rem
-    right calc(15px + 208px + 3px + 11px)
-    bottom 75px
+    color: $aqua-back
+    bottom 30px
 
+
+.slider-product--image
+  background $white
+  display flex
+  justify-content center
+  align-items center
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+  position relative
+  width 100%
+  &:before
+    content: "";
+    padding-top: 100%;
+    float: left;
+  img
+    position absolute
+    max-height: calc(100% - 44px);
+    max-width: calc(100% - 44px);
+    +mobile()
+      max-height: calc(100% - 22px);
+      max-width: calc(100% - 22px);
