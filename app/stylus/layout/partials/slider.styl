@@ -145,11 +145,11 @@
 
 .slider-four
   overflow visible
-  padding-bottom 141px
+  padding-bottom 104px
   margin-bottom 0
   +mobile()
     margin-bottom 50px
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   .slick-list
     overflow visible
     z-index 200
@@ -161,7 +161,7 @@
     +portrait()
       max-width: 200px;
   .arrow
-    bottom: 32px;
+    bottom: 0
     z-index 3
   .arrow.left
     left auto
@@ -175,22 +175,16 @@
 .slider-container
   position relative
   overflow hidden
-  padding-bottom 35px
+  padding-bottom 70px
   +mobile()
     margin: 0 -15px;
-
-.slider-container-index
-    padding-bottom 0
-    .slider-four + .slider-counter
-      bottom 26px
-      +mobile()
-        bottom: 93px
+    padding-bottom 10px
 
 .slider-four + .slider-counter
   position absolute
 
   right 300px
-  bottom: 61px;
+  bottom: 64px;
 
   +mobile()
     right calc(15px + 208px + 3px + 11px)

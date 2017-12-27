@@ -1,13 +1,11 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-
-section
-  margin-bottom 207px
-  +mobile()
-    margin-bottom 57px
+//ARTICLE
 
 article {}
+
+//ASIDE
 
 aside
   h2
@@ -22,6 +20,8 @@ aside
       letter-spacing: 1.5px
       margin-bottom 30px
 
+//MAIN
+
 main
   background $white
   transitions()
@@ -29,11 +29,21 @@ main
     position relative
     z-index 100
 
-.section-back
+//SECTION
+section
+  padding-bottom 163px
+  +mobile()
+    padding-bottom 57px
+
+
+.section-index-back
   position relative
+  padding-bottom: 206px;
   +mobile()
     background $gray-back
     padding-top 47px
+    padding-bottom 0
+    margin-bottom 50px
   &:after
     pseudo(block, absolute)
     left 0
@@ -47,32 +57,30 @@ main
 
 
 .section-brand
-  margin-bottom 0
+  padding-bottom 0
   +mobile()
     background $gray-back
     padding-top 47px
   &--back
     background $gray-back
     padding-bottom 139px
-
     +mobile()
       padding-bottom 0
-
     &-left
       background transparent
       padding-top 66px
       +mobile()
         padding-top 0
+        padding-bottom 30px
 
 .section-product--heading
-  margin-bottom 0
   background $gray-back
+  padding-bottom 0
   +mobile()
     background $white
 
 .section-product--content
   background $gray-back
-  margin-bottom 0
   padding-bottom 167px
   +mobile()
     padding-bottom 71px
@@ -83,7 +91,7 @@ main
 
 .section-collection
   position relative
-  margin-bottom: 90px;
+  padding-bottom 92px
   &:before
     pseudo(block, absolute)
     top 0
@@ -100,9 +108,27 @@ main
       padding-bottom 110px
 
 .section-choice
-  margin-bottom: 143px
   +mobile()
     margin-bottom 40px
+
+.section-catalog
+  +mobile()
+    background $gray-back
+    padding-bottom 57px
+    margin-bottom 0
+  aside
+    background $white
+    h2
+      font-size $s24
+      text-align left
+      letter-spacing: 2px
+      margin-bottom: 28px;
+      margin-top 24px
+      +mobile()
+        margin-top 0
+        font-size: $s18
+        letter-spacing: 1.5px
+        margin-bottom 30px
 
 .back-gray
   background $gray-back
@@ -118,7 +144,3 @@ main
     bottom 0
     height 1px
     background $aqua-back
-
-
-
-

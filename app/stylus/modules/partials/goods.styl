@@ -191,17 +191,25 @@
     display block
     +mobile()
       display none
+    +portrait()
+      display none
   .goods-block--visible
     background $white
     +mobile()
+      background $trans
+    +portrait()
       background $trans
   .goods-block--visible-image
     box-shadow none
     +mobile()
       box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+    +portrait()
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
   .goods-block--panel
     background $white
     +mobile()
+      background $trans
+    +portrait()
       background $trans
   .goods-block--panel-price:after
       opacity 1
@@ -211,6 +219,8 @@
     visibility visible
     background $white
     +mobile()
+      background $trans
+    +portrait()
       background $trans
   .goods-block--panel-price--button
     background $blue
@@ -262,12 +272,64 @@
     display block
     +mobile()
       display none
+    +portrait()
+      display none
   .goods-block--panel
     opacity 1
     z-index 10
     visibility visible
 
 +mobile()
+  .goods-block, .goods-block.goods-block-small
+    margin-bottom 60px
+    .goods-block--visible
+      .goods-block--visible-description
+        padding 14px 0
+        h4
+          font-size $s14
+          line-height normal
+          height 54px
+    .goods-block--panel
+      opacity 1
+      z-index 10
+      visibility visible
+      position static
+      .goods-block--panel-price
+        flex-wrap wrap
+        .goods-block--panel-price--number
+          padding-left 0
+          flex 1 1 100%
+          max-width 100%
+          padding-top 12px
+          padding-bottom 12px
+          p
+            font-size $s14
+        .goods-block--panel-price--button
+          background $blue
+          padding 11px 13px
+          width 52px
+          height 35px
+          svg
+            width 26px
+            height auto
+            g
+              fill $white
+        .goods-block--panel-price--hidden
+          position static
+          transform none
+          opacity 1
+          padding-left 11px
+          max-width calc(100% - 52px)
+          flex 1 1 calc(100% - 52px)
+          height 35px
+          p
+            opacity 1
+            font-size $s14
+            font-weight 500
+      .goods-block--panel-hidden
+        display none
+
++portrait()
   .goods-block, .goods-block.goods-block-small
     margin-bottom 60px
     .goods-block--visible
