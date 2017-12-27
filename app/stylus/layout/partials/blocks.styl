@@ -114,8 +114,16 @@ section
 .section-catalog
   +mobile()
     background $gray-back
-    padding-bottom 57px
+    padding-bottom 100px
     margin-bottom 0
+    position relative
+    &:before
+      pseudo(block, absolute)
+      background $white
+      left 0
+      right 0
+      top 0
+      height 52px
   aside
     background $white
     h2
@@ -137,6 +145,9 @@ section
   position relative
   padding-bottom 72px
   margin-bottom 46px
+  +mobile()
+    margin-bottom 28px
+    padding-bottom 0
   &:after
     pseudo(block, absolute)
     left 15px
