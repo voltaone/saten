@@ -1,0 +1,121 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Корзина
+
+block content
+
+    header.header-breadcrumbs.back-gray.header-product
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Корзина
+
+    section.section-bucket
+        .container
+            .row.bucket-heading
+                .col-md-4
+                    h1 Корзина
+                .col-md-4.back-bucket
+                    a(href='' title='').link-bucket-nav.active
+                        include svgs/bucket-big.svg
+                        | Товары
+                .col-md-4
+                    a(href='' title='').link-bucket-nav
+                        include svgs/delivery-big.svg
+                        | Доставка
+        .container.bucket-container
+            .row
+                .col-md-12
+                    .bucket-item
+                        .bucket-item--left
+                            .bucket-item--image
+                                img(src='img/goods/goods1.png' title='')
+                            .bucket-item--heading
+                                .bucket-item--heading-name Плитка Cicogres Lotto Gres
+                                .bucket-item--heading-price 164 000 грн. /шт
+                                .bucket-item--heading-code ЦЦ-367-235509
+                        .bucket-item--right
+                            .bucket-item--number
+                                .quantity
+                                    .quantity-button.quantity-button--minus —
+                                    input(type='number' value='1' min='1' step='1' pattern=" [0-9]+([\.][0-9]+)?").quantity-input
+                                    .quantity-button.quantity-button--plus +
+
+                            .bucket-item--type
+                                ul.type
+                                    li.active м
+                                        sup 2
+                                    li шт
+                                    li ул
+                            .bucket-item--price
+                                | 164 000 грн.
+                            .bucket-item--delete
+                    .bucket-item
+                        .bucket-item--left
+                            .bucket-item--image
+                                img(src='img/goods/goods2.png' title='')
+                            .bucket-item--heading
+                                .bucket-item--heading-name Ванна Ravak BeHappy 150 x 75 L
+                                .bucket-item--heading-price 164 000 грн. /шт
+                                .bucket-item--heading-code ЦЦ-367-235509
+                        .bucket-item--right
+                            .bucket-item--number
+                                .quantity
+                                    .quantity-button.quantity-button--minus —
+                                    input(type='number' value='1' min='1' step='1' pattern=" [0-9]+([\.][0-9]+)?").quantity-input
+                                    .quantity-button.quantity-button--plus +
+
+                            .bucket-item--type
+                                ul.type
+                                    li м
+                                        sup 2
+                                    li.active шт
+                                    li ул
+                            .bucket-item--price
+                                | 164 000 грн.
+                            .bucket-item--delete
+                    .bucket-item
+                        .bucket-item--left
+                            .bucket-item--image
+                                img(src='img/goods/goods3.png' title='')
+                            .bucket-item--heading
+                                .bucket-item--heading-name Керамогранит ТОВ Атем Грес E0090 - бежевый коричневые точки
+                                .bucket-item--heading-price 164 000 грн. /шт
+                                .bucket-item--heading-code ЦЦ-367-235509
+                        .bucket-item--right
+                            .bucket-item--number
+                                .quantity
+                                    .quantity-button.quantity-button--minus —
+                                    input(type='number' value='1' min='1' step='1' pattern=" [0-9]+([\.][0-9]+)?").quantity-input
+                                    .quantity-button.quantity-button--plus +
+
+                            .bucket-item--type
+                                    ul.type
+                                        li м
+                                            sup 2
+                                        li шт
+                                        li.active ул
+                            .bucket-item--price
+                                | 164 000 грн.
+                            .bucket-item--delete
+            .row.justify-content-end
+                .col-xl-4.col-lg-5.col-md-6
+                    .bucket-big-price
+                        .bucket-big-price--text
+                            | Общая сумма:
+                        .bucket-big-price--number
+                            | 174 164 грн.
+
+            .row
+                .col-md-4
+                    a(href='' title='').button.button-bucket Оформить кредит
+                .col-md-4
+                    a(href='' title='').button.button-bucket Быстрый заказ
+                .col-md-4
+                    a(href='' title='').button.button-bucket Перейти к доставке

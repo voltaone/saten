@@ -20,4 +20,13 @@
 .catalog-back.catalog-back-product
   &:after
     background $white
-    top: -106px;
+    top: -106px
+
+.catalog-back.catalog-back-search
+  padding-top 21px
+  &:after
+    top: -65px
+    +mobile()
+      display none
+  +mobile()
+    padding-top 0

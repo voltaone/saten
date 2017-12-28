@@ -148,16 +148,27 @@ a
       &:before, &:after
         background $blue
 
-//.link-up
-//  position fixed
-//  right 15px
-//  bottom 15px
-//  width 30px
-//  height 30px
-//  display flex
-//  justify-content center
-//  align-items center
-//  opacity 0
-//
-//.link-up.visible
-//  opacity 1
+.link-bucket-nav
+  font-size: $s26
+  font-weight: 500;
+  line-height: 1.77;
+  letter-spacing: 0.6px
+  color $gray-text2
+  padding 5px 0
+  display inline-block
+  svg
+    margin-right 17px
+    g
+      fill $gray-text2
+      transitions()
+  &:hover
+    color $black
+    svg
+      g
+        fill $black
+
+.link-bucket-nav.active
+  color $black
+  svg
+    g
+      fill $black

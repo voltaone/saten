@@ -52,3 +52,29 @@ form {}
         margin 30px 0
         max-width unset
 
+.form-search
+  position relative
+  z-index 10
+  .form-group
+    position relative
+    button
+      position absolute
+      right 0
+      top 0
+      color $aqua-back
+      font-size: 1.5rem
+      padding: 7px 20px 9px;
+      background $white
+    input
+      padding-left 26px
+      border-bottom 0
+      font-size: $s18
+      font-weight: 500;
+      letter-spacing: 1.4px;
+      margin-bottom 0
+      background $white
+      +placeholder()
+        color $black
+        font-size: $s18
+
+

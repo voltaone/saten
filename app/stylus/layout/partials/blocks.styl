@@ -102,6 +102,7 @@ section
   +mobile()
     padding-top 41px
     margin-bottom 0
+    padding-bottom 42px
     &:before
       display none
     .slider-four
@@ -109,7 +110,8 @@ section
 
 .section-choice
   +mobile()
-    margin-bottom 40px
+    margin-bottom 0
+    padding-bottom 41px
 
 .section-catalog
   +mobile()
@@ -137,6 +139,27 @@ section
         font-size: $s18
         letter-spacing: 1.5px
         margin-bottom 30px
+
+.section-catalog.section-search
+  +mobile()
+    &:before
+      display none
+    aside
+      display none
+
+.back-bucket
+  &:after
+    pseudo(block,absolute)
+    top -35px
+    left -98px
+    background $white
+    height 100vw
+    width 100vw
+    z-index -1
+
+.section-bucket
+  background $gray-back
+  overflow hidden
 
 .back-gray
   background $gray-back

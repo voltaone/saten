@@ -1,0 +1,196 @@
+.bucket-container
+  position relative
+  z-index 40
+
+.bucket-heading
+  position relative
+  z-index 20
+  padding-top 35px
+  padding-bottom: 51px
+  h1
+    font-size: 2.500rem
+    font-weight: 500
+    line-height: 1.15
+    letter-spacing: 1px
+
+
+.bucket-item
+  display flex
+  border-bottom 1px solid $gray-line2
+  position relative
+  justify-content space-between
+  +mobile()
+    flex-wrap wrap
+
+  &--left
+    display flex
+    flex 1 1 calc(100% - 388px)
+    max-width calc(100% - 388px)
+    padding 10px 0
+    justify-content space-between
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+  &--right
+    display flex
+    align-items center
+    flex 1 1 388px
+    max-width 388px
+    justify-content space-between
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+  &--image
+    padding 5px
+    width 68px
+    height 68px
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+    display flex
+    padding 5px
+    align-items center
+    justify-content center
+    overflow hidden
+    flex 1 1 68px
+    max-width 68px
+    background $white
+    img
+      height 100%
+  &--heading
+    display flex
+    flex-wrap wrap
+    align-items flex-end
+    align-self flex-end
+    flex 1 1 calc(100% - 95px)
+    max-width calc(100% - 95px)
+    &-name
+      font-size: $s16
+      font-weight: 600;
+      line-height: 1
+      margin-bottom 16px
+      flex 1 1 100%
+      max-width 100%
+    &-price
+      font-size: $s14
+      font-weight: 600
+      line-height: .7
+      color $blue
+      flex 1 1 200px
+      max-width 200px
+      +portrait()
+        margin-bottom 10px
+    &-code
+      font-size: $s12
+      font-weight: 500;
+      letter-spacing: 0.9px;
+      opacity .3
+      line-height 1
+
+  &--number
+    height 100%
+    display flex
+    align-items center
+    .quantity
+      max-width unset
+      &-button
+        flex: 1 1 83px;
+        max-width: 83px
+        padding-bottom: 12px;
+        opacity 0
+        background $trans
+
+      &-input
+        flex: 1 1 83px;
+        max-width: 83px;
+        font-size $s20
+        padding-bottom: 10px;
+        background $trans
+  &--type
+    padding-right: 27px;
+    height 100%
+    .type
+      flex-direction column
+      height 100%
+      margin 0
+      position relative
+      padding: 15px 0;
+      +portrait()
+        padding-bottom 25px
+        padding-top 10px
+      li
+        text-align left
+        flex 1 1 100%
+        max-width 100%
+        width 100%
+        height auto
+
+        line-height 1
+        background $trans
+        opacity 0
+        transitions()
+        &:nth-child(1)
+          transform translateY(21px)
+        &:nth-child(3)
+          transform translateY(-21px)
+      .active
+        opacity 1
+
+  &--price
+    font-size: $s16
+    font-weight: 600
+    line-height: 1.88;
+    padding 0 30px
+
+  &--delete
+    position absolute
+    right 0
+    top 16px
+    width 15px
+    height 15px
+    cursor pointer
+    opacity 0
+    transitions()
+    &:before, &:after
+      pseudo(block, absolute)
+      background $aqua-ad2
+      width 16px
+      height 2px
+      top 6px
+      left 0
+    &:before
+      transform rotate(45deg)
+    &:after
+      transform rotate(-45deg)
+  &:hover
+    .bucket-item--delete
+      opacity 1
+    .bucket-item--type
+      .type
+        li
+          opacity 1
+          &:nth-child(1)
+            transform none
+          &:nth-child(3)
+            transform none
+    .bucket-item--number
+      .quantity
+        .quantity-button
+          opacity 1
+
+
+.bucket-big-price
+  display flex
+  justify-content space-between
+  align-items center
+  margin: 61px 0 73px;
+  &--text
+    font-size: $s22
+    color $blue
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 1px;
+  &--number
+    font-size: $s22
+    font-weight: 600
+    line-height: 1.36;
+    letter-spacing: 1px;
+    color $blue
