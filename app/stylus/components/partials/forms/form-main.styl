@@ -6,11 +6,30 @@ form {}
   flex-direction row
   justify-content space-between
   input
-    flex 1 1 calc(50% - .5rem)
-    max-width calc(50% - .5rem)
+    flex 1 1 calc(50% - 20px)
+    max-width calc(50% - 20px)
     +mobile()
       flex 1 1 100%
       max-width 100%
+
+.form-three-input
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content space-between
+  input
+    flex 1 1 calc(37% - 20px)
+    max-width calc(37% - 20px)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    &:last-child
+      flex 1 1 calc(26% - 20px)
+      max-width calc(26% - 20px)
+      +mobile()
+        flex 1 1 100%
+        max-width 100%
+
 
 
 .form-nav
@@ -77,4 +96,38 @@ form {}
         color $black
         font-size: $s18
 
+
+.form-delivery
+  display block
+  input
+    line-height: 2;
+    padding-top: 0;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    font-size $s16
+    margin-bottom 0
+    +placeholder()
+      font-size $s16
+    +mobile()
+      margin-bottom 10px
+      padding-left 0
+
+.form-wish
+  display flex
+  justify-content space-between
+  margin-top: 39px;
+  +mobile()
+    margin-top 0
+  p
+    flex: 1 1 calc(37% - 20px);
+    max-width: calc(37% - 20px);
+    margin 2px 0
+    +mobile()
+      display none
+  input
+    flex 1 1 calc(63% - 10px)
+    max-width calc(63% - 10px)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
 

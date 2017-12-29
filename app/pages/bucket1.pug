@@ -17,18 +17,19 @@ block content
                             a(href='' title='') Корзина
 
     section.section-bucket
-        .container
-            .row.bucket-heading
-                .col-md-4
-                    h1 Корзина
-                .col-md-4.back-bucket
-                    a(href='' title='').link-bucket-nav.active
-                        include svgs/bucket-big.svg
-                        | Товары
-                .col-md-4
-                    a(href='' title='').link-bucket-nav
-                        include svgs/delivery-big.svg
-                        | Доставка
+        .bucket-header
+            .container
+                .row.bucket-heading
+                    .col-md-4
+                        h1 Корзина
+                    .col-6.col-md-4.back-bucket
+                        a(href='' title='').link-bucket-nav.left.active
+                            include svgs/bucket-big.svg
+                            | Товары
+                    .col-6.col-md-4
+                        a(href='' title='').link-bucket-nav.right
+                            include svgs/delivery-big.svg
+                            | Доставка
         .container.bucket-container
             .row
                 .col-md-12
@@ -113,9 +114,9 @@ block content
                             | 174 164 грн.
 
             .row
-                .col-md-4
+                .col-md-4.order-md-1.order-3
                     a(href='' title='').button.button-bucket Оформить кредит
-                .col-md-4
+                .col-md-4.order-md-2.order-2
                     a(href='' title='').button.button-bucket Быстрый заказ
-                .col-md-4
-                    a(href='' title='').button.button-bucket Перейти к доставке
+                .col-md-4.order-md-3.order-1
+                    a(href='' title='').button.button-bucket.button-bucket-order Перейти к доставке

@@ -2,10 +2,10 @@ $(document).ready(function () {
     "use strict";
 
     // ----- FILTER ACCORDION -----
-    $('.filter-accordion--group-heading').click(function(e){
+    $('.filter-accordion--group-heading').click(function (e) {
         e.preventDefault();
-       $(this).siblings('.filter-accordion--group-panel').slideToggle();
-       $(this).parent().toggleClass('active');
+        $(this).siblings('.filter-accordion--group-panel').slideToggle();
+        $(this).parent().toggleClass('active');
     });
 
     $('.credit-heading').click(function (e) {
@@ -19,12 +19,12 @@ $(document).ready(function () {
         e.preventDefault();
         $('.menu-panel').toggleClass('open');
     })
-    
+
     // ----- QUANTITY -----
-    
+
     $('.quantity-button--minus').click(function () {
         var val = parseInt($(this).siblings('.quantity-input').val());
-        if ( val != 1 ) {
+        if (val != 1) {
             val--;
             $(this).siblings('.quantity-input').val(val);
         }
@@ -136,6 +136,49 @@ $(document).ready(function () {
     });
 
 
+    // ----- SELECT -----
+
+    //CHOSEN
+    $(".chosen-select").chosen({
+        disable_search_threshold: 10,
+        no_results_text: "Нічого не знайдено"
+    });
+    // $(".chosen-image").chosenImage({disable_search_threshold: 10});
+
+    // ----- ANIMATION -----
+
+    // WOW JS
+    // new WOW().init();
+
+
+    // ----- SCROLLSPY -----
+
+    // $(function(){ // on document load
+    //     $('.menu').ddscrollSpy({ // initialize first demo
+    //         scrolltopoffset: -50
+    //     });
+    // });
+
+    // SCROLLING CLASS CHANGE
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $(".link-up").addClass("visible");
+        }
+        else {
+            $(".link-up").removeClass("visible");
+        }
+    });
+
+    // ANCHOR LINKS SCROLLING
+    $(".smooth").click(function (event) {
+        event.preventDefault();
+        var id = $(this).attr("href"),
+            top = $(id).offset().top - 70;
+        $("body,html").animate({
+            scrollTop: top
+        }, 1500);
+    });
+
 
     // ----- RANGE SLIDER -----
 
@@ -167,7 +210,6 @@ $(document).ready(function () {
         keypressSlider.noUiSlider.set(r);
     }
 
-// Listen to keydown events on the input field.
     inputs.forEach(function (input, handle) {
 
         input.addEventListener('change', function () {
@@ -230,64 +272,6 @@ $(document).ready(function () {
         });
     });
 
-
-    // ----- SELECT -----
-
-    //CHOSEN
-    $(".chosen-select").chosen({
-        disable_search_threshold: 10,
-        no_results_text: "Нічого не знайдено"
-    });
-    // $(".chosen-image").chosenImage({disable_search_threshold: 10});
-
-    // ----- MODAL -----
-
-    // MODAAL PLUGIN
-    // $(".inline").modaal();
-
-    // ----- ANIMATION -----
-
-    // WOW JS
-    // new WOW().init();
-
-
-    // ----- ACCORDION -----
-    $(function () {
-        $("#accordion").accordion({
-            collapsible: true,
-            heightStyle: "content"
-        });
-    });
-
-
-
-    // ----- SCROLLSPY -----
-
-    // $(function(){ // on document load
-    //     $('.menu').ddscrollSpy({ // initialize first demo
-    //         scrolltopoffset: -50
-    //     });
-    // });
-
-    // SCROLLING CLASS CHANGE
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $(".link-up").addClass("visible");
-        }
-        else {
-            $(".link-up").removeClass("visible");
-        }
-    });
-
-    // ANCHOR LINKS SCROLLING
-    $(".smooth").click(function (event) {
-        event.preventDefault();
-        var id = $(this).attr("href"),
-            top = $(id).offset().top - 70;
-        $("body,html").animate({
-            scrollTop: top
-        }, 1500);
-    });
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
@@ -308,6 +292,26 @@ $(window).on('load resize', function () {
                 heightStyle: "content"
             });
         });
+
+        $(function () {
+            $("#accordion2").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+        });
+
+        $('.accordion-button').click(function(){
+            $('.accordion-button').not(this).each(function(){
+                $(this).addClass('hidden')
+            });
+            // $(this).show();
+
+            if ($(this).hasClass('ui-accordion-header-active')) {
+                $('.accordion-button').removeClass('hidden');
+            }
+        })
+
 
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         // MENU

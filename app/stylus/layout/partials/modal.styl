@@ -16,24 +16,37 @@
     padding 18px 15px 82px
 
 .fancybox-close-small
-  width 22px
-  height 22px
-  top 21px
-  right 15px
-  background $trans
-  &:hover
+    width 22px
+    height 22px
+    top 21px
+    right 15px
+    background $trans
+    z-index 300
+    &:hover
+      &:before, &:after
+        background $black
     &:before, &:after
+      pseudo(block, absolute)
+      width 29px
+      height 2px
+      top: 10px;
+      right: -3px;
       background $black
-  &:before, &:after
-    pseudo(block, absolute)
-    width 29px
-    height 2px
-    top: 10px;
-    right: -3px;
-    background $black
-    border-radius 0
-  &:before
-    transform rotate(45deg)
-  &:after
-    transform rotate(-45deg)
+      border-radius 0
+    &:before
+      transform rotate(45deg)
+    &:after
+      transform rotate(-45deg)
 
+
+.fancybox-slide > div.section-bucket-modal
+  background $white
+  text-align left
+  padding 0
+  padding-bottom 70px
+  box-shadow: 0 1px 40px 0 rgba(68, 99, 109, 0.5);
+  max-width: unset;
+  +mobile()
+    background $gray-back
+  .bucket-heading
+    padding-top 70px

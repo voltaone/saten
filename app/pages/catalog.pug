@@ -249,7 +249,7 @@ block content
                         .col-xl-6.col-md-8
                             .sort
                                 .sort--filter
-                                    a(title='' data-fancybox data-src="#filter" href="javascript:;")#filter-trigger
+                                    a(data-fancybox data-src="#filter" href="javascript:;")#filter-trigger
                                         include svgs/filter.svg
                                 .sort--heading
                                     | Сортировать по:
@@ -271,7 +271,7 @@ block content
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -303,7 +303,7 @@ block content
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -335,7 +335,7 @@ block content
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -784,3 +784,6 @@ block content
                         li.pagination-arrow.right
                             a(href='')
                                 include svgs/arrow-right-small.svg
+
+
+    include partials/_bucket-modal

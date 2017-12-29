@@ -147,6 +147,8 @@ section
     aside
       display none
 
+
+
 .back-bucket
   &:after
     pseudo(block,absolute)
@@ -156,10 +158,24 @@ section
     height 100vw
     width 100vw
     z-index -1
+    +mobile()
+      display none
+
+.back-bucket-success
+  &:after
+    left: -182px;
+    +tablet()
+      left -127px
+    +portrait()
+      left -127px
 
 .section-bucket
   background $gray-back
   overflow hidden
+
+.section-bucket-success
+  +mobile()
+    background $white
 
 .back-gray
   background $gray-back

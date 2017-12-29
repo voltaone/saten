@@ -156,8 +156,15 @@ a
   color $gray-text2
   padding 5px 0
   display inline-block
+  +mobile()
+    font-size $s18
+    display block
   svg
     margin-right 17px
+    +mobile()
+      height 16px
+      margin-right 12px
+      width auto
     g
       fill $gray-text2
       transitions()
@@ -172,3 +179,40 @@ a
   svg
     g
       fill $black
+  +mobile()
+    position relative
+    &:after
+      pseudo(block,absolute)
+      top 0
+      bottom 0
+      background $gray-back
+      width 100vw
+      z-index -1
+
+.link-bucket-nav.active.left
+
+  +mobile()
+    &:after
+      right -15px
+
+
+.link-bucket-nav.active.right
+  position relative
+  +mobile()
+    &:after
+      left -15px
+
+.link-modal-close
+  font-size: $s22
+  font-weight: 500;
+  line-height: 1.36;
+  letter-spacing: 1px;
+  color $aqua-text
+  margin: 61px 0 73px;
+  display block
+  +mobile()
+    margin 45px 0 47px
+  +portrait()
+    font-size $s20
+  svg
+    margin-right 28px

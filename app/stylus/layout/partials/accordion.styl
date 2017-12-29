@@ -40,7 +40,49 @@
 #accordion
   .accordion-button
     display none
-
-
+    transitions()
     +mobile()
       display block
+
+#accordion2
+  .accordion-button
+    display none
+    height 51px
+    background $white
+    color #b3c9cf
+    margin-bottom 18px
+    transitions()
+    text-align left
+    &:hover
+      background $aqua-back
+      color $black
+    &:before, &:after
+      pseudo(block, absolute)
+      width 16px
+      height 2px
+      top 25px
+      right 10px
+      left auto
+      opacity 0
+      border 0
+      background $black
+      transitions()
+    &:before
+      transform rotate(45deg)
+    &:after
+      transform rotate(-45deg)
+    +mobile()
+      display block
+  .ui-state-active
+      background $aqua-back
+      color $black
+      &:before, &:after
+        opacity 1
+  .ui-accordion-content
+    padding-top 0
+
+  .accordion-button.hidden
+    opacity 0
+    height 0
+    padding 0
+    margin 0

@@ -1,0 +1,103 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Корзина
+
+block content
+
+    header.header-breadcrumbs.back-gray.header-product
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Корзина
+
+    section.section-bucket
+        .bucket-header
+            .container
+                .row.bucket-heading
+                    .col-md-4
+                        h1 Корзина
+                    .col-6.col-md-4.back-bucket
+                        a(href='' title='').link-bucket-nav.left
+                            include svgs/bucket-big.svg
+                            | Товары
+                    .col-6.col-md-4
+                        a(href='' title='').link-bucket-nav.right.active
+                            include svgs/delivery-big.svg
+                            | Доставка
+        .container.bucket-container
+            form.form-delivery
+                .row.bucket-recipient
+                    .col-md-2
+                        p.bucket-paragraph Получатель
+                    .col-md-1.col-lg-2.hidden-xs
+                        hr.bucket-line
+                    .col-md-9.col-lg-8
+                        .form-half-input
+                            input(type='text' placeholder='Имя и фамилия')
+                            input(type='text' placeholder='Номер телефона')
+                .row
+                    .col-md-2
+                        p.bucket-paragraph Способ доставки
+                    .col-md-1.col-lg-2.hidden-xs
+                        hr.bucket-line
+                    .col-md-9.col-lg-8
+                        #tabs.tabs-bucket
+                            ul.tabs-nav
+                                li
+                                    a(href='#tabs-1') Самовывоз
+                                li
+                                    a(href='#tabs-2') Доставка Новой почтой
+                                li
+                                    a(href='#tabs-3') Курьером по Киеву
+                            #accordion2
+                                .accordion-button Самовывоз
+                                #tabs-1
+                                    .form-three-input
+                                            input(type='text' placeholder='Киев' disabled)
+                                            input(type='text' placeholder='ул.Булаховского, 2/1' disabled)
+                                            input(type='text' placeholder='пав. №5' disabled)
+
+
+                                .accordion-button Доставка Новой почтой
+                                #tabs-2
+                                    .form-half-input
+                                        input(type='text' placeholder='Город')
+                                        input(type='text' placeholder='Номер отделения')
+                                .accordion-button Курьером по Киеву
+                                #tabs-3
+                                    .form-three-input
+                                        input(type='text' placeholder='Город' disabled)
+                                        input(type='text' placeholder='Улица')
+                                        input(type='text' placeholder='Номер')
+                                    .form-wish
+                                        p Желаемая дата доставки:
+                                        input(type='text' placeholder='Дата доставки')
+
+
+
+            .row.justify-content-end
+                .col-xl-4.col-lg-5.col-md-6
+                    .bucket-big-price
+                        .bucket-big-price--text-delivery
+                            | Цена доставки:
+                        .bucket-big-price--number-delivery
+                            | 220 грн.
+                        .bucket-big-price--text
+                            | Общая сумма:
+                        .bucket-big-price--number
+                            | 174 164 грн.
+
+
+            .row
+                .col-md-4.order-md-1.order-3
+                    a(href='' title='').button.button-bucket Оформить кредит
+                .col-md-4.order-md-2.order-2
+                    a(href='' title='').button.button-bucket Быстрый заказ
+                .col-md-4.order-md-3.order-1
+                    a(href='' title='').button.button-bucket.button-bucket-order Перейти к доставке

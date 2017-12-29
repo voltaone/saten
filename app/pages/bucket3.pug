@@ -1,0 +1,32 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Корзина
+
+block content
+
+    header.header-breadcrumbs.back-gray.header-product
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Корзина
+
+    section.section-bucket.section-bucket-success
+        .bucket-header
+            .container
+                .row.bucket-heading
+                    .col-md-4.col-lg-3
+                        h1 Корзина
+                    .col-6.col-md-8.col-lg-9.back-bucket.back-bucket-success
+        .container.bucket-container.bucket-success
+            .row.justify-content-center
+                .col-md-6
+                    img(src='img/icon/order.svg')
+                    h2 Спасибо Виталий
+                    p Наш менеджер свяжеться с Вами в ближайшее время
+                    a(href='').button.button-blue Хорошо
