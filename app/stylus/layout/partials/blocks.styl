@@ -3,7 +3,23 @@
 
 //ARTICLE
 
-article {}
+article
+  padding-top 12px
+  padding-bottom 60px
+  p, ul li
+    line-height: 2.0
+    margin-bottom 33px
+  ul
+    li
+      position relative
+      padding-left 25px
+      &:before
+        pseudo(block, absolute)
+        width: 14px;
+        height: 2px;
+        left 0
+        top 16px
+        background $aqua-text
 
 //ASIDE
 
