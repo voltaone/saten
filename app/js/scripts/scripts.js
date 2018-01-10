@@ -1,6 +1,30 @@
 $(document).ready(function () {
     "use strict";
 
+    // ----- ACCORDION -----
+    $(function () {
+        $("#accordion3").accordion({
+            heightStyle: "content"
+        });
+    });
+
+    // ----- MAIN SLIDER -----
+    $(function() {
+        var col = 0;
+
+        $('path').hover(function () {
+            var data = $(this).attr('data-item');
+            // if (col == 2) {
+            // }
+
+
+            $('.preview-block[data-item=' + data + ']').show();
+            col++;
+        })
+
+    })
+
+
     // ----- FILTER ACCORDION -----
     $('.filter-accordion--group-heading').click(function (e) {
         e.preventDefault();

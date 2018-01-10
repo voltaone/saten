@@ -54,7 +54,6 @@
     &:focus
       outline none
 
-
 .slider-counter
   position absolute
   right 0
@@ -135,13 +134,32 @@
       justify-content center
       z-index 1
       img
-        min-width 100%
+        width 100%
         +tablet()
           min-width unset
         +portrait()
           min-width unset
         +mobile()
           min-width unset
+    &-svg
+      position absolute
+      top 0
+      left 0
+      bottom 0
+      right 0
+      display flex
+      align-items center
+      justify-content center
+      z-index 2
+      svg
+        width 100%
+        height auto
+        path
+          opacity 0
+          transitions()
+          cursor pointer
+          &:hover
+            opacity .6
 
 .slider-four
   overflow visible
@@ -230,7 +248,6 @@
     letter-spacing: 1.6px;
     color: $aqua-back
     bottom 30px
-
 
 .slider-product--image
   background $white

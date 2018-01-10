@@ -1,22 +1,52 @@
 .warranty-container
   position relative
   z-index 40
+  padding-bottom 40px
   .bucket-line
     margin 30px auto
+  &:after
+    pseudo(block, absolute)
+    background $white
+    top -180px
+    left 293px
+    width 100vw
+    bottom 0
+    z-index -1
+    +tablet()
+      left 240px
+    +portrait()
+      left 170px
+    +mobile()
+      display none
 
 
 .warranty-heading-paragraph
   display flex
   align-items center
+  +mobile()
+    margin-bottom 28px
   img
     margin-right 32px
+    +tablet()
+      margin-right 20px
+      max-width 50px
+    +portrait()
+      margin-right 20px
+      max-width 50px
+    +portrait()
+      margin-right 26px
+      max-width 24px
   p
     margin-bottom 0
+    +mobile()
+      font-size $s18
+      margin-top 0
+
 
 
 .warranty-heading
   position relative
-  z-index 20
+  z-index 41
   padding-top 44px
   padding-bottom: 74px
 //  +mobile()

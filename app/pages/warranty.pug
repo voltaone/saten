@@ -16,7 +16,7 @@ block content
                         li
                             a(href='' title='') Гарнтия и возврат
 
-    section.section-bucket
+    section.section-bucket.section-warranty
         .bucket-header
             .container
                 .row.warranty-heading
@@ -24,13 +24,13 @@ block content
                         h1 Гарнтия и возврат
         .container.warranty-container
             .row
-                .col-md-2
+                .col-md-3.col-lg-2
                     .warranty-heading-paragraph
                         img(src='img/icon/warranty1.svg')
                         p.bucket-paragraph
                             | Гарантия и сервис
 
-                .col-md-1.col-lg-2.hidden-xs
+                .col-md-1.col-lg-2.hidden-xs.hidden-md
                     hr.bucket-line
                 .col-md-9.col-lg-8
                     article
@@ -44,13 +44,13 @@ block content
 
                         p Кроме того, обращаем Ваше внимание, что согласно п.3 ст.4 Закона Украины «О защите прав потребителя» перед началом эксплуатации покупатель обязан внимательно ознакомиться с инструкцией и правилами эксплуатации купленного изделия.
             .row
-                .col-md-2
+                .col-md-3.col-lg-2
                     .warranty-heading-paragraph
                         img(src='img/icon/warranty2.svg')
                         p.bucket-paragraph
                             | Возврат товара
 
-                .col-md-1.col-lg-2.hidden-xs
+                .col-md-1.col-lg-2.hidden-xs.hidden-md
                     hr.bucket-line
                 .col-md-9.col-lg-8
                     article
@@ -74,3 +74,5 @@ block content
                             b Обмен или возврат товара производится по адресу г.Киев, ул. Булаховского, 2/1 с понедельника по пятницу с 9:00 до 18:00.
 
                         p Возврат денег возможен на протяжении 7 дней с дня подачи заявления при условии наличия расчетного документа и документа, удостоверяющего личность покупателя.
+
+    include partials/_questions

@@ -1,0 +1,23 @@
+section.back-gray.section-question
+    .container
+        .row.justify-content-center
+            .col-lg-8.col-md-10
+
+                h3.h3-question Остались вопросы?
+                form.form-question
+                    .form-group.error
+                        span Неправильно введенное имя
+                        input(type='text' placeholder='Введите имя ')
+                        label
+                            include ../svgs/form/user.svg
+                    .form-group
+                        span Неправильно введенный e-mail
+                        input(type='text' placeholder='E-mail')
+                        label
+                            include ../svgs/form/mail.svg
+                    .form-group.form-group-textarea.error
+                        span Введите текст
+                        textarea(placeholder='Текст сообщения')
+                        label
+                            include ../svgs/form/messenge.svg
+                    button(type='submit').button.button-blue.button-big Отправить
