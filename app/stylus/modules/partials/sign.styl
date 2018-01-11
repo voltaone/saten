@@ -1,0 +1,42 @@
+.sign-heading
+  position relative
+  z-index 41
+  padding-top 44px
+  padding-bottom: 74px
+  +mobile()
+    padding-top 0
+    padding-bottom 40px
+  h1
+    font-size: 2.75rem
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-bottom 42px
+    img
+      margin-right 15px
+    +mobile()
+      font-size $s24
+    +portrait()
+      font-size 2.5rem
+
+.sign-container
+  position relative
+  z-index 40
+  padding-bottom 0
+
+  &:after
+    pseudo(block, absolute)
+    background $white
+    top: -137px;
+    left: -84px;
+    width 100vw
+    height 100vh
+    z-index -1
+    +tablet()
+      left -60px
+    +portrait()
+      left -20px
+    +mobile()
+      display none

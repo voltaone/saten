@@ -141,6 +141,7 @@
           min-width unset
         +mobile()
           min-width unset
+          width auto
     &-svg
       position absolute
       top 0
@@ -154,6 +155,8 @@
       svg
         width 100%
         height auto
+        +mobile()
+          width auto
         path
           opacity 0
           transitions()

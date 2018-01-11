@@ -856,6 +856,15 @@ a:focus {
 .link-modal-close svg {
 	margin-right: 28px;
 }
+.link-signup {
+	display: inline-block;
+	text-decoration: underline;
+	font-size: 1.125rem;
+	color: #17b3ed;
+	font-weight: 500;
+	line-height: 1.89;
+	letter-spacing: 1.3px;
+}
 button {
 	border: none;
 	cursor: pointer;
@@ -1442,6 +1451,24 @@ ol {
 }
 .form-question .button {
 	margin: 21px auto;
+}
+.form-sign {
+	padding: 27px 0;
+	position: relative;
+	top: -91px;
+	z-index: 40;
+}
+.form-sign .button {
+	margin: 34px auto 10px;
+}
+@media (max-width: 767px) {
+	.form-sign {
+		position: static;
+		padding-top: 0;
+	}
+}
+.form-link {
+	text-align: center;
 }
 input {
 	-webkit-appearance: none;
@@ -2160,6 +2187,11 @@ section {
 }
 .section-brand2 {
 	padding-bottom: 45px;
+}
+.section-sign {
+	background: #f6f6f6;
+	overflow: hidden;
+	padding-bottom: 0;
 }
 .back-bucket:after {
 	content: '';
@@ -3531,6 +3563,7 @@ footer {
 @media (max-width: 767px) {
 	.slider-main .slide-img img {
 		min-width: unset;
+		width: auto;
 	}
 }
 .slider-main .slide-svg {
@@ -3556,6 +3589,11 @@ footer {
 .slider-main .slide-svg svg {
 	width: 100%;
 	height: auto;
+}
+@media (max-width: 767px) {
+	.slider-main .slide-svg svg {
+		width: auto;
+	}
 }
 .slider-main .slide-svg svg path {
 	opacity: 0;
@@ -5199,6 +5237,12 @@ footer {
 	top: -54px;
 	left: 115px;
 	z-index: -1;
+}
+@media (max-width: 767px) {
+	.brand-counter {
+		font-weight: 700;
+		top: -80px;
+	}
 }
 .brands-menu {
 	position: relative;
@@ -7309,6 +7353,12 @@ footer {
 	padding-top: 44px;
 	padding-bottom: 74px;
 }
+@media (max-width: 767px) {
+	.warranty-heading {
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+}
 .warranty-heading h1 {
 	font-size: 2.75rem;
 	font-weight: 500;
@@ -7323,6 +7373,11 @@ footer {
 .warranty-heading p {
 	margin-bottom: 0;
 	line-height: 2;
+}
+@media (max-width: 767px) {
+	.warranty-heading p {
+		margin-top: 60px;
+	}
 }
 .contacts-container {
 	padding-bottom: 0;
@@ -7469,4 +7524,75 @@ footer {
 }
 .about-container h2 {
 	margin-bottom: 71px;
+}
+.sign-heading {
+	position: relative;
+	z-index: 41;
+	padding-top: 44px;
+	padding-bottom: 74px;
+}
+@media (max-width: 767px) {
+	.sign-heading {
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+}
+.sign-heading h1 {
+	font-size: 2.75rem;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: 1px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 42px;
+}
+.sign-heading h1 img {
+	margin-right: 15px;
+}
+@media (max-width: 767px) {
+	.sign-heading h1 {
+		font-size: 1.5rem;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.sign-heading h1 {
+		font-size: 2.5rem;
+	}
+}
+.sign-container {
+	position: relative;
+	z-index: 40;
+	padding-bottom: 0;
+}
+.sign-container:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #fff;
+	top: -137px;
+	left: -84px;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.sign-container:after {
+		left: -60px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.sign-container:after {
+		left: -20px;
+	}
+}
+@media (max-width: 767px) {
+	.sign-container:after {
+		display: none;
+	}
 }

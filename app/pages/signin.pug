@@ -1,0 +1,48 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Вход в кабинет
+
+block content
+
+    header.header-breadcrumbs.back-gray.header-product
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Вход в кабинет
+
+    section.section-sign
+        .bucket-header
+            .container
+                .row.sign-heading
+                    .col-12.order-1
+                        h1
+                            img(src='img/icon/signin.svg')
+                            | Вход в кабинет
+                    .col-md-7.col-lg-6.col-xl-5.order-md-2.order-3
+                        article
+                            p В личном кабинете вы можете подсчитывать общую стоимость товаров в корзине, добавить постоянный адресс доставки и управлять заказами.
+                    .offset-md-0.offset-lg-1.offset-xl-2.col-md-5.col-lg-4.sign-container.order-md-3.order-2
+                        form.form-sign
+                            .form-group.error
+                                span Неверный формат ввода
+                                input(type='text' placeholder='Введите имя ')
+                                label.form-group--icon
+                                    include svgs/form/user.svg
+                                label.form-group--icon-success
+                                    include svgs/form/checked.svg
+                            .form-group.success
+                                span Неправильно введенный e-mail
+                                input(type='text' placeholder='E-mail')
+                                label.form-group--icon
+                                    include svgs/form/mail.svg
+                                label.form-group--icon-success
+                                    include svgs/form/checked.svg
+                            button(type='submit').button.button-blue.button-big Войти
+                            .form-link
+                                a(href='').link-signup Зарегистрироваться
