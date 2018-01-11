@@ -1,0 +1,61 @@
+.contacts-container
+  padding-bottom 0
+  article
+    padding-bottom 95px
+    +mobile()
+      padding-top 65px
+      +mobile()
+        padding-bottom 0
+
+
+.contacts-header
+  +mobile()
+    background $gray-back
+
+
+.contact
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  border-bottom 1px solid $gray-line2
+  margin-bottom 15px
+  +mobile()
+    padding-bottom 40px
+    margin-bottom 34px
+  &:last-child
+    border none
+  &-heading
+    flex 1 1 38.5%
+    max-width 38.5%
+    padding-right 50px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      padding-right 0
+    p
+      margin-bottom: 20px
+      +mobile()
+        margin-bottom 25px
+  &-text
+    flex 1 1 61.5%
+    max-width 61.5%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    p
+      margin-bottom 19px
+      +mobile()
+        font-size $s14
+    a
+      color $black
+      text-decoration underline
+      display inline-block
+      margin 5px 0
+      +mobile()
+        font-size $s14
+    .button
+      color $white
+      text-decoration none
+      margin 0
+      +mobile()
+        margin 35px auto

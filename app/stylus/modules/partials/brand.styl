@@ -46,7 +46,6 @@
         font-size 1rem
       &--arrow
         width 70px
-
     +mobile()
       display none
 
@@ -58,3 +57,195 @@
       .link-more--arrow
         &:before, &:after
           background $blue
+
+.brand-counter
+  font-size: 9.688rem
+  letter-spacing: 2.9px;
+  color $white
+  position absolute
+  top -54px
+  left 115px
+  z-index -1
+
+.brands-menu
+  position relative
+
+.brand-alphabet
+  display flex
+  flex-direction row
+  margin 15px 0 100px
+  min-height: 50px;
+  transitions()
+  +mobile()
+    z-index -1
+    position absolute
+    visibility hidden
+    opacity 0
+    left 0
+    right 0
+    top 50px
+    margin 0
+
+  &--all
+    flex 1 1 165px
+    max-width 165px
+    height auto
+    background $aqua-text
+    +mobile()
+      display none
+    a
+      width 100%
+      justify-content center
+      color $white
+      background $aqua-text
+      display flex
+      align-items center
+      font-size: $s20
+      font-weight: 500;
+      line-height: 2.3;
+      letter-spacing: 0.6px
+      height 100%
+  &--letters
+    background $white
+    align-items center
+    display flex
+    flex 1 1 calc(100% - 165px)
+    max-width calc(100% - 165px)
+    padding 0 56px
+    height auto
+    +portrait()
+      padding 0 40px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      padding 0
+  +mobile()
+    .brand-alphabet--ul
+      li
+        margin 0
+        a
+          width 50px
+          height 50px
+          display flex
+          align-items center
+          justify-content center
+
+
+.brand-alphabet.active
+  +mobile()
+    z-index 50
+    visibility visible
+    opacity 1
+
+.brand-alphabet--menu.active
+  .brand-alphabet--menu-letters
+    flex: 1 1 calc(100% - 50px);
+    max-width: calc(100% - 50px);
+    .brand-alphabet--ul
+      flex-wrap wrap
+    .brand-alphabet--ul-all
+      flex 1 1 100%
+      max-width 100%
+      margin 0
+      a
+        width 100%
+
+.brand-alphabet--ul
+  display flex
+  flex-wrap wrap
+  flex-direction row
+
+  li
+    margin 0 4px
+    +mobile()
+      margin 0 14px
+    a
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      color: $aqua-text
+      padding 5px
+      display block
+
+.brand-top
+  .brand-block
+    margin-bottom 90px
+
+.brand-bottom
+  border-bottom 1px solid $aqua-back
+  padding-bottom 55px
+  .brand-block
+    margin-bottom 66px
+
+.brand-alphabet--menu
+  display none
+  justify-content space-between
+  height 50px
+  overflow hidden
+  margin-bottom 50px
+  +mobile()
+    display flex
+  &-button
+    a
+      display flex
+      justify-content center
+      width 50px
+      height 50px
+      color $white
+      background $blue
+      font-size 2.5rem
+      line-height 1
+      position relative
+      transition none
+      &:after, &:before
+        pseudo(block, absolute)
+        width 2px
+        height 22px
+        background $white
+        top 14px
+        transform rotate(45deg)
+        left 24px
+        opacity 0
+      &:after
+        transform rotate(-45deg)
+    .active
+      color $trans
+      &:after, &:before
+        opacity 1
+
+
+
+  &-letters
+    flex 1 1 calc(100% - 60px)
+    max-width calc(100% - 60px)
+    background $white
+    overflow hidden
+
+    .brand-alphabet--ul
+      flex-wrap nowrap
+      height 100%
+      align-items center
+      li
+        height 100%
+        display flex
+        align-items center
+      &-all
+        margin-left 0
+        margin-right 20px
+
+        a
+          transition none
+          width 50px
+          justify-content center
+          color $white
+          background $aqua-text
+          display flex
+          align-items center
+          font-size: $s20
+          font-weight: 500;
+          letter-spacing: 0.6px
+          height 100%
+
+
+
+

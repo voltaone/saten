@@ -5,19 +5,25 @@ section.back-gray.section-question
 
                 h3.h3-question Остались вопросы?
                 form.form-question
-                    .form-group.error
+                    .form-group.success
                         span Неправильно введенное имя
                         input(type='text' placeholder='Введите имя ')
-                        label
+                        label.form-group--icon
                             include ../svgs/form/user.svg
+                        label.form-group--icon-success
+                            include ../svgs/form/checked.svg
                     .form-group
                         span Неправильно введенный e-mail
                         input(type='text' placeholder='E-mail')
-                        label
+                        label.form-group--icon
                             include ../svgs/form/mail.svg
+                        label.form-group--icon-success
+                            include ../svgs/form/checked.svg
                     .form-group.form-group-textarea.error
                         span Введите текст
                         textarea(placeholder='Текст сообщения')
-                        label
+                        label.form-group--icon
                             include ../svgs/form/messenge.svg
+                        label.form-group--icon-success
+                            include ../svgs/form/checked.svg
                     button(type='submit').button.button-blue.button-big Отправить

@@ -1,0 +1,68 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Контакты
+
+block content
+
+    header.header-breadcrumbs.back-gray
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Контакты
+
+    section.section-contacts
+        .contacts-header
+            .container
+                .row.warranty-heading
+                    .col-12
+                        h1 Контакты
+        .container.warranty-container.contacts-container
+            .row
+                .col-md-3.col-lg-4
+                    img(src='img/illus/illus1.png').img-contacts
+                .col-md-9.col-lg-8
+                    article
+                        .contact
+                            .contact-heading
+                                p
+                                    b Прием заказов, общие вопросы:
+                            .contact-text
+                                a(href='mailto:') info@saten.com.ua
+                                br
+                                a(href='tel:') (044) 238-86-10
+                        .contact
+                            .contact-heading
+                                p
+                                    b График приема заказов по телефону:
+                            .contact-text
+                                p
+                                    | Понедельник - Пятница:  с 9:00 до 19:00
+                                    br
+                                    | Суббота:  c 10:00 до 18:00
+                                    br
+                                    | Воскресенье: с 10:00 до 17:00
+                        .contact
+                            .contact-heading
+                                p
+                                    b По вопросам сотрудничества:
+                            .contact-text
+                                a(href='mailto:') partnership@saten.ua
+                        .contact
+                            .contact-heading
+                                p
+                                    b Адрес:
+                            .contact-text
+                                p г. Киев, ул.Булаховского 2/1, пав. №5
+                                a(href='').button.button-blue Показать на карте
+
+                    #map
+                    include partials/_snazzymap
+
+
+    include partials/_questions

@@ -86,3 +86,47 @@
     height 0
     padding 0
     margin 0
+
+#accordion3.ui-accordion
+    .ui-accordion-header
+      background $trans
+      font-size: $s20
+      font-weight: 500;
+      line-height: 1.6;
+      color: rgba(0,0,0,.4)
+      text-align left
+      position relative
+      border-bottom 1px solid #e7e7e7;
+      margin-bottom 7px
+      padding 0 50px 11px 0
+      +mobile()
+        padding-right 30px
+      &:hover
+        color $black
+      &:after, &:before
+        pseudo(block, absolute)
+        width 14px
+        height 2px
+        background $blue
+        top 17px
+        left auto
+        right 28px
+        border: none
+        transitions()
+        opacity 1
+        +mobile()
+          right 20px
+      &:after
+        transform rotate(90deg)
+    .ui-state-active
+      color $black
+      border-color $trans
+      &:after
+        transform none
+    .ui-accordion-content
+      border-bottom 1px solid #e7e7e7
+      ul
+        li
+          margin-bottom 10px
+          &:before
+            top 13px

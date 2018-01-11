@@ -36,14 +36,15 @@ form {}
 
   label
     position absolute
-    top 0
+    top 20px
     left 20px
     bottom 0
     margin 0
+    +mobile()
+      left 10px
 
-  input + label
-    display flex
-    align-items center
+  &--icon-success
+    display none
 
   textarea + label
     top 20px
@@ -53,9 +54,11 @@ form {}
     font-size: $s16
     font-weight: 500;
     line-height: 2.0;
-    padding-left 60px
     margin 0
     border-bottom 2px solid $blue
+    padding: 12px 0 11px 60px
+    +mobile()
+      padding-left 38px
     +placeholder()
       font-size $s16
 
@@ -68,7 +71,6 @@ form {}
     opacity 0
 
 .form-group.error
-
   input, textarea
     border-color $red
     color $red
@@ -80,6 +82,21 @@ form {}
   svg
     g
       fill $red
+
+.form-group.success
+  input, textarea
+    border-color $green
+    color $black
+
+  svg
+    g
+      fill $green
+
+  .form-group--icon
+    display none
+  .form-group--icon-success
+    display block
+
 
 
 .form-nav

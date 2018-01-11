@@ -5,3 +5,44 @@ img {}
 
 .img-responsive
   width 100%
+
+.img-contacts
+  max-width 329px
+  width 100%
+  position relative
+  z-index -1
+  top 32px
+  +mobile()
+    position absolute
+    max-width 178px
+    top: -190px;
+    right: -35px
+
+.img-about
+  position absolute
+  top: -253px;
+  right: -81px;
+  z-index 1
+  +mobile()
+    max-width 305px
+    top -202px
+
+.img-about--block
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+  background $white
+  display flex
+  align-items center
+  justify-content center
+  padding 21px
+  margin-bottom 55px
+  +mobile()
+    padding 0
+    box-shadow 0
+
+  .img-about2
+    margin-bottom 20px
+    width 100%
+    margin-bottom 0
+    +mobile()
+      width auto
+      height 280px

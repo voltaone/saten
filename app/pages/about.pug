@@ -1,0 +1,79 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | О компании
+
+block content
+
+    header.header-breadcrumbs.back-gray
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') О компании
+
+    section.section-about
+        .contacts-header
+            .container
+                .row.warranty-heading
+                    .col-12
+                        h1 О компании
+        .container
+            .row
+                .col-md-7.col-lg-6.col-xl-5.order-md-1.order-2
+                    article.article-about
+                        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                .col-lg-6.order-1.order-md-2
+                    img(src='img/illus/illus2.png').img-about
+        .about-container
+            .container
+                .row
+                    .col-12
+                        h2 Принципы работы
+                    .col-6.col-lg-3
+                        .advantage-block.advantage-block1
+                            .advantage-block--image
+                                include svgs/advantage/advantage1.svg
+                            .advantage-block--description
+                                h4 Самый большой выбор товаров для ремонта
+                            .advantage-block--heading
+                                h3 150 000
+                    .col-6.col-lg-3
+                        .advantage-block.advantage-block2
+                            .advantage-block--image
+                                include svgs/advantage/advantage2.svg
+                            .advantage-block--description
+                                h4 Лучшие цены на рынке Украины
+                            .advantage-block--heading
+                                h3 - 30 %
+                    .col-6.col-lg-3
+                        .advantage-block.advantage-block3
+                            .advantage-block--image
+                                include svgs/advantage/advantage3.svg
+                            .advantage-block--description
+                                h4 Проверенны на качество производители
+                            .advantage-block--heading
+                                h3 548
+                    .col-6.col-lg-3
+                        .advantage-block.advantage-block4
+                            .advantage-block--image
+                                include svgs/advantage/advantage4.svg
+                            .advantage-block--description
+                                h4 Актуальное наличие товара на складе
+                            .advantage-block--heading
+                                h3 89 %
+
+    section.section-about-last
+        .container
+            .row.justify-content-center
+                .col-12
+                    h2 С нами легко работать
+                    .img-about--block
+                        img(src='img/illus/illus3.png').img-about2
+                .col-md-8
+                    article
+                        p Напольное биде Devit Charlestone 2010142 отличается прекрасным европейским качеством и очень доступной ценой. Биде удобно в эксплуатации, универсальные размеры подойдут в любую ванную комнату. Вы также можете выбрать унитаз, раковину на нашем сайте в одном элегантном стиле коллекции Charlestone.

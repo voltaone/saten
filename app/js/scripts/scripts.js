@@ -1,6 +1,14 @@
 $(document).ready(function () {
     "use strict";
 
+    // ----- BRAND -----
+    $('#brand-trigger').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active')
+        $('.brand-alphabet').toggleClass('active')
+        $('.brand-alphabet--menu').toggleClass('active')
+    })
+
     // ----- ACCORDION -----
     $(function () {
         $("#accordion3").accordion({

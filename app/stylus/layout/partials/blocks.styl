@@ -21,6 +21,14 @@ article
         top 16px
         background $aqua-text
 
+.article-about
+  position relative
+  z-index 20
+  padding-top 0
+  padding-bottom 0
+  +mobile()
+    padding-bottom 40px
+
 //ASIDE
 
 aside
@@ -171,6 +179,33 @@ section
   +mobile()
     padding-top 28px
 
+.section-contacts
+  background $gray-back
+  +mobile()
+    background $white
+
+.section-about
+  background: $gray-back
+  padding-bottom 0
+  position relative
+  min-height 666px
+  margin-bottom 364px
+  +portrait()
+    margin-bottom 80px
+  +mobile()
+    margin-bottom 80px
+
+.section-about-last
+  padding-bottom 97px
+
+.section-brand
+  margin-bottom 130px
+  min-height auto
+  +mobile()
+    margin-bottom 80px
+
+.section-brand2
+  padding-bottom 45px
 
 
 .back-bucket
