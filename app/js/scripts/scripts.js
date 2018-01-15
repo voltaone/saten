@@ -46,7 +46,6 @@ $(document).ready(function () {
     })
 
     // ----- MENU -----
-
     $('#menu-trigger').click(function (e) {
         e.preventDefault();
         $('.menu-panel').toggleClass('open');
@@ -172,9 +171,9 @@ $(document).ready(function () {
 
     //CHOSEN
     $(".chosen-select").chosen({
-        disable_search_threshold: 10,
-        no_results_text: "Нічого не знайдено"
+        no_results_text: "Ничего не найдено"
     });
+
     // $(".chosen-image").chosenImage({disable_search_threshold: 10});
 
     // ----- ANIMATION -----
@@ -318,6 +317,7 @@ $(window).on('load resize', function () {
         $('#second').appendTo('#mob-nav-top');
         $('.menu-user').appendTo('#panel-2');
         $('.product-filter--brand').appendTo('#productBrand');
+        $('.cabinet-filter').appendTo('.section-cabinet');
         // ----- TABS -----
         $(function () {
             $("#accordion").accordion({
@@ -342,7 +342,7 @@ $(window).on('load resize', function () {
             if ($(this).hasClass('ui-accordion-header-active')) {
                 $('.accordion-button').removeClass('hidden');
             }
-        })
+        });
 
 
     } else if (window.matchMedia("(min-width: 768px)").matches) {
@@ -353,6 +353,7 @@ $(window).on('load resize', function () {
         $('#third').appendTo('#fourth');
         $('.login').appendTo('#login-here');
         $('.menu-user').appendTo('#panel .col-6');
+        $('.cabinet-filter').prependTo('#cabFilter');
         // ----- TABS -----
         $(function () {
             $("#tabs").tabs();

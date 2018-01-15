@@ -16,3 +16,65 @@ input[type='checkbox'].error + label
 
 input[type='radio'].error + label
   color red
+
+
+
+
+.form-group.error
+  input, textarea
+    border-color $red
+    color $red
+    +placeholder()
+      color $red
+
+  .form-group--span
+    opacity 1
+
+  svg
+    g
+      fill $red
+
+  .chosen-container
+    border-bottom 2px solid $red
+    .chosen-single
+      span
+        color $red
+
+  select
+    color $red
+    border-bottom 2px solid $red
+
+.form-group.success
+  input, textarea
+    border-color $green
+    color $black
+
+  svg
+    g
+      fill $green
+
+  .form-group--icon
+    display none
+  .form-group--icon-success
+    display block
+
+.form-address.disabled
+    &:before, &:after
+      opacity 0
+
+.form-cabinet-edit
+  .form-address
+    &:before, &:after
+      opacity 1
+      visibility visible
+  .button
+    opacity 1 !important
+    visibility visible !important
+  .link-edit
+    opacity 0
+    visibility hidden
+
+
+
+
+

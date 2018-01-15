@@ -1,0 +1,112 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Вход в кабинет
+
+block content
+
+    header.header-breadcrumbs.back-gray
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Личный кабинет
+
+    section.section-sign.section-cabinet
+        .bucket-header
+            .container
+                .row.cabinet-heading
+                    .col-md-10
+                        h1 Личный кабинет
+            .cabinet-mobile
+                .back-gray
+                    .container
+                        .row
+                            .col-12
+                                ul.cabinet-log
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login2.svg
+                                            | Виталий
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login.svg
+                                            | Выход
+                .back-white
+                    .container
+                        .row
+                            .col-12
+                                .cabinet-sublog
+                                    .cabinet-sublog--heading Ваши данные
+                                    .cabinet-sublog--nav
+                                        ul
+                                            li
+                                                a(href='' title='')
+                                                    include svgs/cabinet.svg
+                                            li
+                                                a(href='' title='')
+                                                    include svgs/close.svg
+            .container
+                .row
+                    .col-md-4#cabFilter
+                        ul.filter-top--main.cabinet-filter
+                            li
+                                a(href='cabinet1.html' title='').active Ваши данные
+                            li
+                                a(href='cabinet2.html' tutle='') Корзина
+                            li
+                                a(href='cabinet3.html' title='') Просмотренные товары
+                            li
+                                a(href='cabinet4.html' title='') История заказов
+                            li
+                                a(href='cabinet5.html' title='') Бонусы
+                        hr.hidden-xs
+                        a(href='' tutle='').link-logout Выход
+
+
+                    .col-md-8.sign-container
+                        form.form-cabinet.form-cabinet-edit
+                            a(href='').link-edit
+                                include svgs/cabinet.svg
+                                | Редактировать
+                            .cabinet-data
+                                .cabinet-data--heading
+                                    p Имя
+                                .cabinet-data--text
+                                    .form-group
+                                        span.form-group--span
+                                        input(type='text' value='Виталий Коновалец' disabled)
+                            .cabinet-data
+                                .cabinet-data--heading
+                                    p Электронная почтa
+                                .cabinet-data--text
+                                    .form-group
+                                        span.form-group--span
+                                        input(type='text' value='vitaliy@gmail.com' disabled)
+                            .cabinet-data
+                                .cabinet-data--heading
+                                    p Телефон
+                                .cabinet-data--text
+                                    .form-group
+                                        span.form-group--span
+                                        input(type='text' value='+38 (099) 232 22 33' disabled)
+                            hr.cabinet-hr
+                            .cabinet-data
+                                .cabinet-data--heading
+                                    p Адреса для доставок
+                                .cabinet-data--text
+                                    .form-group.form-address.disabled
+                                        span.form-group--span
+                                        input(type='text' value='г. Киев, ул. Щорса 34' disabled)
+                                    .form-group.form-address.disabled
+                                        span.form-group--span
+                                        input(type='text' value='г. Киев, ул. Белорусская 22' disabled)
+                                    .form-group.form-address.disabled
+                                        span.form-group--span
+                                        input(type='text' value='г. Одесса, ул. Леонтовича 17' disabled)
+
+                                    button(type='submit').button Применить

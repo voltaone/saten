@@ -56,7 +56,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body id="index">
+  <body>
     <nav>
       <div class="container">
         <div class="row">
@@ -211,14 +211,13 @@
       </div>
     </nav>
     <main>
-      <!--include ../partials/_header.pug-->
       <header class="header-breadcrumbs back-gray header-product">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <ul class="breadcrumbs">
                 <li><a href="" title="">Главная</a></li>
-                <li><a href="" title="">Вход в кабинет</a></li>
+                <li><a href="" title="">Зарегистрируйтесь</a></li>
               </ul>
             </div>
           </div>
@@ -229,16 +228,16 @@
           <div class="container">
             <div class="row sign-heading">
               <div class="col-12 order-1">
-                <h1><img src="img/icon/signin.svg">Вход в кабинет</h1>
+                <h1><img src="img/icon/signup.svg">Зарегистрируйтесь</h1>
               </div>
-              <div class="col-md-7 col-lg-6 col-xl-5 order-md-2 order-3">
-                <article>
-                  <p>В личном кабинете вы можете подсчитывать общую стоимость товаров в корзине, добавить постоянный адресс доставки и управлять заказами.</p>
+              <div class="col-md-5 col-xl-4 order-md-2 order-3">
+                <article class="article-signup">
+                  <p>Для удобного способа покупки зарегистрируйте личный аккаунт в котором будет храниться история покупок и личные данные.</p><a class="link-accept" href="" title="">Регистрируясь, вы автоматически принимаете согласие на обработку личных данных</a>
                 </article>
               </div>
-              <div class="offset-md-0 offset-lg-1 offset-xl-2 col-md-5 col-lg-4 sign-container order-md-3 order-2">
-                <form class="form-sign">
-                  <div class="form-group error"><span>Неверный формат ввода</span>
+              <div class="col-md-7 col-xl-8 sign-container order-md-3 order-2">
+                <form class="form-signup">
+                  <div class="form-group error"><span class="form-group--span">Неверный формат ввода</span>
                     <input type="text" placeholder="Введите имя ">
                     <label class="form-group--icon"><?xml version="1.0" encoding="UTF-8"?>
 <svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -269,8 +268,41 @@
 </svg>
                     </label>
                   </div>
-                  <div class="form-group success"><span>Неправильно введенный e-mail</span>
-                    <input type="text" placeholder="E-mail">
+                  <div class="form-group success"><span class="form-group--span">Неправильно введенный номер телефона</span>
+                    <input type="text" placeholder="Номер телефона">
+                    <label class="form-group--icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>noun_1344657_cc</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saten_Registration" transform="translate(-930.000000, -332.000000)" fill-rule="nonzero" fill="#17B3ED">
+            <g id="noun_1344657_cc" transform="translate(930.000000, 332.000000)">
+                <g id="Group">
+                    <path d="M11.6078532,11.5936842 C10.9383795,11.3115789 9.80469528,10.7463158 8.89627423,9.83894737 C7.98785318,8.93157895 7.42259002,7.79684211 7.14153739,7.12736842 L8.0183795,6.25052632 L3.84995844,0 L1.08153739,2.76842105 C-1.21425208,5.06526316 0.257326864,10.1315789 4.43101107,14.3052632 C7.17627423,17.0505263 10.4689058,18.7557895 13.0246953,18.7557895 C14.2310111,18.7557895 15.2478532,18.3757895 15.9699584,17.6547368 L18.7362742,14.8863158 L12.4846953,10.7178947 L11.6078532,11.5936842 Z M15.4331163,15.2126316 L14.4804848,16.1663158 C14.1594321,16.4873684 13.6699584,16.6494737 13.0257479,16.6494737 C11.0383795,16.6494737 8.24995844,15.1442105 5.92048476,12.8157895 C2.41206371,9.30736842 1.33943213,5.48842105 2.56995844,4.25789474 L3.52469528,3.30315789 L5.31101107,5.98315789 L4.73206371,6.56421053 L4.91311634,7.16631579 C4.94259002,7.26315789 5.65206371,9.57052632 7.40995844,11.3273684 C9.16785318,13.0842105 11.474169,13.7947368 11.5720637,13.8231579 L12.1752216,14.0052632 L12.754169,13.4263158 L15.4331163,15.2126316 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </label>
+                    <label class="form-group--icon-success"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saten_Registration" transform="translate(-539.000000, -332.000000)" fill="#78C783">
+            <path d="M547.745459,350.109446 L558.35432,333.059839 L556.658224,332 L546.505737,348.135559 L541.396108,340 L539.700012,341.059839 L546.554462,352.02925 L547.745899,350.110147 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
+                    </label>
+                  </div>
+                  <div class="form-group"><span class="form-group--span">Неправильно введенный e-mail</span>
+                    <input type="mail" placeholder="E-mail">
                     <label class="form-group--icon"><?xml version="1.0" encoding="UTF-8"?>
 <svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
@@ -300,8 +332,54 @@
 </svg>
                     </label>
                   </div>
-                  <button class="button button-blue button-big" type="submit">Войти</button>
-                  <div class="form-link"><a class="link-signup" href="">Зарегистрироваться</a></div>
+                  <div class="form-group"><span class="form-group--span">Неправильно введенная область</span>
+                    <div class="select-container">
+                      <select class="chosen-select">
+                        <option>г. Киев</option>
+                        <option>Киевская</option>
+                        <option>Львовская</option>
+                        <option>Харьковская</option>
+                        <option>Днепропетровская</option>
+                        <option>Одесская</option>
+                        <option>Запорожская</option>
+                        <option>Донецкая</option>
+                        <option>Хмельницкая</option>
+                      </select>
+                    </div>
+                    <label class="form-group--icon"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>noun_1309918_cc</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saten_Registration" transform="translate(-929.000000, -394.000000)" fill-rule="nonzero" fill="#17B3ED">
+            <g id="noun_1309918_cc" transform="translate(929.000000, 394.000000)">
+                <g id="Group">
+                    <g id="Shape">
+                        <path d="M13.1643353,18.7860264 L16.8763405,18.7860264 L16.8763405,11.2340426 L9.5,3.68585687 L2.25497497,11.2340426 L2.25497497,18.7860264 L5.7697575,18.7860264 L5.7697575,11.2978723 L13.1643353,11.2978723 L13.1643353,18.7860264 Z M11,13.8510638 L8,13.8510638 L8,21 L0,21 L0,10.176476 L9.5,0.474348357 L19,10.176476 L19,21 L11,21 L11,13.8510638 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                    </label>
+                    <label class="form-group--icon-success"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saten_Registration" transform="translate(-539.000000, -332.000000)" fill="#78C783">
+            <path d="M547.745459,350.109446 L558.35432,333.059839 L556.658224,332 L546.505737,348.135559 L541.396108,340 L539.700012,341.059839 L546.554462,352.02925 L547.745899,350.110147 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
+                    </label>
+                  </div>
+                  <button class="button button-blue button-big" type="submit">Зарегистрироваться</button>
                 </form>
               </div>
             </div>

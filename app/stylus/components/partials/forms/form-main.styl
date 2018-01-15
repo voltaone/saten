@@ -42,6 +42,7 @@ form {}
     margin 0
     +mobile()
       left 10px
+      top 18px
 
   &--icon-success
     display none
@@ -49,6 +50,8 @@ form {}
   textarea + label
     top 20px
     bottom auto
+    +mobile()
+      top 18px
 
   input, textarea
     font-size: $s16
@@ -62,7 +65,7 @@ form {}
     +placeholder()
       font-size $s16
 
-  span
+  &--span
     color $red
     font-size $s12
     position absolute
@@ -70,32 +73,25 @@ form {}
     left 0
     opacity 0
 
-.form-group.error
-  input, textarea
-    border-color $red
-    color $red
-    +placeholder()
-      color $red
-  span
-    opacity 1
 
-  svg
-    g
-      fill $red
+.form-address
+  position relative
+  &:after, &:before
+    pseudo(block, absolute)
+    width 2px
+    height 15px
+    background $blue
+    top 5px
+    transform rotate(45deg)
+    right 5px
+    cursor pointer
+    opacity 0
+    visibility hidden
+  &:after
+    transform rotate(-45deg)
+  input
+    border-color rgba(255,255,255,.2)
 
-.form-group.success
-  input, textarea
-    border-color $green
-    color $black
-
-  svg
-    g
-      fill $green
-
-  .form-group--icon
-    display none
-  .form-group--icon-success
-    display block
 
 
 
@@ -229,4 +225,25 @@ form {}
 .form-link
   text-align center
 
+.form-signup
+  position relative
+  z-index 40
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  top -23px
+  .form-group
+    flex 1 1 calc(50% - 15px)
+    max-width calc(50% - 15px)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+  .button
+    margin 24px auto
+  +mobile()
+    position static
+
+
+.form-cabinet
+  position relative
 

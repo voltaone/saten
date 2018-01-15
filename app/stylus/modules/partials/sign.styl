@@ -14,8 +14,12 @@
     display: flex;
     align-items: center;
     margin-bottom 42px
+    position relative
+    z-index 60
     img
       margin-right 15px
+      +mobile()
+        margin-right 10px
     +mobile()
       font-size $s24
     +portrait()
@@ -32,7 +36,7 @@
     top: -137px;
     left: -84px;
     width 100vw
-    height 100vh
+    height 200vh
     z-index -1
     +tablet()
       left -60px

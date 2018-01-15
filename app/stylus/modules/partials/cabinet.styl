@@ -1,0 +1,168 @@
+.cabinet-heading
+  position: relative;
+  z-index: 41;
+  padding-top: 35px;
+
+  h1
+    font-size: 2.5rem
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    position relative
+    z-index 60
+    margin-bottom: 47px;
+    +mobile()
+      margin-bottom 20px
+      font-size $s24
+
+  +mobile()
+    background $gray-back
+    padding-top 0
+
+.cabinet-filter
+  margin-bottom 0
+  li
+    margin-bottom: 28px;
+    a
+      font-size $s18
+      letter-spacing: 1px;
+
+  +mobile()
+    position absolute
+    top 93px
+    left 0
+    right 0
+    background $white
+    z-index 80
+    bottom 0
+
+
+    li
+      margin-bottom 0
+      a
+        padding 15px 16px 18px
+        border-bottom 1px solid rgba(0,0,0,.2)
+        display block
+        font-weight 500
+        &:hover
+          padding-left 16px
+        &:before, &:after
+          display none
+      a.active
+        padding-left 16px
+        &:hover
+          padding-left 16px
+
+.cabinet-data
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  margin-bottom 13px
+  &--heading
+    flex 1 1 38.5%
+    max-width 38.5%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    p
+      opacity: 0.39;
+      font-size: $s18
+      letter-spacing: 1px;
+      margin-bottom 0
+  &--text
+    flex 1 1 61.5%
+    max-width 61.5%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    .form-group
+      margin-bottom 0
+      input
+        padding-top 0
+        padding-bottom 13px
+        padding-left 0
+        font-size: $s18;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height 1
+        border-color $blue
+      input[disabled]
+        border-color $trans
+    .form-address.form-group
+      margin-bottom 14px
+      +mobile()
+        margin-top 12px
+        margin-bottom 12px
+      input
+        border-bottom 1px solid rgba(0, 0, 0, .2)
+      input[disabled]
+        border-color rgba(0, 0, 0, .2)
+        +mobile()
+          border-color $trans
+    .button
+      font-size $s20
+      margin-top 35px
+      padding-top 11px
+      padding-bottom 15px
+      opacity 0
+      visibility hidden
+
+.cabinet-hr
+  margin-top: 26px;
+  margin-bottom: 36px;
+
+.cabinet-mobile
+  display none
+  +mobile()
+    display block
+
+.cabinet-log
+  display flex
+  margin-bottom 24px
+  li
+    flex 1 1 50%
+    max-width 50%
+    a
+      font-size: $s18;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: $aqua-text2;
+      display flex
+      align-items center
+      svg
+        margin-right 9px
+    &:nth-child(1)
+      a
+        color $blue
+        svg
+          g
+            fill $blue
+    &:nth-child(2)
+      a
+        svg
+          transform rotate(180deg)
+          g
+            fill $aqua-text2
+
+.cabinet-sublog
+  display flex
+  margin-bottom 24px
+  justify-content space-between
+  background $white
+  padding-top 19px
+  padding-bottom 25px
+  &--heading
+    color $blue
+    flex 1 1 calc(100% - 68px)
+    max-width calc(100% - 68px)
+    font-size: $s18;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+  &--nav
+    max-width 68px
+    flex 1 1 68px
+    ul
+      display flex
+      justify-content space-between
+

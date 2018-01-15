@@ -5,22 +5,31 @@ select
   -webkit-appearance none
   -moz-appearance none
   width 100%
-  background $white
-  border none
-  border-radius 0
   display block
-  padding 2px 30px
-  font-size $s12
-  height 36px
   transitions()
+
+  color $black
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  height 55px
+  border-radius 0
+  border none
+  background none
+  box-shadow none
+  padding: 13px 0 10px 60px;
+  border-bottom 2px solid $blue
+  +mobile()
+    padding-left 38px
+
   &:focus
     outline none
+
 
 .select-container
   display block
   position relative
   width 100%
-  max-width 263px
   &:after
     triangle($black, down, 6px)
     top calc(50% - 3px)
