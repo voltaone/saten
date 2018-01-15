@@ -2371,11 +2371,14 @@ section {
 	padding-bottom: 97px;
 }
 .section-brand {
+	min-height: auto;
+}
+.section-brand3 {
 	margin-bottom: 130px;
 	min-height: auto;
 }
 @media (max-width: 767px) {
-	.section-brand {
+	.section-brand3 {
 		margin-bottom: 80px;
 	}
 }
