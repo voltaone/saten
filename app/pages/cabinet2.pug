@@ -1,0 +1,280 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Личный кабинет - Просмотренные товары
+
+block content
+
+    header.header-breadcrumbs.back-gray
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Личный кабинет
+
+    section.section-sign.section-cabinet
+        .bucket-header
+            .container
+                .row.cabinet-heading
+                    .col-md-10
+                        h1 Личный кабинет
+            .cabinet-mobile
+                .back-gray
+                    .container
+                        .row
+                            .col-12
+                                ul.cabinet-log
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login2.svg
+                                            | Виталий
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login.svg
+                                            | Выход
+
+            .container
+                .row
+                    .col-md-3
+                        ul.filter-top--main.cabinet-filter.hidden-xs
+                            li
+                                a(href='cabinet1.html' title='') Ваши данные
+                            li
+                                a(href='bucket1.html' title='') Корзина
+                            li
+                                a(href='cabinet2.html' title='').active Просмотренные товары
+                            li
+                                a(href='cabinet3.html' title='') История заказов
+                            li
+                                a(href='cabinet4.html' title='') Бонусы
+                        hr.hidden-xs
+                        a(href='' tutle='').link-logout Выход
+
+                    .col-12.visible-xs
+                        .cabinet-sublog
+                            .cabinet-sublog--heading Просмотренные товары
+                            .cabinet-sublog--nav.cabinet-sublog--nav-lonely
+                                ul
+                                    li
+                                        a(href='cabinet1.html' title='')
+                                            include svgs/close.svg
+
+
+                    .col-md-9.sign-container.cabinet-container
+                        .row
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+                            .col-lg-4.col-6
+                                .goods-block
+                                    a(href='' title='').goods-block--visible
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
+                                        .goods-block--visible-description
+                                            h4 Плитка Ape Ceramica Motive Crema
+                                    .goods-block--panel
+                                        a(data-fancybox data-src="#bucket-modal" href="javascript:;").goods-block--panel-price
+                                            .goods-block--panel-price--number
+                                                p 164 грн
+                                            .goods-block--panel-price--hidden
+                                                p Купить
+                                            .goods-block--panel-price--button
+                                                include svgs/bucket-small.svg
+
+                                        .goods-block--panel-hidden
+                                            .goods-block--panel-hidden--content
+                                                p.available
+                                                    span.true есть в наличии
+                                                    span.false нет в наличии
+                                                p.goods-block--panel-hidden--content-code
+                                                    span.line Код товара:
+                                                        span  ГЧ-565-279905
+                                                    span.line Бренд:
+                                                        span  Atis
+                                                    span.line Производитель:
+                                                        span  Украина
+                                            a(href='' title='').goods-block--panel-hidden--more
+                                                span.link-more
+                                                    span.link-more--text Подробнее
+                                                    span.link-more--arrow
+
+                        .row
+                            .col-12
+                                ul.pagination
+                                    li.pagination-arrow.left
+                                        a(href='')
+                                            include svgs/arrow-left-small.svg
+                                    li
+                                        a(href='') 1
+                                    li
+                                        a(href='').active 2
+                                    li
+                                        a(href='') 3
+                                    li
+                                        a(href='') 4
+                                    li
+                                        a(href='') ...
+                                    li.pagination-arrow.right
+                                        a(href='')
+                                            include svgs/arrow-right-small.svg

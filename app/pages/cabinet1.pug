@@ -2,7 +2,7 @@
 extend layouts/_layout.pug
 
 block title
-    | Вход в кабинет
+    | Личный кабинет - Ваши данные
 
 block content
 
@@ -36,36 +36,35 @@ block content
                                         a(href='' title='')
                                             include svgs/login.svg
                                             | Выход
-                .back-white
-                    .container
-                        .row
-                            .col-12
-                                .cabinet-sublog
-                                    .cabinet-sublog--heading Ваши данные
-                                    .cabinet-sublog--nav
-                                        ul
-                                            li
-                                                a(href='' title='')
-                                                    include svgs/cabinet.svg
-                                            li
-                                                a(href='' title='')
-                                                    include svgs/close.svg
+
             .container
                 .row
-                    .col-md-4#cabFilter
+                    .col-md-4
                         ul.filter-top--main.cabinet-filter
                             li
                                 a(href='cabinet1.html' title='').active Ваши данные
                             li
-                                a(href='cabinet2.html' tutle='') Корзина
+                                a(href='bucket1.html' title='') Корзина
                             li
-                                a(href='cabinet3.html' title='') Просмотренные товары
+                                a(href='cabinet2.html' title='') Просмотренные товары
                             li
-                                a(href='cabinet4.html' title='') История заказов
+                                a(href='cabinet3.html' title='') История заказов
                             li
-                                a(href='cabinet5.html' title='') Бонусы
+                                a(href='cabinet4.html' title='') Бонусы
                         hr.hidden-xs
                         a(href='' tutle='').link-logout Выход
+
+                    .col-12.visible-xs
+                        .cabinet-sublog
+                            .cabinet-sublog--heading Ваши данные
+                            .cabinet-sublog--nav
+                                ul
+                                    li
+                                        a(href='' title='')
+                                            include svgs/cabinet.svg
+                                    li
+                                        a(href='cabinet1.html' title='')
+                                            include svgs/close.svg
 
 
                     .col-md-8.sign-container

@@ -1,0 +1,109 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Личный кабинет - Просмотренные товары
+
+block content
+
+    header.header-breadcrumbs.back-gray
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='' title='') Главная
+                        li
+                            a(href='' title='') Личный кабинет
+
+    section.section-sign.section-cabinet
+        .bucket-header
+            .container
+                .row.cabinet-heading
+                    .col-md-10
+                        h1 Личный кабинет
+            .cabinet-mobile
+                .back-gray
+                    .container
+                        .row
+                            .col-12
+                                ul.cabinet-log
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login2.svg
+                                            | Виталий
+                                    li
+                                        a(href='' title='')
+                                            include svgs/login.svg
+                                            | Выход
+
+            .container
+                .row
+                    .col-md-3
+                        ul.filter-top--main.cabinet-filter.hidden-xs
+                            li
+                                a(href='cabinet1.html' title='') Ваши данные
+                            li
+                                a(href='bucket1.html' title='') Корзина
+                            li
+                                a(href='cabinet2.html' title='') Просмотренные товары
+                            li
+                                a(href='cabinet3.html' title='').active История заказов
+                            li
+                                a(href='cabinet4.html' title='') Бонусы
+                        hr.hidden-xs
+                        a(href='' tutle='').link-logout Выход
+
+                    .col-12.visible-xs
+                        .cabinet-sublog
+                            .cabinet-sublog--heading История заказов
+                            .cabinet-sublog--nav.cabinet-sublog--nav-lonely
+                                ul
+                                    li
+                                        a(href='cabinet1.html' title='')
+                                            include svgs/close.svg
+
+
+                    .col-md-9.sign-container.cabinet-container--goods
+                        .row
+                            .col-12
+                                .bucket-item
+                                    .bucket-item--left
+                                        .bucket-item--image
+                                            img(src='img/goods/goods1.png' title='')
+                                        .bucket-item--heading
+                                            .bucket-item--heading-name Плитка Cicogres Lotto Gres
+                                            .bucket-item--heading-price 164 000 грн. /шт
+                                            .bucket-item--heading-code ЦЦ-367-235509
+                                    .bucket-item--right
+                                        .bucket-item--status
+                                            span.bucket-item--status-text Отправлен
+                                        .bucket-item--price
+                                            | 100м², 164 грн
+                                .bucket-item
+                                    .bucket-item--left
+                                        .bucket-item--image
+                                            img(src='img/goods/goods2.png' title='')
+                                        .bucket-item--heading
+                                            .bucket-item--heading-name Ванна Ravak BeHappy 150 x 75 L
+                                            .bucket-item--heading-price 164 000 грн. /шт
+                                            .bucket-item--heading-code ЦЦ-367-235509
+                                    .bucket-item--right
+                                        .bucket-item--status
+                                            span.bucket-item--status-text На складе
+                                        .bucket-item--price
+                                            | 100м², 164 000 грн
+                                .bucket-item.bucket-item--done
+                                    .bucket-item--left
+                                        .bucket-item--image
+                                            img(src='img/goods/goods3.png' title='')
+                                        .bucket-item--heading
+                                            .bucket-item--heading-name Керамогранит ТОВ Атем Грес …
+                                            .bucket-item--heading-price 164 000 грн. /шт
+                                            .bucket-item--heading-code ЦЦ-367-235509
+                                    .bucket-item--right
+                                        .bucket-item--status
+                                            span.bucket-item--status-text Получен
+                                            span.bucket-item--status-date 08.11.17
+                                        .bucket-item--price
+                                            | 100м², 164 000 грн

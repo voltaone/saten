@@ -21,27 +21,33 @@
 
 .cabinet-filter
   margin-bottom 0
+  position relative
+  z-index 100
   li
     margin-bottom: 28px;
     a
       font-size $s18
       letter-spacing: 1px;
+      +tablet()
+        white-space nowrap
+        max-width 210px
+        overflow hidden
+        text-overflow ellipsis
+      +portrait()
+        white-space nowrap
+        max-width 150px
+        overflow hidden
+        text-overflow ellipsis
 
   +mobile()
-    position absolute
-    top 93px
-    left 0
-    right 0
+    left -15px
+    width calc(100% + 30px)
     background $white
-    z-index 80
-    bottom 0
-
-
     li
       margin-bottom 0
       a
         padding 15px 16px 18px
-        border-bottom 1px solid rgba(0,0,0,.2)
+        border-bottom 1px solid rgba(0, 0, 0, .2)
         display block
         font-weight 500
         &:hover
@@ -50,7 +56,9 @@
           display none
       a.active
         padding-left 16px
+        color $black
         &:hover
+          color $blue
           padding-left 16px
 
 .cabinet-data
@@ -165,4 +173,33 @@
     ul
       display flex
       justify-content space-between
+  .cabinet-sublog--nav-lonely
+    ul
+      justify-content flex-end
 
+.cabinet-container
+  padding-bottom 38px
+  &:after
+    left: -4px;
+
+.cabinet-container--goods
+  padding-top 14px
+  padding-bottom 149px
+  +mobile()
+    padding-top 0
+  .bucket-item--price
+    font-size $s14
+    padding 0
+    text-align right
+    +mobile()
+      text-align left
+  .bucket-item--done
+    .bucket-item--status
+
+      .bucket-item--status-date
+        display block
+      .bucket-item--status-text
+        color $green-text
+  .bucket-item--right
+    +mobile()
+      padding-left 75px

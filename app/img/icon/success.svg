@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="74px" viewBox="0 0 90 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16">
+            <path d="M0,0 L0,60 L53.8598257,60 L57.3692658,41.4522808 L76,37.62528 L76,0 L0,0 Z M68,8 L68,12.272412 L38,37 L8,12.2716008 L8,8 L68,8 Z M8,52 L8,23 L38,48.13097 L68,23 L68,37.1933186 L57.3692658,41.4522808 L54.1818243,52 L8,52 Z" id="Shape-Copy-3" fill="#DEE8EB" fill-rule="nonzero"></path>
+            <path d="M69.5,73.5 C58.454305,73.5 49.5,64.545695 49.5,53.5 C49.5,42.454305 58.454305,33.5 69.5,33.5 C80.545695,33.5 89.5,42.454305 89.5,53.5 C89.5,64.545695 80.545695,73.5 69.5,73.5 Z M69.5,66.5 C76.6797017,66.5 82.5,60.6797017 82.5,53.5 C82.5,46.3202983 76.6797017,40.5 69.5,40.5 C62.3202983,40.5 56.5,46.3202983 56.5,53.5 C56.5,60.6797017 62.3202983,66.5 69.5,66.5 Z" id="Oval-2" fill="#DEE8EB" fill-rule="nonzero"></path>
+            <polygon id="Path" fill="#78C783" points="67.9473684 60.9649286 61 53.8464761 64.5526316 50.2063583 67.9473684 53.6846931 75.4473684 46 79 49.6401178"></polygon>
+        </g>
+    </g>
+</svg>

@@ -321,7 +321,6 @@ $(window).on('load resize', function () {
         $('#second').appendTo('#mob-nav-top');
         $('.menu-user').appendTo('#panel-2');
         $('.product-filter--brand').appendTo('#productBrand');
-        $('.cabinet-filter').appendTo('.section-cabinet');
         // ----- TABS -----
         $(function () {
             $("#accordion").accordion({
@@ -341,7 +340,6 @@ $(window).on('load resize', function () {
             $('.accordion-button').not(this).each(function(){
                 $(this).addClass('hidden')
             });
-            // $(this).show();
 
             if ($(this).hasClass('ui-accordion-header-active')) {
                 $('.accordion-button').removeClass('hidden');
@@ -357,7 +355,6 @@ $(window).on('load resize', function () {
         $('#third').appendTo('#fourth');
         $('.login').appendTo('#login-here');
         $('.menu-user').appendTo('#panel .col-6');
-        $('.cabinet-filter').prependTo('#cabFilter');
         // ----- TABS -----
         $(function () {
             $("#tabs").tabs();

@@ -2,28 +2,33 @@ section.back-gray.section-question
     .container
         .row.justify-content-center
             .col-lg-8.col-md-10
-
-                h3.h3-question Остались вопросы?
-                form.form-question
-                    .form-group.success
-                        span Неправильно введенное имя
-                        input(type='text' placeholder='Введите имя ')
-                        label.form-group--icon
-                            include ../svgs/form/user.svg
-                        label.form-group--icon-success
-                            include ../svgs/form/checked.svg
-                    .form-group
-                        span Неправильно введенный e-mail
-                        input(type='text' placeholder='E-mail')
-                        label.form-group--icon
-                            include ../svgs/form/mail.svg
-                        label.form-group--icon-success
-                            include ../svgs/form/checked.svg
-                    .form-group.form-group-textarea.error
-                        span Введите текст
-                        textarea(placeholder='Текст сообщения')
-                        label.form-group--icon
-                            include ../svgs/form/messenge.svg
-                        label.form-group--icon-success
-                            include ../svgs/form/checked.svg
-                    button(type='submit').button.button-blue.button-big Отправить
+                .question
+                    h3.h3-question Остались вопросы?
+                    form.form-question
+                        .form-group.success
+                            span.form-group--span Неправильно введенное имя
+                            input(type='text' placeholder='Введите имя ')
+                            label.form-group--icon
+                                include ../svgs/form/user.svg
+                            label.form-group--icon-success
+                                include ../svgs/form/checked.svg
+                        .form-group
+                            span.form-group--span Неправильно введенный e-mail
+                            input(type='text' placeholder='E-mail')
+                            label.form-group--icon
+                                include ../svgs/form/mail.svg
+                            label.form-group--icon-success
+                                include ../svgs/form/checked.svg
+                        .form-group.form-group-textarea.error
+                            span.form-group--span Введите текст
+                            textarea(placeholder='Текст сообщения')
+                            label.form-group--icon
+                                include ../svgs/form/messenge.svg
+                            label.form-group--icon-success
+                                include ../svgs/form/checked.svg
+                        button(type='submit').button.button-blue.button-big Отправить
+                .question-thanks
+                    img(src='img/icon/success.svg' title='')
+                    h3.h3-question Спасибо
+                    p Наш менеджер ответит на вопрос в ближайшее время
+                    a(href='' title='').button.button-blue.button-big Ок
