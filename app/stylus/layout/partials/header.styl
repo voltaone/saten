@@ -1,8 +1,6 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-header {}
-
 .header-slider
   position relative
   margin-bottom 225px
@@ -11,11 +9,8 @@ header {}
 
   &--container
     position absolute
-    left 0
-    right 0
-    bottom -65px
-    +mobile()
-      bottom -210px
+    bottom: -65px
+    left calc((100% + 390px + 30px) / 2)
 
 .header-breadcrumbs
   padding-top 20px
