@@ -2,35 +2,36 @@
 
   max-width 263px
   width 100%
-  position relative
 
-  transitions()
-  transition box-shadow 0s ease
+  position relative
+  z-index: 10
 
   margin-bottom 39px
-
-  z-index: 10;
 
   &:after
     pseudo(none,absolute)
     top 0
     left 0
     right 0
-    height 558px
+
     z-index 10
+
+    height 558px
+
     box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
   &--visible
     display block
+
     position relative
 
     z-index 12
 
-    transitions()
+    // transitions()
 
     &-description
+
       padding: 25px 19px 7px
-      transitions()
 
       h4
         font-size $s14
@@ -39,11 +40,12 @@
         overflow hidden
 
     &-image
-      background $white
-
       display flex
       justify-content center
       align-items center
+
+      background $white
+
       box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
       position relative
@@ -56,48 +58,48 @@
 
       img
         position absolute
+
         max-height: calc(100% - 40px);
         max-width: calc(100% - 40px);
+
         +mobile()
           max-height: calc(100% - 20px);
           max-width: calc(100% - 20px);
 
   &--panel
     position relative
-
     z-index 15
-
-    transitions()
+    // transitions()
 
     &-price
       display flex
       justify-content space-between
       align-items center
+
       height 100%
+
       position relative
       overflow hidden
 
       &:before, &:after
         pseudo(block, absolute)
-
         left 0
-        height 1px
         right 0
+
+        height 1px
         width 100%
         background $aqua-back
 
       &:before
         top 0
+
       &:after
         bottom 0
         opacity 0
-        transitions()
+        // transitions()
 
       &--number
-        padding-left 19px
-
-        padding-top 10px
-        padding-bottom 12px
+        padding 10px 0 12px 19px
 
         p
           color $blue
@@ -111,17 +113,19 @@
         background $trans
         width: 68px;
         height: 52px
+        
         display flex
         justify-content center
         align-items center
+
         position relative
         z-index 20
-        transitions()
+        //transitions()
 
         svg
           g
             fill $aqua-text
-            transitions()
+            // transitions()
 
       &--hidden
         position absolute
@@ -134,7 +138,7 @@
         display flex
         align-items center
         transform translateX(100%)
-        z-index 10
+        z-index 1
         transitions()
 
         opacity 0
@@ -145,16 +149,16 @@
           line-height: 1.36;
           letter-spacing: 1px;
           margin-bottom 0
-          transitions()
+          // transitions()
 
     &-hidden
       position absolute
       width 100%
 
-      transitions()
+      // transitions()
 
       opacity 0
-      z-index -1
+      z-index -100
       visibility hidden
 
       &--more
@@ -257,7 +261,7 @@
     width 100%
 
     opacity 0
-    z-index -1
+    z-index -100
     visibility hidden
 
   .goods-block--visible-description

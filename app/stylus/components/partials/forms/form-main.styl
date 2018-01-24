@@ -1,4 +1,3 @@
-form {}
 
 .form-half-input
   display flex
@@ -87,6 +86,8 @@ form {}
     cursor pointer
     opacity 0
     visibility hidden
+    &:hover
+      opacity 1
   &:after
     transform rotate(-45deg)
   input
@@ -126,6 +127,8 @@ form {}
 
     +mobile()
       margin-bottom 15px
+
+
 
   .button
       +portrait()

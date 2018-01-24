@@ -18,12 +18,17 @@
 
 .img-about
   position absolute
-  top: -253px;
+  top: -236px;
   right: -81px;
   z-index 1
+  max-width 945px
   +mobile()
     max-width 305px
-    top -202px
+    right: -36px;
+    top: -253px;
+  +portrait()
+    max-width: 745px;
+    top -179px
 
 .img-about--block
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);

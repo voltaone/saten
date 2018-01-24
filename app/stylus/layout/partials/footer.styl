@@ -54,6 +54,7 @@ footer
           transform rotate(-45deg)
       &:hover
         padding-left 37px
+        color $blue
         span
           width 23px
           opacity 1
@@ -79,6 +80,8 @@ footer
       letter-spacing: .7px;
       color $white
       font-size $s14
+      &:hover
+        color $blue
 
 .footer-social
   list-flex(row)
@@ -88,12 +91,14 @@ footer
     margin-right $s22
     a
       letter-spacing: 0.7px;
-      color $white
+      color $black
       font-size 1.638rem
       .fa
         +mobile()
           color $black
           font-size 30px
+      &:hover
+        color $blue
 
 .footer-copyright
   border-top 2px solid $black-line

@@ -1,4 +1,4 @@
-.about-container
+.about-container2
   position absolute
   bottom -157px
   z-index 40
@@ -16,3 +16,33 @@
     padding-top 60px
   h2
     margin-bottom 71px
+
+
+.about-container
+  padding-bottom: 411px;
+  +mobile()
+    padding-bottom 0
+  +portrait()
+    padding-bottom: 300px;
+
+.about-heading
+  position relative
+  z-index 41
+  padding-top 44px
+  padding-bottom: 57px
+  +mobile()
+    padding-top 150px
+    padding-bottom 20px
+  h1
+    font-size: 2.75rem
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    +mobile()
+      font-size $s24
+
+  p
+    margin-bottom 0
+    line-height: 2.0;
+    +mobile()
+      margin-top 60px

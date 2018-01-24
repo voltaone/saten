@@ -241,19 +241,22 @@
     transitions()
     &:before, &:after
       pseudo(block, absolute)
-      background $aqua-ad2
+      background $blue
+      opacity .4
       width 16px
       height 2px
       top 6px
       left 0
-      +mobile()
-        background $blue
+      transitions()
     &:before
       transform rotate(45deg)
     &:after
       transform rotate(-45deg)
     +mobile()
       opacity 1
+    &:hover
+      &:before, &:after
+        opacity 1
   &:hover
     .bucket-item--delete
       opacity 1

@@ -31,18 +31,32 @@
     align-items center
     justify-content center
 
+    transitions()
+
+    &:hover
+      background $aqua-link2
+
     +mobile()
       max-width 104px
       height 50px
     .fa
       font-size 3.5rem
+      position: relative;
+      top: -2px;
+      transitions()
       +mobile()
         font-size: 3rem;
 
   .arrow.left
     left 0
+    &:hover
+      .fa
+        transform translateX(-10px)
   .arrow.right
     right 0
+    &:hover
+      .fa
+        transform translateX(10px)
 
   .slide
     display flex
@@ -118,6 +132,10 @@
   .slide
     position relative
     height 556px
+    +tablet()
+      height 406px
+    +portrait()
+      height: 316px
     +mobile()
       height 448px
     &-text
@@ -165,7 +183,7 @@
 
 .slider-four
   overflow visible
-  padding-bottom 104px
+  padding-bottom 109px
   margin-bottom 0
   +mobile()
     margin-bottom 50px
@@ -185,12 +203,12 @@
     z-index 3
   .arrow.left
     left auto
-    right 148px
+    right 146px
     +mobile()
       right calc(15px + 104px + 3px)
   .arrow.right
     left auto
-    right 15px
+    right 13px
 
 .slider-container
   position relative
@@ -208,7 +226,7 @@
 
   +mobile()
     right calc(15px + 208px + 3px + 11px)
-    bottom 125px
+    bottom: 69px;
 
 .slider-product
   margin -20px -22px 0

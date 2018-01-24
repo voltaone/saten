@@ -1,19 +1,32 @@
 .preview
   display flex
   width 1000px
+  +mobile()
+    width auto
   &-block
     flex 1 1 calc(50% - 15px)
     display none
     max-width 165px
     margin-right 30px
+    +mobile()
+      display block
+    &:hover
+      .preview-block--image
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+        transform translateY(5px)
+      .preview-block--description
+        opacity .5
     &--image
       background $white
       display flex
       align-items center
       justify-content center
       height: 155px;
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .15);
       overflow hidden
       margin-bottom 15px
+      transitions()
       img
         max-height 100%
+    &--description
+      transitions()

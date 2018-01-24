@@ -6,6 +6,8 @@
   &--header
     height: 263px
     position relative
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+
     +mobile()
       width: calc(100% + 30px);
       left: -15px;
@@ -72,9 +74,17 @@
         max-width 100%
       .link-more
         width 100%
+        transform translateX(-80px)
+        opacity 0
+
         .link-more--text
           color $blue
         .link-more--arrow
           &:before, &:after
             background $blue
+
+  &:hover
+    .link-more
+        transform none
+        opacity 1
 

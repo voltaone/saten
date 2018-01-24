@@ -49,6 +49,8 @@ $(document).ready(function () {
     $('#menu-trigger').click(function (e) {
         e.preventDefault();
         $('.menu-panel').toggleClass('open');
+        $('body').toggleClass('open');
+        $('html').toggleClass('open');
     })
 
     // ----- QUANTITY -----
@@ -82,6 +84,7 @@ $(document).ready(function () {
         nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
         dots: false
     });
+
 
 
     // $(".slider-two").slick({
@@ -157,6 +160,13 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
@@ -190,15 +200,7 @@ $(document).ready(function () {
     //     });
     // });
 
-    // SCROLLING CLASS CHANGE
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $(".link-up").addClass("visible");
-        }
-        else {
-            $(".link-up").removeClass("visible");
-        }
-    });
+
 
     // ANCHOR LINKS SCROLLING
     $(".smooth").click(function (event) {
@@ -332,6 +334,15 @@ $(window).on('load resize', function () {
             });
         });
 
+        // SLICK SLIDER
+        $(".preview").slick({
+            dots: false,
+            arrows: false,
+            centerMode: true,
+            variableWidth: true,
+            infinite: false
+        });
+
         $('.accordion-button').click(function(){
             $('.accordion-button').not(this).each(function(){
                 $(this).addClass('hidden')
@@ -354,6 +365,16 @@ $(window).on('load resize', function () {
         // ----- TABS -----
         $(function () {
             $("#tabs").tabs();
+        });
+
+        // SCROLLING CLASS CHANGE
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $("nav").addClass("scroll");
+            }
+            else {
+                $("nav").removeClass("scroll");
+            }
         });
     }
 });

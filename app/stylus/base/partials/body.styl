@@ -9,6 +9,25 @@ body
   font(1rem, $black, 400, normal)
   background $white
 
+  padding-top 121px
+  +mobile()
+    padding-top 56px
+
+
+body.open
+  +mobile()
+    overflow hidden
+    nav
+      height 100%
+      overflow scroll
+      -webkit-overflow-scrolling: touch
+
+html.open
+  +mobile()
+    overflow hidden
+
+
+
 +displays()
   .container
     max-width 1170px

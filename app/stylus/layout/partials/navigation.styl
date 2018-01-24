@@ -9,6 +9,13 @@ nav
   transitions()
   padding-top 14px
   border-bottom 1px solid $aqua-back
+
+  position fixed
+  left 0
+  right 0
+  top 0
+  z-index 9999
+
   +portrait()
     padding-bottom 14px
 
@@ -38,27 +45,38 @@ nav
     #bucket
       padding: 0 17px;
       position relative
+      svg
+        transitions()
       span
         position absolute
         right: 7px;
-        bottom: -8px;
+        bottom: -7px;
         background $blue
         color: $white
         width: 20px;
         height: 20px;
         border-radius 50%
         font-weight 500
-        font-size $s15
+        font-size $s12
         text-align center
         line-height 20px
+        +mobile()
+          bottom 4px
         &:empty
           display none
+      &:hover
+        svg
+          opacity .2
       +portrait()
         padding 0 14px
       
       
   #login-here
     max-width: 128px;
+
+.login
+  &:hover
+    opacity .2
 
 .login.login-in
   margin-right 24px
@@ -103,6 +121,10 @@ nav
       font-weight 500
       font-size $s14
       color $black
+      +portrait()
+        font-size $s12
+      &:hover
+        opacity .5
   &--dropdown
     position relative
     height: 100%;
@@ -121,7 +143,7 @@ nav
       position absolute
       background $aqua-back
       z-index -1
-      width: 195px
+      width: 230px
       left 0
       top 64px
       height calc(100vh - 85px)
@@ -153,6 +175,7 @@ nav
 .menu-panel
   position relative
   margin-top: 14px;
+  transitions()
   &:after
     pseudo(block, absolute)
     top 0
@@ -233,6 +256,8 @@ nav
           font-weight: 500;
           color $aqua-link2
           display inline-block
+          &:hover
+            color $blue
           .fa
             font-size 21px
             position relative
@@ -304,6 +329,7 @@ nav
       svg
         width 24px
         height 24px
+
     .menu-panel
       margin-top 0
       .menu-sub
@@ -353,7 +379,7 @@ nav
       justify-content flex-start
       align-items flex-start
       margin 0
-      padding 25px 0
+      padding 25px 0 9px
       li
         height auto
         a
@@ -385,6 +411,8 @@ nav
       height auto
       line-height normal
       padding-bottom 0
+      transitions()
+
     .menu-nav--dropdown
       margin-bottom: 1.813rem;
 
@@ -489,3 +517,20 @@ nav
 #first
   +portrait()
     padding-right:0
+
+nav.scroll
+  padding-top 9px
+  .menu-nav--dropdown-link
+    line-height 33px
+    height 49px
+  .menu-panel
+    margin-top: 9px;
+  +portrait()
+    padding-top 5px
+    padding-bottom 0
+    .menu li a, .menu-nav--dropdown-link
+      padding-bottom 0
+      line-height 1
+      height auto
+    .menu-nav
+      margin-top 0

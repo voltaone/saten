@@ -32,7 +32,7 @@
           transform rotate(-45deg)
         &:hover
           padding-left 18px
-          color $blue
+          color $black
           &:before, &:after
             opacity 1
       a.active
@@ -162,6 +162,9 @@
             font-weight: 500;
             line-height: 2.4;
             letter-spacing: 1px;
+            &:hover
+              color $blue
+              opacity 1
 
 
   .filter-accordion--group.filter-accordion--group-withback
@@ -212,6 +215,8 @@
       img
         max-width 98px
         max-height 34px
+      &:hover
+        opacity .5
 
 #filter-trigger
   display block

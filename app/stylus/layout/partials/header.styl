@@ -4,13 +4,20 @@
 .header-slider
   position relative
   margin-bottom 225px
+  +portrait()
+    margin-bottom 150px
   +mobile()
-    margin-bottom 300px
-
+    margin-bottom 40px
   &--container
     position absolute
     bottom: -65px
     left calc((100% + 390px + 30px) / 2)
+    +tablet()
+      left: calc((100% + 230px + 30px) / 2);
+    +mobile()
+      position relative
+      left 0
+      bottom: 45px;
 
 .header-breadcrumbs
   padding-top 20px

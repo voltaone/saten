@@ -25,6 +25,8 @@
     +mobile()
       flex 1 1 61px
       max-width 61px
+    &:hover
+      color $blue
   &-input
     margin 0
     border 0
@@ -65,6 +67,9 @@
     display flex
     align-items center
     justify-content center
+    transitions()
+    &:hover
+      color $blue
     sup
       font-size $s12
     +mobile()
@@ -78,3 +83,5 @@
     +mobile()
       color $white
       background $blue
+    &:hover
+      color $black

@@ -20,7 +20,21 @@
       font-weight 700
       cursor default
       pointer-events: none;
+  .pagination-arrow
+    transitions()
+    svg
+      g
+        fill $blue
+        transitions()
+    &:hover
+      svg
+        g
+          fill $black
   .pagination-arrow.left
     margin-right 25px
+    &:hover
+      transform translateX(-10px)
   .pagination-arrow.right
     margin-left 25px
+    &:hover
+      transform translateX(10px)
