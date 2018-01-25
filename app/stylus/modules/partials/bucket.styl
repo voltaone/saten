@@ -84,15 +84,20 @@
       align-self flex-start
       padding-left 15px
     &-name
-      font-size: $s16
-      font-weight: 600;
-      line-height: 1
       margin-bottom 16px
       flex 1 1 100%
       max-width 100%
-      +mobile()
-        font-size $s14
-        line-height normal
+      a
+        display inline-block
+        color $black
+        font-size: $s16
+        font-weight: 600;
+        line-height: 1
+        &:hover
+          color $blue
+        +mobile()
+          font-size $s14
+          line-height normal
     &-price
       font-size: $s14
       font-weight: 500
@@ -208,7 +213,7 @@
       padding-bottom 15px
     &-date
       position absolute
-      bottom 5px
+      bottom 10px
       display none
       font-size: $s12
       letter-spacing: .9px

@@ -27,12 +27,58 @@
       font-weight: 500;
       line-height: 2;
 
-.chosen-container-single .chosen-search
-  padding 0
-  input[type='text']
+.chosen-container-single
+  .chosen-search
+    padding 0
+    input[type='text']
+      border 0
+      padding 11px 15px 12px 50px
+      background-image none !important
+      border-bottom 2px solid $blue
+      &:focus
+        border-color $gray-back
+
+  .chosen-single div b
+    display none
+
+  .chosen-drop
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+    padding-left 10px
+    padding-right 10px
+    border-radius 0
     border 0
-    padding 11px 15px 12px
-    background-image none !important
+    background $white
+    &:before
+      pseudo(block, absolute)
+      top 0
+      left 10px
+      right 10px
+      background $gray-back
+      height 2px
+
+    .chosen-results
+      padding 0
+      margin 0
+      box-shadow none
+      .active-result
+        transitions()
+        padding 8px 30px
+        color $black
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 2;
+        border-bottom 2px solid $gray-back
+        padding-left 50px
+        &:last-child
+          border-bottom $trans
+        &:hover
+          border-color $blue
+
+      .active-result.highlighted
+        background $white
+        color $aqua-text
+
+
 
 .chosen-container.chosen-with-drop
   &:after
@@ -46,32 +92,8 @@
     background none
 
 
-.chosen-container-single .chosen-drop
-  border-radius 0
-  border 0
-  padding 0
-  box-shadow none
-  background $white
-  .chosen-results
-    padding 0
-    margin 0
-    box-shadow none
-    .active-result
-      transitions()
-      padding 8px 30px
-
-      color $black
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 2;
-
-    .active-result.highlighted
-      background $white
-      color $aqua-text
-
-
-.chosen-container-single .chosen-single div b
-  display none
+.chosen-container.chosen-container-active.chosen-with-drop
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
 
 //
 .form-sort
@@ -101,3 +123,11 @@
 
   .chosen-container-single .chosen-search
     display none
+
+  .chosen-container-single .chosen-drop .chosen-results .active-result
+    padding-left 20px
+    padding-top 3px
+    padding-bottom 3px
+    background $trans
+
+

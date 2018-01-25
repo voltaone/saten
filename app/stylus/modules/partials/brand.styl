@@ -42,12 +42,14 @@
     .link-more
       max-width 170px
       width 70px
+      transition .6s all ease
       &--text
         font-size 1rem
       &--arrow
         width 70px
+        opacity 1
     +mobile()
-      display none
+        display none
 
   &:hover
     .link-more
@@ -55,6 +57,7 @@
       .link-more--text
         color $blue
       .link-more--arrow
+
         &:before, &:after
           background $blue
 
@@ -140,26 +143,6 @@
           align-items center
           justify-content center
 
-
-.brand-alphabet.active
-  +mobile()
-    z-index 50
-    visibility visible
-    opacity 1
-
-.brand-alphabet--menu.active
-  .brand-alphabet--menu-letters
-    flex: 1 1 calc(100% - 50px);
-    max-width: calc(100% - 50px);
-    .brand-alphabet--ul
-      flex-wrap wrap
-    .brand-alphabet--ul-all
-      flex 1 1 100%
-      max-width 100%
-      margin 0
-      a
-        width 100%
-
 .brand-alphabet--ul
   display flex
   flex-wrap wrap
@@ -182,14 +165,21 @@
       color: $black
 
 .brand-top
+  +mobile()
+    padding-bottom 52px
+
   .brand-block
     margin-bottom 90px
+    +mobile()
+      margin-bottom 22px
 
 .brand-bottom
   border-bottom 1px solid $aqua-back
   padding-bottom 55px
   .brand-block
     margin-bottom 66px
+    +mobile()
+      margin-bottom 22px
 
 .brand-alphabet--menu
   display none
@@ -222,12 +212,6 @@
         opacity 0
       &:after
         transform rotate(-45deg)
-    .active
-      color $trans
-      &:after, &:before
-        opacity 1
-
-
 
   &-letters
     flex 1 1 calc(100% - 60px)
@@ -281,6 +265,31 @@
     line-height: 2.0;
     +mobile()
       margin-top 60px
+
+.brands-menu.active
+  .brand-alphabet
+    +mobile()
+      z-index 50
+      visibility visible
+      opacity 1
+
+  .brand-alphabet--menu
+    .brand-alphabet--menu-letters
+      flex: 1 1 calc(100% - 50px);
+      max-width: calc(100% - 50px);
+      .brand-alphabet--ul
+        flex-wrap wrap
+      .brand-alphabet--ul-all
+        flex 1 1 100%
+        max-width 100%
+        margin 0
+        a
+          width 100%
+
+  .brand-alphabet--menu-button a
+    color $trans
+    &:after, &:before
+      opacity 1
 
 
 

@@ -1,15 +1,19 @@
 .preview
   display flex
-  width 1000px
+  width 380px
+  overflow hidden
+  flex-shrink: 0;
   +mobile()
     width auto
   &-block
-    flex 1 1 calc(50% - 15px)
-    display none
+    flex 1 0 calc(50% - 15px)
     max-width 165px
     margin-right 30px
+    display none
     +mobile()
-      display block
+      position static
+      visibility visible
+      opacity 1
     &:hover
       .preview-block--image
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
@@ -30,3 +34,4 @@
         max-height 100%
     &--description
       transitions()
+

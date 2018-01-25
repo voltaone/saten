@@ -445,8 +445,6 @@ nav
         g
           fill $white
 
-
-
     .link-call
       position static
       max-width 100%
@@ -460,49 +458,12 @@ nav
         font-size 32px
         margin-right 20px
 
-    .menu-panel.open
-      button
-        background $trans
-      .menu-sub
-        &--hidden, &--visible
-          display none
+
 
     #panel-2
       padding-right 0
 
 
-.menu-panel.open
-  &:after
-    opacity 1
-  input
-    color $white
-    +placeholder()
-      color $aqua-link2
-  button
-    background  $black-line2
-  .menu-sub
-    &--hidden
-      display block
-    &--visible
-      display none
-  .menu-panel--nav
-    opacity 1
-    visibility visible
-    z-index 1000
-  .nav-icon
-    span
-      &:nth-child(1)
-        top 18px
-        width 0%
-        left 50%
-      &:nth-child(2)
-        transform rotate(45deg)
-      &:nth-child(3)
-        transform rotate(-45deg)
-      &:nth-child(4)
-        top 18px
-        width 0%
-        left 50%
 
 
 .nav-panel--mobile
@@ -525,6 +486,8 @@ nav.scroll
     height 49px
   .menu-panel
     margin-top: 9px;
+  .menu-nav--dropdown-menu
+    top 50px
   +portrait()
     padding-top 5px
     padding-bottom 0

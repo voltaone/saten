@@ -46,12 +46,22 @@ a
   text-align center
   position fixed
   right 0
-  bottom 100px
+  bottom 0
   font-size 2rem
   display block
   z-index 100
   span
     display none
+  &:hover
+    background $black
+    color $white
+
+.link-call.bottom
+  bottom 404px
+  +portrait()
+    bottom 633px
+
+
 
 .link-brand
   height 100%
@@ -124,6 +134,7 @@ a
   max-width 219px
   width 77px
   display block
+
   transitions()
   &--text
     color transparent
@@ -140,6 +151,8 @@ a
     position absolute
     right 0
     top 12px
+    opacity 0
+    transitions()
     &:before, &:after
       pseudo(block, absolute)
       height 2px
@@ -159,6 +172,7 @@ a
     .link-more--text
       color $blue
     .link-more--arrow
+      opacity 1
       &:before, &:after
         background $blue
 
