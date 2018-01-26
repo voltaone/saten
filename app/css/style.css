@@ -393,6 +393,9 @@ body.open .menu-panel .nav-icon span:nth-child(4) {
 body.open .menu-panel button {
 	background: #243033;
 }
+body.open .menu-panel button:hover {
+	background: #557279;
+}
 @media (max-width: 767px) {
 	body.open .menu-panel button {
 		background: transparent;
@@ -734,6 +737,11 @@ a:focus {
 	max-height: 546px;
 	padding: 0 0 38px 35px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+	.link-brand {
+		padding-bottom: 70px;
+	}
+}
 @media (max-width: 767px) {
 	.link-brand {
 		padding-left: 15px;
@@ -766,6 +774,11 @@ a:focus {
 	line-height: 1.3;
 	letter-spacing: 1.1px;
 	margin-bottom: .875rem;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.link-brand p {
+		font-size: 1.125rem;
+	}
 }
 @media (max-width: 767px) {
 	.link-brand p {
@@ -999,6 +1012,7 @@ a:focus {
 	font-size: .75rem;
 	line-height: 2.17;
 	color: #000;
+	margin: 25px 0;
 }
 .link-accept:hover {
 	color: #17b3ed;
@@ -1466,6 +1480,9 @@ ol {
 	background: #dee8eb;
 	color: #fff;
 	font-size: 1.625rem;
+}
+.form-nav button:hover {
+	background: #557279;
 }
 .form-footer input {
 	line-height: 2.95;
@@ -2374,6 +2391,11 @@ article ul li:before {
 	padding-top: 8px;
 	padding-bottom: 100px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+	.article-accordion {
+		padding-bottom: 60px;
+	}
+}
 .article-about {
 	position: relative;
 	z-index: 20;
@@ -2680,6 +2702,11 @@ nav {
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-nav li a {
 		font-size: .75rem;
+		-o-text-overflow: ellipsis;
+		   text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		padding-right: 5px;
 	}
 }
 .menu-nav li a:hover {
@@ -3230,7 +3257,7 @@ nav.scroll .menu-nav--dropdown-menu {
 		height: auto;
 	}
 	nav.scroll .menu-nav {
-		margin-top: 0;
+		margin-top: 5px;
 	}
 }
 .header-slider {
@@ -3814,7 +3841,7 @@ footer {
 }
 .slider-main .slide {
 	position: relative;
-	height: 556px;
+	height: 68.5vh;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.slider-main .slide {
@@ -3984,6 +4011,11 @@ footer {
 	margin: -20px -22px 0;
 	padding-bottom: 78px;
 	height: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.slider-product {
+		padding-bottom: 25px;
+	}
 }
 .slider-product .slide {
 	overflow: visible;
@@ -4845,7 +4877,7 @@ footer {
 }
 .product-heading {
 	padding-top: 21px;
-	padding-bottom: 17px;
+	padding-bottom: 25px;
 }
 @media (max-width: 767px) {
 	.product-heading {
@@ -6381,6 +6413,7 @@ footer {
 	font-size: .75rem;
 	margin-right: 27px;
 	letter-spacing: .9px;
+	padding-bottom: 4px;
 }
 @media (max-width: 767px) {
 	.sort--heading {
@@ -6766,6 +6799,23 @@ footer {
 		height: 42px;
 	}
 }
+.filter-bottom .filter-colors li a:hover {
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+	        box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+}
+.filter-bottom .filter-colors li .active {
+	outline: 4px solid #000;
+}
+.filter-bottom .filter-colors li .active:hover {
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
 .filter-accordion {
 	max-width: 212px;
 	padding-bottom: 18px;
@@ -7084,7 +7134,7 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.product-slider-container {
-		margin-bottom: 60px;
+		margin-bottom: 70px;
 	}
 }
 @media (max-width: 767px) {
@@ -7849,6 +7899,12 @@ footer {
 	line-height: 1.88;
 	padding: 0 30px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+	.bucket-item--price {
+		padding: 0 15px;
+		text-align: right;
+	}
+}
 @media (max-width: 767px) {
 	.bucket-item--price {
 		-webkit-box-ordinal-group: 0;
@@ -8324,7 +8380,7 @@ footer {
 	top: -137px;
 	left: -84px;
 	width: 100vw;
-	height: 200vh;
+	height: 300vh;
 	z-index: -1;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -8334,7 +8390,7 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.sign-container:after {
-		left: -20px;
+		left: -10px;
 	}
 }
 @media (max-width: 767px) {

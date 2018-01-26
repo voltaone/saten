@@ -1,11 +1,23 @@
 $(document).ready(function () {
     "use strict";
 
+    // ----- EDIT PROFILE -----
+    $('.link-edit').click(function(e) {
+        e.preventDefault();
+        $('.form-cabinet').addClass('form-cabinet-edit');
+        $('.cabinet-data--text .form-group input').removeAttr('disabled');
+    });
+    $('.cabinet-data--text .button').click(function(e) {
+        e.preventDefault();
+        $('.form-cabinet').removeClass('form-cabinet-edit');
+        $('.cabinet-data--text .form-group input').attr('disabled', '');
+    });
+
     // ----- BRAND -----
     $('#brand-trigger').click(function (e) {
         e.preventDefault();
         $('.brands-menu').toggleClass('active');
-    })
+    });
 
     // ----- TYPE CHOOSE -----
     $('.type li').click(function () {
@@ -15,10 +27,10 @@ $(document).ready(function () {
 
     // ----- BUTTON FAST HOVER -----
     $('.button-fast').hover(function () {
-        $(this).siblings().css('color', '#000')
+        $(this).siblings().css('color', '#000');
     }, function () {
-        $(this).siblings().css('color', '#fff')
-    })
+        $(this).siblings().css('color', '#fff');
+    });
 
     // ----- ACCORDION -----
     $(function () {
@@ -50,13 +62,13 @@ $(document).ready(function () {
     $('.credit-heading').click(function (e) {
         e.preventDefault();
         $(this).parent().toggleClass('active');
-    })
+    });
 
     // ----- MENU -----
     $('#menu-trigger').click(function (e) {
         e.preventDefault();
         $('html, body').toggleClass('open');
-    })
+    });
 
     // ----- QUANTITY -----
 
@@ -144,7 +156,7 @@ $(document).ready(function () {
         no_results_text: "Ничего не найдено",
         placeholder_text_single: "dfdfdf"
     });
-    $('.chosen-search-input').attr('placeholder', 'Введите первую букву области')
+    $('.chosen-search-input').attr('placeholder', 'Введите первую букву области');
 });
 
 // !!! RESPONSIVE SCRIPTS !!!

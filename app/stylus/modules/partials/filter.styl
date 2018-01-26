@@ -111,6 +111,14 @@
         +mobile()
           width 42px
           height 42px
+        &:hover
+          transform scale(1.2)
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+      .active
+        outline 4px solid $black
+        &:hover
+          transform none
+          box-shadow none
 
 
 .filter-accordion
