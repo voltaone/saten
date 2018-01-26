@@ -1,0 +1,163 @@
+.section-index-back
+  position relative
+  padding-bottom: 206px;
+  +mobile()
+    background $gray-back
+    padding-top 47px
+    padding-bottom 0
+    margin-bottom 50px
+  &:after
+    pseudo(block, absolute)
+    left 0
+    right 0
+    background $gray-back
+    top 208px
+    height 643px
+    z-index 1
+    +mobile()
+      display none
+
+
+.section-brand
+  padding-bottom 0
+  +mobile()
+    background $gray-back
+    padding-top 47px
+  &--back
+    background $gray-back
+    padding-bottom 139px
+    +mobile()
+      padding-bottom 0
+    &-left
+      background transparent
+      padding-top 66px
+      +mobile()
+        padding-top 0
+        padding-bottom 30px
+
+.section-product--heading
+  background $gray-back
+  padding-bottom 0
+  +mobile()
+    background $white
+
+.section-product--content
+  background $gray-back
+  padding-bottom 167px
+  +mobile()
+    padding-bottom 71px
+    aside
+      border-bottom 1px solid $aqua-text
+      padding-bottom 62px
+      margin-bottom 49px
+
+.section-collection
+  position relative
+  padding-bottom 92px
+  &:before
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    background $gray-back
+    height 236px
+  +mobile()
+    padding-top 41px
+    margin-bottom 0
+    padding-bottom 42px
+    &:before
+      display none
+    .slider-four
+      padding-bottom 110px
+
+.section-choice
+  +mobile()
+    margin-bottom 0
+    padding-bottom 41px
+
+.section-catalog
+  +mobile()
+    background $gray-back
+    padding-bottom 100px
+    margin-bottom 0
+    position relative
+    &:before
+      pseudo(block, absolute)
+      background $white
+      left 0
+      right 0
+      top 0
+      height 52px
+  aside
+    background $white
+    h2
+      font-size $s24
+      text-align left
+      letter-spacing: 2px
+      margin-bottom: 28px;
+      margin-top 24px
+      +mobile()
+        margin-top 0
+        font-size: $s18
+        letter-spacing: 1.5px
+        margin-bottom 30px
+
+.section-catalog.section-search
+  +mobile()
+    &:before
+      display none
+    aside
+      display none
+
+.section-bucket.section-warranty
+  +mobile()
+    background $white
+
+.section-question.back-gray
+  +mobile()
+    padding-top 28px
+
+.section-contacts
+  background $gray-back
+  +mobile()
+    background $white
+
+.section-about
+  background: $gray-back
+  padding-bottom 0
+  position relative
+  min-height 666px
+  margin-bottom 364px
+  +portrait()
+    margin-bottom 80px
+  +mobile()
+    margin-bottom 80px
+
+.section-about-last
+  padding-bottom 97px
+
+.section-brand3
+  margin-bottom 130px
+  min-height unset
+  +mobile()
+    margin-bottom 64px
+
+.section-brand2
+  padding-bottom 45px
+
+.section-sign
+  background $gray-back
+  overflow hidden
+  padding-bottom: 0
+
+.section-cabinet
+  padding-bottom: 86px;
+  position relative
+
+.section-bucket
+  background $gray-back
+  overflow hidden
+
+.section-bucket-success
+  +mobile()
+    background $white

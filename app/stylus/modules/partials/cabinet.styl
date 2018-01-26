@@ -1,23 +1,28 @@
-.cabinet-heading
-  position: relative;
-  z-index: 80;
-  padding-top: 35px;
+.cabinet-container
+  padding-bottom 38px
+  &:after
+    left: -4px
 
-  h1
-    font-size: 2.5rem
-    font-weight: 500;
-    line-height: 1.15;
-    letter-spacing: 1px;
-    position relative
-    z-index 60
-    margin-bottom: 47px;
-    +mobile()
-      margin-bottom 20px
-      font-size $s24
-
+.cabinet-container--goods
+  padding-top 14px
+  padding-bottom 149px
   +mobile()
-    background $gray-back
     padding-top 0
+  .bucket-item--price
+    font-size $s14
+    padding 0
+    text-align right
+    +mobile()
+      text-align left
+  .bucket-item--done
+    .bucket-item--status
+      .bucket-item--status-date
+        display block
+      .bucket-item--status-text
+        color $green-text
+  .bucket-item--right
+    +mobile()
+      padding-left 75px
 
 .cabinet-filter
   margin-bottom 0
@@ -177,29 +182,6 @@
     ul
       justify-content flex-end
 
-.cabinet-container
-  padding-bottom 38px
-  &:after
-    left: -4px;
 
-.cabinet-container--goods
-  padding-top 14px
-  padding-bottom 149px
-  +mobile()
-    padding-top 0
-  .bucket-item--price
-    font-size $s14
-    padding 0
-    text-align right
-    +mobile()
-      text-align left
-  .bucket-item--done
-    .bucket-item--status
 
-      .bucket-item--status-date
-        display block
-      .bucket-item--status-text
-        color $green-text
-  .bucket-item--right
-    +mobile()
-      padding-left 75px
+

@@ -15,42 +15,49 @@ body
 
 
 body.open
+  .menu-panel
+    &:after
+      opacity 1
+    input
+      color $white
+      +placeholder()
+        color $aqua-link2
+    .menu-panel--nav
+      opacity 1
+      visibility visible
+      z-index 1000
+    .nav-icon
+      span
+        &:nth-child(1)
+          top 18px
+          width 0%
+          left 50%
+        &:nth-child(2)
+          transform rotate(45deg)
+        &:nth-child(3)
+          transform rotate(-45deg)
+        &:nth-child(4)
+          top 18px
+          width 0%
+          left 50%
+    button
+      background $black-line2
+      +mobile()
+        background $trans
+    .menu-sub
+      &--visible
+        display none
+      &--hidden
+        display block
+        +mobile()
+          display none
   +mobile()
     overflow hidden
     nav
       height 100%
       overflow scroll
       -webkit-overflow-scrolling: touch
-    .menu-panel
-      &:after
-        opacity 1
-      input
-        color $white
-        +placeholder()
-          color $aqua-link2
-      .menu-panel--nav
-        opacity 1
-        visibility visible
-        z-index 1000
-      .nav-icon
-        span
-          &:nth-child(1)
-            top 18px
-            width 0%
-            left 50%
-          &:nth-child(2)
-            transform rotate(45deg)
-          &:nth-child(3)
-            transform rotate(-45deg)
-          &:nth-child(4)
-            top 18px
-            width 0%
-            left 50%
-      button
-        background $trans
-      .menu-sub
-        &--hidden, &--visible
-          display none
+
 
 html.open
   +mobile()

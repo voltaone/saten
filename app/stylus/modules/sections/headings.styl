@@ -1,0 +1,101 @@
+.row-heading
+  position relative
+  z-index 41
+  padding-top 44px
+  padding-bottom: 74px
+  h1
+    font-weight 500
+    line-height: 1.15;
+    letter-spacing: 1px;
+    position relative
+    font-size: 2.75rem
+    +mobile()
+      font-size $s24
+  p
+    margin-bottom 0
+    line-height: 2.0
+    +mobile()
+      margin-top 60px
+
+
+.cabinet-heading
+  z-index: 80;
+  padding-top: 35px
+  padding-bottom 0
+  +mobile()
+    background $gray-back
+    padding-top 0
+  h1
+    font-size: 2.5rem
+    z-index 60
+    margin-bottom: 47px;
+    +mobile()
+      margin-bottom 20px
+      font-size $s24
+
+
+.about-heading
+  padding-bottom: 57px
+  +mobile()
+    padding-top 150px
+    padding-bottom 20px
+
+.brand-heading
+  p
+    position relative
+    top -15px
+    +mobile()
+      position static
+  +mobile()
+    padding-top 50px
+    padding-bottom 40px
+
+.bucket-heading
+  z-index 20
+  padding-top 35px
+  padding-bottom: 51px
+  +mobile()
+    padding-top 0
+    padding-bottom 0
+  h1
+    font-size: 2.500rem
+    +mobile()
+      font-size $s20
+
+.product-heading
+  padding-top 21px
+  padding-bottom 17px
+  +mobile()
+    padding-top 0
+    &:after
+      pseudo(block, absolute)
+      bottom 0
+      left -50vw
+      right 0
+      height 97px
+      width 200vw
+      background $gray-back
+      z-index -1
+  h1
+    font-size 1.5rem
+
+.sign-heading
+  +mobile()
+    padding-top 0
+    padding-bottom 40px
+  h1
+    display: flex;
+    align-items: center;
+    margin-bottom 42px
+    z-index 70
+    img
+      margin-right 15px
+      +mobile()
+        margin-right 10px
+    +portrait()
+      font-size 2.5rem
+
+.warranty-heading
+  +mobile()
+    padding-top 0
+    padding-bottom 40px
