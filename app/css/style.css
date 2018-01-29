@@ -2770,6 +2770,10 @@ nav {
 	height: 100%;
 	margin-right: 12px;
 	margin-top: 14px;
+	max-height: 64px;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-nav {
@@ -2793,6 +2797,16 @@ nav {
 	font-weight: 500;
 	font-size: .875rem;
 	color: #000;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	        align-items: center;
+	height: 100%;
+	padding-bottom: 9px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-nav li a {
@@ -2802,6 +2816,7 @@ nav {
 		white-space: nowrap;
 		overflow: hidden;
 		padding-right: 5px;
+		display: block;
 	}
 }
 .menu-nav li a:hover {
@@ -2821,17 +2836,6 @@ nav {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-nav--dropdown {
-		height: auto;
-	}
-}
-.menu-nav--dropdown-link {
-	height: 100%;
-	line-height: 54px;
-	padding-bottom: 10px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	.menu-nav--dropdown-link {
-		line-height: 1;
 		height: auto;
 	}
 }
@@ -2887,9 +2891,15 @@ nav {
 .menu-panel {
 	position: relative;
 	margin-top: 14px;
+	margin-bottom: 10px;
 	-webkit-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
+}
+@media (max-width: 767px) {
+	.menu-panel {
+		margin-bottom: 0;
+	}
 }
 .menu-panel:after {
 	content: '';
@@ -3105,7 +3115,11 @@ nav {
 }
 @media (max-width: 767px) {
 	nav {
+		max-height: unset;
 		padding-top: 0;
+	}
+	nav .menu-nav {
+		max-height: unset;
 	}
 	nav .container {
 		max-width: 100%;
@@ -3129,6 +3143,7 @@ nav {
 	}
 	nav .menu-panel {
 		margin-top: 0;
+		max-height: unset;
 	}
 	nav .menu-panel .menu-sub {
 		padding: 1px 0;
@@ -3332,12 +3347,17 @@ nav.scroll {
 	padding-top: 9px;
 	max-height: 101px;
 }
-nav.scroll .menu-nav--dropdown-link {
-	line-height: 33px;
-	height: 49px;
+nav.scroll .menu-nav li a {
+	padding-bottom: 4px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	nav.scroll .menu-nav li a {
+		padding-bottom: 0;
+	}
 }
 nav.scroll .menu-panel {
 	margin-top: 9px;
+	margin-bottom: 0;
 }
 nav.scroll .menu-nav--dropdown-menu {
 	top: 50px;
@@ -3347,17 +3367,15 @@ nav.scroll .menu-nav--dropdown-menu {
 		padding-top: 5px;
 		padding-bottom: 0;
 	}
-	nav.scroll .menu li a, nav.scroll .menu-nav--dropdown-link {
-		padding-bottom: 0;
-		line-height: 1;
-		height: auto;
-	}
 	nav.scroll .menu-nav {
 		margin-top: 5px;
 	}
 }
 nav.scroll .menu-nav {
-	max-height: 63px;
+	max-height: 49px;
+}
+nav.scroll .menu-nav--dropdown-menu li a {
+	padding: 15px;
 }
 .header-slider {
 	position: relative;

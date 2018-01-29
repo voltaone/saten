@@ -44,7 +44,7 @@ nav
       color $black-text
       +tablet()
         padding-left 0
-      
+
     #bucket
       padding: 0 17px;
       position relative
@@ -72,8 +72,8 @@ nav
           opacity .2
       +portrait()
         padding 0 14px
-      
-      
+
+
   #login-here
     max-width: 128px;
 
@@ -111,6 +111,12 @@ nav
   height 100%
   margin-right 12px
   margin-top 14px
+
+  //edge
+  max-height 64px
+  transitions()
+
+
   +portrait()
     flex-wrap wrap
     margin-right 0
@@ -124,12 +130,17 @@ nav
       font-weight 500
       font-size $s14
       color $black
+      display: flex;
+      align-items: center;
+      height 100%
+      padding-bottom 9px
       +portrait()
         font-size $s12
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
         padding-right 5px
+        display block
       &:hover
         opacity .5
   &--dropdown
@@ -139,13 +150,6 @@ nav
     align-items: center
     +portrait()
       height auto
-    &-link
-      height: 100%;
-      line-height: 54px;
-      padding-bottom 10px
-      +portrait()
-        line-height 1
-        height auto
     &-menu
       position absolute
       background $aqua-back
@@ -182,7 +186,10 @@ nav
 .menu-panel
   position relative
   margin-top: 14px;
+  margin-bottom 10px
   transitions()
+  +mobile()
+    margin-bottom 0
   &:after
     pseudo(block, absolute)
     top 0
@@ -321,7 +328,10 @@ nav
 //MOBILE NAV
 +mobile()
   nav
+    max-height unset
     padding-top 0
+    .menu-nav
+      max-height unset
     .container
       max-width 100%
     .link-logo
@@ -341,6 +351,7 @@ nav
 
     .menu-panel
       margin-top 0
+      max-height unset
       .menu-sub
         padding 1px 0px
         width 54px
@@ -475,6 +486,7 @@ nav
 
 
 
+
 .nav-panel--mobile
   margin-bottom 45px
   display block
@@ -491,23 +503,23 @@ nav
 nav.scroll
   padding-top 9px
   max-height 101px
-  .menu-nav--dropdown-link
-    line-height 33px
-    height 49px
+  .menu-nav li a
+      padding-bottom 4px
+      +portrait()
+        padding-bottom 0
   .menu-panel
     margin-top: 9px;
+    margin-bottom 0
   .menu-nav--dropdown-menu
     top 50px
   +portrait()
     padding-top 5px
     padding-bottom 0
-    .menu li a, .menu-nav--dropdown-link
-      padding-bottom 0
-      line-height 1
-      height auto
     .menu-nav
       margin-top 5px
 
   //edge
   .menu-nav
-    max-height 63px
+    max-height 49px
+  .menu-nav--dropdown-menu li a
+    padding 15px
