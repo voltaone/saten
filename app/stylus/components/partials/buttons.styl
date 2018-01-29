@@ -88,3 +88,49 @@ button
   &:hover
       background $black
 
+.button-credit
+  .credit-heading
+    background $aqua-back
+    color $black
+    text-align center
+    font-size: $s20
+    padding-top: 5px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 1.1px
+    transitions()
+    &:after
+      transitions()
+      +portrait()
+        top 18px
+        right 15px
+
+    +portrait()
+      font-size $s16
+    &:hover
+      background $blue
+      color $white
+      &:after
+        border-top: 4px solid $white;
+      +mobile()
+        background $aqua-back
+        color $black
+  .type
+    max-width unset
+  .button
+      max-width unset
+  .credit-dropdown--price
+    padding-bottom 17px
+  .credit-dropdown
+    border-top 0
+
+.button-credit.active
+  .credit-heading
+    background $blue
+    color $white
+    &:after
+      border-top: 4px solid $white;
+  .credit-dropdown
+    z-index 1000
+
+

@@ -12,9 +12,9 @@ block content
                 .col-12
                     ul.breadcrumbs
                         li
-                            a(href='' title='') Главная
+                            a(href='./' title='') Главная
                         li
-                            a(href='' title='') Корзина
+                            a(href='bucket1.html' title='') Корзина
 
     section.section-bucket
         .bucket-header
@@ -23,11 +23,11 @@ block content
                     .col-md-4
                         h1 Корзина
                     .col-6.col-md-4.back-bucket
-                        a(href='' title='').link-bucket-nav.left
+                        a(href='bucket1.html' title='').link-bucket-nav.left
                             include svgs/bucket-big.svg
                             | Товары
                     .col-6.col-md-4
-                        a(href='' title='').link-bucket-nav.right.active
+                        a(href='bucket2.html' title='').link-bucket-nav.right.active
                             include svgs/delivery-big.svg
                             | Доставка
         .container.bucket-container
@@ -96,8 +96,18 @@ block content
 
             .row
                 .col-md-4.order-md-1.order-3
-                    a(href='' title='').button.button-bucket Оформить кредит
+                    .credit.button-credit
+                        .credit-heading Оформить кредит
+                        .credit-dropdown
+                            p.credit-dropdown--heading Цена в кредит:
+                            p.credit-dropdown--price 4500 грн/мес
+                            p.credit-dropdown--heading Срок кредита (мес):
+                            ul.type
+                                li 3
+                                li.active 6
+                                li 12
+                            a(href='#').button.button-blue Оформить
                 .col-md-4.order-md-2.order-2
-                    a(href='' title='').button.button-bucket Быстрый заказ
+                    a(href='#' title='').button.button-bucket Быстрый заказ
                 .col-md-4.order-md-3.order-1
-                    a(href='' title='').button.button-bucket.button-bucket-order Перейти к доставке
+                    a(href='bucket3.html' title='').button.button-bucket.button-bucket-order Оформить

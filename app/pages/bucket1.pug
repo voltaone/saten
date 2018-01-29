@@ -12,9 +12,9 @@ block content
                 .col-12
                     ul.breadcrumbs
                         li
-                            a(href='' title='') Главная
+                            a(href='./' title='') Главная
                         li
-                            a(href='' title='') Корзина
+                            a(href='bucket1.html' title='') Корзина
 
     section.section-bucket
         .bucket-header
@@ -23,11 +23,11 @@ block content
                     .col-md-4
                         h1 Корзина
                     .col-6.col-md-4.back-bucket
-                        a(href='' title='').link-bucket-nav.left.active
+                        a(href='bucket1.html' title='').link-bucket-nav.left.active
                             include svgs/bucket-big.svg
                             | Товары
                     .col-6.col-md-4
-                        a(href='' title='').link-bucket-nav.right
+                        a(href='bucket2.html' title='').link-bucket-nav.right
                             include svgs/delivery-big.svg
                             | Доставка
         .container.bucket-container
@@ -39,7 +39,7 @@ block content
                                 img(src='img/goods/goods1.png' title='')
                             .bucket-item--heading
                                 .bucket-item--heading-name
-                                    a(href='' title='') Плитка Cicogres Lotto Gres
+                                    a(href='product.html' title='') Плитка Cicogres Lotto Gres
                                 .bucket-item--heading-price 164 000 грн. /шт
                                 .bucket-item--heading-code ЦЦ-367-235509
                         .bucket-item--right
@@ -64,7 +64,7 @@ block content
                                 img(src='img/goods/goods2.png' title='')
                             .bucket-item--heading
                                 .bucket-item--heading-name
-                                    a(href='' title='') Ванна Ravak BeHappy 150 x 75 L
+                                    a(href='product.html' title='') Ванна Ravak BeHappy 150 x 75 L
                                 .bucket-item--heading-price 164 000 грн. /шт
                                 .bucket-item--heading-code ЦЦ-367-235509
                         .bucket-item--right
@@ -89,7 +89,7 @@ block content
                                 img(src='img/goods/goods3.png' title='')
                             .bucket-item--heading
                                 .bucket-item--heading-name
-                                    a(href='' title='') Керамогранит ТОВ Атем Грес E0090 - бежевый коричневые точки
+                                    a(href='product.html' title='') Керамогранит ТОВ Атем Грес E0090 - бежевый коричневые точки
                                 .bucket-item--heading-price 164 000 грн. /шт
                                 .bucket-item--heading-code ЦЦ-367-235509
                         .bucket-item--right
@@ -118,8 +118,18 @@ block content
 
             .row
                 .col-md-4.order-md-1.order-3
-                    a(href='' title='').button.button-bucket Оформить кредит
+                    .credit.button-credit
+                        .credit-heading Оформить кредит
+                        .credit-dropdown
+                            p.credit-dropdown--heading Цена в кредит:
+                            p.credit-dropdown--price 4500 грн/мес
+                            p.credit-dropdown--heading Срок кредита (мес):
+                            ul.type
+                                li 3
+                                li.active 6
+                                li 12
+                            a(href='#').button.button-blue Оформить
                 .col-md-4.order-md-2.order-2
-                    a(href='' title='').button.button-bucket Быстрый заказ
+                    a(href='#' title='').button.button-bucket Быстрый заказ
                 .col-md-4.order-md-3.order-1
-                    a(href='' title='').button.button-bucket.button-bucket-order Перейти к доставке
+                    a(href='bucket2.html' title='').button.button-bucket.button-bucket-order Перейти к доставке

@@ -132,13 +132,17 @@
   .slide
     position relative
     height 68.5vh
-    //height 556px
+    min-height 556px
     +tablet()
       height 406px
+      min-height unset
     +portrait()
       height: 316px
+      min-height unset
     +mobile()
       height 448px
+      min-height unset
+
     &-text
       padding-top 63px
     &-img
@@ -272,23 +276,21 @@
     color: $aqua-back
     bottom 30px
 
-.slider-product--image
+
+.slider-product--container
+  position relative
+  padding 22px
   background $white
   display flex
   justify-content center
   align-items center
-  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
-  position relative
-  width 100%
-  padding 22px
+  box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
+  min-height 409px
   &:before
     content: "";
     padding-top: 100%;
     float: left;
+
   img
-    position absolute
-    max-height: calc(100% - 44px);
-    max-width: calc(100% - 44px);
-    +mobile()
-      max-height: calc(100% - 22px);
-      max-width: calc(100% - 22px);
+    max-width 100%
+    max-height 100%

@@ -12,13 +12,13 @@ block content
                 .col-12
                     ul.breadcrumbs
                         li
-                            a(href='' title='') Главная
+                            a(href='./' title='') Главная
                         li
-                            a(href='' title='') Плитка
+                            a(href='catalog.html' title='') Плитка
                         li
-                            a(href='' title='') Напольная плитка
+                            a(href='catalog.html' title='') Напольная плитка
                         li
-                            a(href='' title='') Плитка Ape Ceramica
+                            a(href='product.html' title='') Плитка Ape Ceramica
 
     section.section-product--heading
         .container
@@ -39,7 +39,7 @@ block content
                 aside.col-lg-3.col-md-4.order-md-1.order-2
                     .product-filter
                         .product-filter--brand
-                            a(href='' title='')
+                            a(href='catalog.html' title='')
                                 img(src='img/brand/brand5.png' title='')
                         .quantity
                             .quantity-button.quantity-button--minus —
@@ -55,8 +55,8 @@ block content
                             span.false Нет в наличии
                         p.product-price 100 450 грн
                         .product-buttons
-                            a(href='').button.button-blue Заказать
-                            a(href='').button.button-fast Быстрый заказ
+                            a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').button.button-blue Заказать
+                            a(href='#' title='').button.button-fast Быстрый заказ
                         .credit
                             .credit-heading Кредит
                             .credit-dropdown
@@ -67,7 +67,7 @@ block content
                                     li 3
                                     li.active 6
                                     li 12
-                                a(href='').button.button-blue Оформить
+                                a(href='#').button.button-blue Оформить
 
 
 
@@ -78,14 +78,17 @@ block content
                             .product-slider-container
                                 .slider.slider-full.slider-product
                                     .slide
-                                        .slider-product--image
-                                            img(src='img/goods/goods5.png' title='' alt='')
+                                        .slider-product--container
+                                            .slider-product--image
+                                                img(src='img/goods/goods5.png' title='' alt='')
                                     .slide
-                                        .slider-product--image
-                                            img(src='img/goods/goods2.png' title='' alt='')
+                                        .slider-product--container
+                                            .slider-product--image
+                                                img(src='img/goods/goods2.png' title='' alt='')
                                     .slide
-                                        .slider-product--image
-                                            img(src='img/goods/goods2.png' title='' alt='')
+                                        .slider-product--container
+                                            .slider-product--image
+                                                img(src='img/goods/goods2.png' title='' alt='')
                                 .slider-product-counter.slider-counter
                         .col.col-product-2
                             table.table-product.table-heading
@@ -93,13 +96,13 @@ block content
                                     td
                                         | Бренд:
                                     td
-                                        a(href='' title='') Alfobel
+                                        a(href='catalog.html' title='') Alfobel
 
                                 tr
                                     td
                                         | Коллекция:
                                     td
-                                        a(href='' title='') Burgos
+                                        a(href='catalog.html' title='') Burgos
                             hr
                             table.table-product
                                 tr
@@ -189,13 +192,14 @@ block content
                     .slider-container
                         .slider.slider-four
                             .goods-block
-                                a(href='' title='').goods-block--visible
-                                    .goods-block--visible-image
-                                        img(src='img/goods/goods1.png')
+                                a(href='product.html' title='').goods-block--visible
+                                    .goods-block--visible-container
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -215,18 +219,19 @@ block content
                                                     span  Atis
                                                 span.line Производитель:
                                                     span  Украина
-                                        a(href='' title='').goods-block--panel-hidden--more
+                                        a(href='product.html' title='').goods-block--panel-hidden--more
                                             span.link-more
                                                 span.link-more--text Подробнее
                                                 span.link-more--arrow
                             .goods-block
-                                a(href='' title='').goods-block--visible
-                                    .goods-block--visible-image
-                                        img(src='img/goods/goods1.png')
+                                a(href='product.html' title='').goods-block--visible
+                                    .goods-block--visible-container
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -246,18 +251,19 @@ block content
                                                     span  Atis
                                                 span.line Производитель:
                                                     span  Украина
-                                        a(href='' title='').goods-block--panel-hidden--more
+                                        a(href='product.html' title='').goods-block--panel-hidden--more
                                             span.link-more
                                                 span.link-more--text Подробнее
                                                 span.link-more--arrow
                             .goods-block
-                                a(href='' title='').goods-block--visible
-                                    .goods-block--visible-image
-                                        img(src='img/goods/goods1.png')
+                                a(href='product.html' title='').goods-block--visible
+                                    .goods-block--visible-container
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods1.png')
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -277,18 +283,19 @@ block content
                                                     span  Atis
                                                 span.line Производитель:
                                                     span  Украина
-                                        a(href='' title='').goods-block--panel-hidden--more
+                                        a(href='product.html' title='').goods-block--panel-hidden--more
                                             span.link-more
                                                 span.link-more--text Подробнее
                                                 span.link-more--arrow
                             .goods-block
-                                a(href='' title='').goods-block--visible
-                                    .goods-block--visible-image
-                                        img(src='img/goods/goods1.png')
+                                a(href='product.html' title='').goods-block--visible
+                                    .goods-block--visible-container
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods2.png')
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -307,18 +314,19 @@ block content
                                                     span  Atis
                                                 span.line Производитель:
                                                     span  Украина
-                                        a(href='' title='').goods-block--panel-hidden--more
+                                        a(href='product.html' title='').goods-block--panel-hidden--more
                                             span.link-more
                                                 span.link-more--text Подробнее
                                                 span.link-more--arrow
                             .goods-block
-                                a(href='' title='').goods-block--visible
-                                    .goods-block--visible-image
-                                        img(src='img/goods/goods1.png')
+                                a(href='product.html' title='').goods-block--visible
+                                    .goods-block--visible-container
+                                        .goods-block--visible-image
+                                            img(src='img/goods/goods3.png')
                                     .goods-block--visible-description
                                         h4 Плитка Ape Ceramica Motive Crema
                                 .goods-block--panel
-                                    a(href='' title='').goods-block--panel-price
+                                    a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                         .goods-block--panel-price--number
                                             p 164 грн
                                         .goods-block--panel-price--hidden
@@ -338,7 +346,7 @@ block content
                                                     span  Atis
                                                 span.line Производитель:
                                                     span  Украина
-                                        a(href='' title='').goods-block--panel-hidden--more
+                                        a(href='product.html' title='').goods-block--panel-hidden--more
                                             span.link-more
                                                 span.link-more--text Подробнее
                                                 span.link-more--arrow
@@ -351,13 +359,14 @@ block content
                     h2 C этим товаром выбирают
                 .col-lg-3.col-md-4.col-6
                     .goods-block
-                        a(href='' title='').goods-block--visible
-                            .goods-block--visible-image
-                                img(src='img/goods/goods2.png')
+                        a(href='product.html' title='').goods-block--visible
+                            .goods-block--visible-container
+                                .goods-block--visible-image
+                                    img(src='img/goods/goods2.png')
                             .goods-block--visible-description
                                 h4 Плитка Ape Ceramica Motive Crema
                         .goods-block--panel
-                            a(href='' title='').goods-block--panel-price
+                            a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                 .goods-block--panel-price--number
                                     p 164 грн
                                 .goods-block--panel-price--hidden
@@ -377,19 +386,20 @@ block content
                                             span  Atis
                                         span.line Производитель:
                                             span  Украина
-                                a(href='' title='').goods-block--panel-hidden--more
+                                a(href='product.html' title='').goods-block--panel-hidden--more
                                     span.link-more
                                         span.link-more--text Подробнее
                                         span.link-more--arrow
                 .col-lg-3.col-md-4.col-6
                     .goods-block
-                        a(href='' title='').goods-block--visible
-                            .goods-block--visible-image
-                                img(src='img/goods/goods3.png')
+                        a(href='product.html' title='').goods-block--visible
+                            .goods-block--visible-container
+                                .goods-block--visible-image
+                                    img(src='img/goods/goods3.png')
                             .goods-block--visible-description
                                 h4 Плитка Ape Ceramica Motive Crema
                         .goods-block--panel
-                            a(href='' title='').goods-block--panel-price
+                            a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                 .goods-block--panel-price--number
                                     p 164 грн
                                 .goods-block--panel-price--hidden
@@ -409,20 +419,21 @@ block content
                                             span  Atis
                                         span.line Производитель:
                                             span  Украина
-                                a(href='' title='').goods-block--panel-hidden--more
+                                a(href='product.html' title='').goods-block--panel-hidden--more
                                     span.link-more
                                         span.link-more--text Подробнее
                                         span.link-more--arrow
 
                 .col-lg-3.col-md-4.col-6
                     .goods-block
-                        a(href='' title='').goods-block--visible
-                            .goods-block--visible-image
-                                img(src='img/goods/goods2.png')
+                        a(href='product.html' title='').goods-block--visible
+                            .goods-block--visible-container
+                                .goods-block--visible-image
+                                    img(src='img/goods/goods2.png')
                             .goods-block--visible-description
                                 h4 Плитка Ape Ceramica Motive Crema
                         .goods-block--panel
-                            a(href='' title='').goods-block--panel-price
+                            a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                 .goods-block--panel-price--number
                                     p 164 грн
                                 .goods-block--panel-price--hidden
@@ -442,19 +453,20 @@ block content
                                             span  Atis
                                         span.line Производитель:
                                             span  Украина
-                                a(href='' title='').goods-block--panel-hidden--more
+                                a(href='product.html' title='').goods-block--panel-hidden--more
                                     span.link-more
                                         span.link-more--text Подробнее
                                         span.link-more--arrow
                 .col-lg-3.col-md-4.col-6
                     .goods-block
-                        a(href='' title='').goods-block--visible
-                            .goods-block--visible-image
-                                img(src='img/goods/goods3.png')
+                        a(href='product.html' title='').goods-block--visible
+                            .goods-block--visible-container
+                                .goods-block--visible-image
+                                    img(src='img/goods/goods1.png')
                             .goods-block--visible-description
                                 h4 Плитка Ape Ceramica Motive Crema
                         .goods-block--panel
-                            a(href='' title='').goods-block--panel-price
+                            a(data-fancybox data-src="#bucket-modal" href="javascript:;" title='').goods-block--panel-price
                                 .goods-block--panel-price--number
                                     p 164 грн
                                 .goods-block--panel-price--hidden
@@ -474,7 +486,7 @@ block content
                                             span  Atis
                                         span.line Производитель:
                                             span  Украина
-                                a(href='' title='').goods-block--panel-hidden--more
+                                a(href='product.html' title='').goods-block--panel-hidden--more
                                     span.link-more
                                         span.link-more--text Подробнее
                                         span.link-more--arrow

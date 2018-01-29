@@ -29,6 +29,14 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    // ----- COLORS CHOOSE -----
+    $('.filter-colors li a').click(function (e) {
+        e.preventDefault();
+        $('.filter-colors li a').removeClass('active');
+        $(this).addClass('active');
+
+    })
+
     // ----- BUTTON FAST HOVER -----
     $('.button-fast').hover(function () {
         $(this).siblings().css('color', '#000');
@@ -67,6 +75,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).parent().toggleClass('active');
     });
+
 
     // ----- MENU -----
     $('#menu-trigger').click(function (e) {

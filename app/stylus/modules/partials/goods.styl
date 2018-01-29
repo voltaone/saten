@@ -18,7 +18,7 @@
 
     height 558px
 
-    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
 
   &--visible
     display block
@@ -27,7 +27,6 @@
 
     z-index 12
 
-    // transitions()
 
     &-description
 
@@ -39,37 +38,51 @@
         height 44px
         overflow hidden
 
-    &-image
+    &-container
+      position relative
+      padding 22px
+      background $white
       display flex
       justify-content center
       align-items center
-
-      background $white
-
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
-
-      position relative
-      width 100%
-
+      box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
+      height: 263px;
+      +tablet()
+        height 210px
+      +portrait()
+        height 210px
+      +mobile()
+        height auto
+        padding 10px
+      +landscape()
+        height 254px
       &:before
         content: "";
         padding-top: 100%;
         float: left;
 
+
+    &-image
+      display flex
+      align-items center
+      justify-content center
+      +mobile()
+        height 100%
       img
-        position absolute
-
-        max-height: calc(100% - 40px);
-        max-width: calc(100% - 40px);
-
+        max-width 100%
+        max-height 100%
         +mobile()
-          max-height: calc(100% - 20px);
-          max-width: calc(100% - 20px);
+          max-height 130px
+        +landscape()
+          max-height 234px
+
+
+
+
 
   &--panel
     position relative
     z-index 15
-    // transitions()
 
     &-price
       display flex
@@ -205,12 +218,12 @@
       background $trans
     +portrait()
       background $trans
-  .goods-block--visible-image
+  .goods-block--visible-container
     box-shadow none
     +mobile()
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
     +portrait()
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
   .goods-block--panel
     background $white
     +mobile()

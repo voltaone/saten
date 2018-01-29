@@ -5,12 +5,15 @@
     margin-bottom 30px
   &--image
     height 66px
-    align-items flex-start
     justify-content center
     display flex
     position relative
     max-width 165px
     margin-bottom 20px
+
+    //firefox
+    align-items center
+
     &:after
       pseudo(block, absolute)
       bottom 0
@@ -20,9 +23,9 @@
       background $white
       z-index: 2
     img
-      position: absolute;
       z-index: 5;
-      bottom: 21px;
+      position relative
+      bottom 5px
 
       +mobile()
         max-width 107px
