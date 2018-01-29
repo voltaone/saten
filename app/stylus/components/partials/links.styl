@@ -241,13 +241,22 @@ a
   letter-spacing: 1px;
   color $aqua-text
   margin: 61px 0 73px;
-  display block
+  display inline-block
   +mobile()
     margin 45px 0 47px
   +portrait()
     font-size $s20
   svg
     margin-right 28px
+    transitions()
+    g
+      transitions()
+  &:hover
+    color $blue
+    svg
+      transform translateX(-25px)
+      g
+        fill $blue
 
 .link-signup
   display inline-block
@@ -300,12 +309,12 @@ a
     display none
   svg
     margin-right 17px
-    g
+    g, polygon
       fill $blue
       transitions()
   &:hover
     color $black
     svg
-      g
+      g, polygon
         fill $black
 

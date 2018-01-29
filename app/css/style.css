@@ -613,6 +613,7 @@ hr {
 	background: #c0d3d8;
 	width: 165px;
 	margin: 20px 0 33px;
+	text-align: left;
 }
 .black {
 	color: #000;
@@ -977,7 +978,7 @@ a:focus {
 	letter-spacing: 1px;
 	color: #c0d3d8;
 	margin: 61px 0 73px;
-	display: block;
+	display: inline-block;
 }
 @media (max-width: 767px) {
 	.link-modal-close {
@@ -991,6 +992,25 @@ a:focus {
 }
 .link-modal-close svg {
 	margin-right: 28px;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.link-modal-close svg g {
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.link-modal-close:hover {
+	color: #17b3ed;
+}
+.link-modal-close:hover svg {
+	-webkit-transform: translateX(-25px);
+	    -ms-transform: translateX(-25px);
+	        transform: translateX(-25px);
+}
+.link-modal-close:hover svg g {
+	fill: #17b3ed;
 }
 .link-signup {
 	display: inline-block;
@@ -1060,7 +1080,7 @@ a:focus {
 .link-edit svg {
 	margin-right: 17px;
 }
-.link-edit svg g {
+.link-edit svg g, .link-edit svg polygon {
 	fill: #17b3ed;
 	-webkit-transition: all .3s ease;
 	     -o-transition: all .3s ease;
@@ -1069,7 +1089,7 @@ a:focus {
 .link-edit:hover {
 	color: #000;
 }
-.link-edit:hover svg g {
+.link-edit:hover svg g, .link-edit:hover svg polygon {
 	fill: #000;
 }
 button {
@@ -2592,6 +2612,7 @@ nav {
 	right: 0;
 	top: 0;
 	z-index: 9999;
+	max-height: 120px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	nav {
@@ -3309,6 +3330,7 @@ nav {
 }
 nav.scroll {
 	padding-top: 9px;
+	max-height: 101px;
 }
 nav.scroll .menu-nav--dropdown-link {
 	line-height: 33px;
@@ -3333,6 +3355,9 @@ nav.scroll .menu-nav--dropdown-menu {
 	nav.scroll .menu-nav {
 		margin-top: 5px;
 	}
+}
+nav.scroll .menu-nav {
+	max-height: 63px;
 }
 .header-slider {
 	position: relative;
@@ -7847,9 +7872,6 @@ footer {
 		max-width: 100%;
 		height: auto;
 	}
-}
-.bucket-item--number .quantity {
-	max-width: unset;
 }
 @media (max-width: 767px) {
 	.bucket-item--number .quantity {
