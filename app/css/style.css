@@ -414,17 +414,16 @@ body.open .menu-panel .menu-sub--hidden {
 }
 @media (max-width: 767px) {
 	body.open {
-		overflow: hidden;
+		overflow: hidden !important;
 	}
 	body.open nav {
 		height: 100%;
-		overflow: scroll;
-		-webkit-overflow-scrolling: touch;
+		overflow: scroll !important;
 	}
 }
 @media (max-width: 767px) {
 	html.open {
-		overflow: hidden;
+		overflow: hidden !important;
 	}
 }
 @media (min-width: 1200px) {
@@ -4040,6 +4039,11 @@ footer {
 	-ms-flex-pack: center;
 	        justify-content: center;
 	z-index: 2;
+}
+@media (max-width: 767px) {
+	.slider-main .slide-svg {
+		display: none;
+	}
 }
 .slider-main .slide-svg svg {
 	width: 100%;
