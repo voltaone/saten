@@ -70,9 +70,15 @@ html.open
 +displays()
   .container
     max-width 1170px
-  .container-1200
+
+.container-1200
+  position relative
+  +displays()
     max-width 1200px
-    position relative
+  +tablet()
+    max-width 990px
+  +portrait()
+    max-width: 750px;
 
 
 .hidden-xs

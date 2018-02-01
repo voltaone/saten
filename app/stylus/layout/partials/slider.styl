@@ -294,9 +294,13 @@
   justify-content center
   align-items center
   box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
-  min-height 409px
+  height 409px
+  +tablet()
+    height 331px
+  +portrait()
+    height 454px
   +mobile()
-    min-height: unset;
+    height: auto;
   &:before
     content: "";
     padding-top: 100%;

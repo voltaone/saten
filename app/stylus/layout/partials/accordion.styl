@@ -54,8 +54,8 @@
     transitions()
     text-align left
     &:hover
-      background $aqua-back
-      color $black
+        background $aqua-back
+        color $black
     &:before, &:after
       pseudo(block, absolute)
       width 16px
@@ -86,6 +86,12 @@
     height 0
     padding 0
     margin 0
+
+  .accordion-button.active
+    opacity 1
+    height 51px
+    padding 16px
+    margin-bottom 18px
 
 #accordion3.ui-accordion
   .ui-accordion-header

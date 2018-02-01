@@ -4733,6 +4733,12 @@ footer {
 	padding: 0;
 	margin: 0;
 }
+#accordion2 .accordion-button.active {
+	opacity: 1;
+	height: 51px;
+	padding: 16px;
+	margin-bottom: 18px;
+}
 #accordion3.ui-accordion .ui-accordion-header {
 	background: transparent;
 	font-size: 1.25rem;

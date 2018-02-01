@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('.filter-colors li a').removeClass('active');
         $(this).addClass('active');
 
-    })
+    });
 
     // ----- BUTTON FAST HOVER -----
     $('.button-fast').hover(function () {
@@ -209,13 +209,15 @@ $(window).on('load resize', function () {
             infinite: false
         });
 
-        $('.accordion-button').click(function () {
-            $('.accordion-button').not(this).each(function () {
-                $(this).addClass('hidden')
-            });
+        var deli = $('#accordion2 .accordion-button');
 
-            if ($(this).hasClass('ui-accordion-header-active')) {
-                $('.accordion-button').removeClass('hidden');
+        deli.click(function () {
+
+            if ($(this).hasClass('active')) {
+                deli.removeClass('hidden').removeClass('active');
+            } else {
+                $(this).addClass('active');
+                deli.addClass('hidden');
             }
         });
 
