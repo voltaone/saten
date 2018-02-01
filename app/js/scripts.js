@@ -171,6 +171,32 @@ $(document).ready(function () {
         placeholder_text_single: "dfdfdf"
     });
     $('.chosen-search-input').attr('placeholder', 'Введите первую букву области');
+
+    // ----- NAVIGATION DROPDOWN ----
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        $('.menu-nav--dropdown-link').click(function (e) {
+            e.preventDefault();
+
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('.menu-nav--dropdown-menu').slideUp('fast');
+
+            } else {
+                $('.menu-nav--dropdown-menu').slideUp('fast');
+                $('.menu-nav--dropdown-link').removeClass('active');
+                $(this).addClass('active');
+                $(this).siblings('.menu-nav--dropdown-menu').slideToggle('fast');
+            }
+        });
+
+        $('.filter-catalog-dropdown').click(function () {
+           $(this).toggleClass('active');
+           $(this).siblings('.filter-top-catalog').slideToggle('fast');
+        });
+
+    }
+
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
@@ -185,6 +211,9 @@ $(window).on('load resize', function () {
         $('#second').appendTo('#mob-nav-top');
         $('.menu-user').appendTo('#panel-2');
         $('.product-filter--brand').appendTo('#productBrand');
+
+
+
         // ----- TABS -----
         $(function () {
             $("#accordion").accordion({
@@ -222,6 +251,10 @@ $(window).on('load resize', function () {
         });
 
 
+
+
+
+
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         // MENU
         $('#first').prependTo('#panel .row');
@@ -230,9 +263,15 @@ $(window).on('load resize', function () {
         $('#third').appendTo('#fourth');
         $('.login').appendTo('#login-here');
         $('.menu-user').appendTo('#panel .col-6');
+
+
         // ----- TABS -----
         $(function () {
             $("#tabs").tabs();
+        });
+
+        $('.menu-nav--dropdown-link').click(function (e) {
+            e.preventDefault();
         });
 
         // SCROLLING CLASS CHANGE
@@ -249,8 +288,6 @@ $(window).on('load resize', function () {
             } else {
                 $('.link-call').removeClass('bottom');
             }
-
-
         });
     }
 });

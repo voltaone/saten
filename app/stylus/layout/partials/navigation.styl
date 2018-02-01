@@ -1,9 +1,6 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-//@import "../libs/rew-sidenav/sidenav.styl"
-//@import "../libs/rew-downnav/downnav.styl"
-
 nav
   background $white
   transitions()
@@ -148,6 +145,19 @@ nav
     align-items: center
     +portrait()
       height auto
+
+    +mobile()
+      display block
+      width 100%
+      &:after
+        pseudo(block, absolute)
+        height 1px
+        width calc(100% + 30px)
+        background #243033
+        bottom -10px
+        left -15px
+        right -15px
+
     &-menu
       position absolute
       background $aqua-back
@@ -161,19 +171,56 @@ nav
       transition .2s all linear
       +portrait()
         display none
+
       +mobile()
+        position static
+        visibility visible
+        opacity 1
+        height auto
+        background $trans
         display none
+
       &:before
         triangle($aqua-back, up, 12px)
         top -10px
         left 10px
+        +mobile()
+          display none
       li
         a
           padding 15px
           display block
           color $aqua-text2
+          +mobile()
+            display inline-block
+            padding-left 0
+            font-weight 400
           &:hover
             background $aqua-link
+            +mobile()
+              background $trans
+              color $blue
+              opacity 1
+        a.current
+          +mobile()
+            color $blue
+            opacity 1
+            position relative
+            padding-left 15px
+            &:before, &:after
+              pseudo(block, absolute)
+              height 2px
+              width 9px
+              left -1px
+              background $blue
+              transitions()
+            &:before
+              top 21px
+              transform rotate(45deg)
+            &:after
+              top 27px
+              transform rotate(-45deg)
+
 
 .menu-nav--dropdown:hover .menu-nav--dropdown-menu
   opacity 1
@@ -405,6 +452,7 @@ nav
           color $white
           font-size 1.125rem
 
+
     .menu-panel--nav-links
       padding 35px 0 0
       li
@@ -431,6 +479,30 @@ nav
       line-height normal
       padding-bottom 0
       transitions()
+      font-size 1.25rem !important
+      position relative
+      &:hover
+        opacity 1 !important
+        &:after
+          border-top-color $blue
+      &:after
+        triangle($white, down, 5px)
+        right 0
+        top 10px
+        transitions()
+
+
+    .menu-nav--dropdown-link.active
+      color $blue
+      &:after
+        transform rotate(180deg)
+        border-top-color $blue
+
+    .menu-nav--dropdown-link.current
+      color $blue
+      &:after
+        border-top-color $blue
+
 
     .menu-nav--dropdown
       margin-bottom: 1.813rem;

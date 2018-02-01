@@ -227,7 +227,44 @@
       &:hover
         opacity .5
 
+.filter-buttons
+  padding-bottom 10px
+  max-width 212px
+  +mobile()
+    max-width 100%
+
 #filter-trigger
   display block
 
+.filter-top-catalog
+  +mobile()
+    position relative
+    display none
+    padding-bottom 0
+    &:after
+      pseudo(block,absolute)
+      background $white
+      width 300vw
+      left -150vw
+      top 0
+      bottom 0
+      z-index -1
+    hr
+      display none
+    .filter-top--main
+      margin-bottom 20px
+
+.filter-catalog-dropdown
+  +mobile()
+    position relative
+    &:after
+      triangle($black, down, 5px)
+      right 15px
+      top 8px
+      transitions()
+
+.filter-catalog-dropdown.active
+  +mobile()
+    &:after
+      transform rotate(180deg)
 
