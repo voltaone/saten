@@ -55,6 +55,10 @@ a
   &:hover
     background $black
     color $white
+    +mobile()
+      background $blue
+      color $white
+
 
 .link-call.bottom
   bottom 404px
@@ -120,7 +124,7 @@ a
     transitions()
 
     +mobile()
-      width 100vw
+      width 150vw
       left -15px
 
     +landscape()
@@ -318,3 +322,7 @@ a
       g, polygon
         fill $black
 
+.link-edit-mobile
+  +mobile()
+    display inline-flex
+    position static

@@ -35,6 +35,8 @@
 
     &:hover
       background $aqua-link2
+      +mobile()
+        background $black
 
     +mobile()
       max-width 104px
@@ -52,11 +54,15 @@
     &:hover
       .fa
         transform translateX(-10px)
+        +mobile()
+          transform none
   .arrow.right
     right 0
     &:hover
       .fa
         transform translateX(10px)
+        +mobile()
+          transform none
 
   .slide
     display flex
@@ -139,6 +145,7 @@
     +portrait()
       height: 316px
       min-height unset
+
     +mobile()
       height 448px
       min-height unset
@@ -288,6 +295,8 @@
   align-items center
   box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
   min-height 409px
+  +mobile()
+    min-height: unset;
   &:before
     content: "";
     padding-top: 100%;

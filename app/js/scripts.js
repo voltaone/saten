@@ -11,6 +11,7 @@ $(document).ready(function () {
         $('.form-cabinet').addClass('form-cabinet-edit');
         $('.cabinet-data--text .form-group input').removeAttr('disabled');
     });
+
     $('.cabinet-data--text .button').click(function(e) {
         e.preventDefault();
         $('.form-cabinet').removeClass('form-cabinet-edit');
@@ -144,14 +145,14 @@ $(document).ready(function () {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             }
         ]

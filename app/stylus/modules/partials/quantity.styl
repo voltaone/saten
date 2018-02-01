@@ -27,6 +27,8 @@
       max-width 61px
     &:hover
       color $blue
+      +mobile()
+        color $aqua-text
   &-input
     margin 0
     border 0
@@ -71,6 +73,8 @@
     transitions()
     &:hover
       color $blue
+      +mobile()
+        color $black
     sup
       font-size $s12
     +mobile()
@@ -86,3 +90,6 @@
       background $blue
     &:hover
       color $black
+      +mobile()
+        color $white
+        background $blue

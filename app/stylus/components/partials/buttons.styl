@@ -27,6 +27,9 @@ button
   &:hover
     color $white
     background $aqua-link2
+    +mobile()
+      background $black
+      color $white
 
   +mobile()
     max-width unset
@@ -55,6 +58,9 @@ button
   &:hover
     color $white
     background $black
+    +mobile()
+      color $white
+      background $blue
 
 .button-fast
   font-weight: 500;
@@ -81,12 +87,18 @@ button
   &:hover
     background $blue
     color $white
+    +mobile()
+      background $aqua-back
+      color $black
 
 .button-bucket-order
   background $blue
   color $white
   &:hover
       background $black
+      +mobile()
+        background $blue
+        color $white
 
 .button-credit
   .credit-heading

@@ -274,7 +274,7 @@
                   <div class="cabinet-sublog--heading">Ваши данные</div>
                   <div class="cabinet-sublog--nav">
                     <ul>
-                      <li><a href="cabinet.html" title=""><svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <li><a class="link-edit link-edit-mobile" href="#" title=""><svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Saten_Cabinet_1" transform="translate(-1104.000000, -256.000000)" fill-rule="nonzero" fill="#17B3ED">
             <g id="noun_1363970_cc" transform="translate(1104.000000, 256.000000)">
@@ -441,5 +441,24 @@
       <script type="text/javascript" src="js/vendor.js"></script>
       <script type="text/javascript" src="js/scripts.js"></script>
     </main>
+    <div id="hellopreloader">
+      <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+      var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el) {
+          el.style.opacity = 1;
+          var interhellopreloader = setInterval(function () {
+              el.style.opacity = el.style.opacity - 0.05;
+              if (el.style.opacity <= 0.05) {
+                  clearInterval(interhellopreloader);
+                  hellopreloader.style.display = "none";
+              }
+          }, 16);
+      }window.onload = function () {
+          setTimeout(function () {
+              fadeOutnojquery(hellopreloader);
+          }, 1000);
+      };
+    </script>
   </body>
 </html>

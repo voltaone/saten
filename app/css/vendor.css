@@ -2868,6 +2868,7 @@ html {
 }
 
 @media (min-width: 576px) {
+	/* 568px */
 	.col-sm {
 		-ms-flex-preferred-size: 0;
 		-webkit-flex-basis: 0;

@@ -288,7 +288,7 @@ html {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) { /* 568px */
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
