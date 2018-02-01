@@ -130,8 +130,8 @@ $(document).ready(function () {
             {
                 breakpoint: 1199,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 4,
+                    slidesToScroll: 4
                 }
             },
             {
@@ -149,7 +149,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 568,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1

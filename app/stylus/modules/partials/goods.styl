@@ -8,6 +8,9 @@
 
   margin-bottom 39px
 
+  +tablet()
+    max-width: 210px;
+
   &:after
     pseudo(none,absolute)
     top 0
@@ -54,8 +57,6 @@
       +mobile()
         height auto
         padding 10px
-      //+landscape()
-      //  height 254px
       &:before
         content: "";
         padding-top: 100%;
@@ -109,7 +110,9 @@
       &:after
         bottom 0
         opacity 0
-        // transitions()
+
+      //+mobile()
+      //  background $blue
 
       &--number
         padding 10px 0 12px 19px
@@ -122,6 +125,9 @@
           letter-spacing: 1px;
           margin-bottom 0
 
+        //+mobile()
+        //  background $gray-back
+
       &--button
         background $trans
         width: 68px;
@@ -133,12 +139,10 @@
 
         position relative
         z-index 20
-        //transitions()
 
         svg
           g
             fill $aqua-text
-            // transitions()
 
       &--hidden
         position absolute
@@ -162,13 +166,10 @@
           line-height: 1.36;
           letter-spacing: 1px;
           margin-bottom 0
-          // transitions()
 
     &-hidden
       position absolute
       width 100%
-
-      // transitions()
 
       opacity 0
       z-index -100

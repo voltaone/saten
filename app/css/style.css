@@ -435,9 +435,23 @@ body.open .menu-panel .menu-sub--hidden {
 	.container {
 		max-width: 1170px;
 	}
+}
+.container-1200 {
+	position: relative;
+}
+@media (min-width: 1200px) {
 	.container-1200 {
 		max-width: 1200px;
-		position: relative;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container-1200 {
+		max-width: 990px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.container-1200 {
+		max-width: 750px;
 	}
 }
 @media (max-width: 767px) {
@@ -1016,6 +1030,11 @@ a:focus {
 	-webkit-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
+}
+@media (max-width: 767px) {
+	.link-modal-close svg {
+		margin-right: 15px;
+	}
 }
 .link-modal-close svg g {
 	-webkit-transition: all .3s ease;
@@ -1814,6 +1833,15 @@ ol {
 		max-width: 100%;
 	}
 }
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.form-question .form-group {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 calc(50% - 15px);
+		    -ms-flex: 1 1 calc(50% - 15px);
+		        flex: 1 1 calc(50% - 15px);
+		max-width: calc(50% - 15px);
+	}
+}
 .form-question .form-group.form-group-textarea {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 1 100%;
@@ -1881,9 +1909,24 @@ ol {
 	.form-signup {
 		position: static;
 	}
+	.form-signup select {
+		background: transparent;
+	}
 }
 .form-cabinet {
 	position: relative;
+}
+@media (max-width: 767px) {
+	.form-sort select {
+		border: none;
+		padding: 7px 30px 9px;
+		background: #fff;
+		font-size: .75rem;
+		font-weight: 500;
+		letter-spacing: .9px;
+		line-height: normal;
+		height: auto;
+	}
 }
 input {
 	-webkit-appearance: none;
@@ -2135,18 +2178,6 @@ select {
 }
 select:focus {
 	outline: none;
-}
-@media (max-width: 767px) {
-	select {
-		border: none;
-		padding: 7px 30px 9px;
-		background: #fff;
-		font-size: .75rem;
-		font-weight: 500;
-		letter-spacing: .9px;
-		line-height: normal;
-		height: auto;
-	}
 }
 .select-container {
 	display: block;
@@ -2593,6 +2624,25 @@ article ul li:before {
 @media (max-width: 767px) {
 	.article-signup {
 		padding-bottom: 35px;
+	}
+}
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.article-contact {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.article-contact .contact {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 50%;
+		    -ms-flex: 1 1 50%;
+		        flex: 1 1 50%;
+		max-width: 50%;
+		padding-right: 15px;
 	}
 }
 aside h2 {
@@ -4324,11 +4374,21 @@ footer {
 	        align-items: center;
 	-webkit-box-shadow: 0 2px 17px 0 rgba(0,0,0,.15);
 	        box-shadow: 0 2px 17px 0 rgba(0,0,0,.15);
-	min-height: 409px;
+	height: 409px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.slider-product--container {
+		height: 331px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.slider-product--container {
+		height: 454px;
+	}
 }
 @media (max-width: 767px) {
 	.slider-product--container {
-		min-height: unset;
+		height: auto;
 	}
 }
 .slider-product--container:before {
@@ -4411,7 +4471,7 @@ footer {
 	}
 }
 .fancybox-slide > div.section-bucket-modal .bucket-heading {
-	padding-top: 70px;
+	padding-top: 20px;
 }
 .ui-tabs .ui-tabs-nav {
 	display: -webkit-box;
@@ -5096,6 +5156,11 @@ footer {
 		padding-bottom: 20px;
 	}
 }
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.about-heading {
+		padding-top: 100px;
+	}
+}
 .brand-heading p {
 	position: relative;
 	top: -15px;
@@ -5334,6 +5399,11 @@ footer {
 	position: relative;
 	z-index: 10;
 	margin-bottom: 39px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.goods-block {
+		max-width: 210px;
+	}
 }
 .goods-block:after {
 	content: '';
@@ -7815,6 +7885,11 @@ p.product-warranty {
 		background: #fff;
 	}
 }
+@media (max-width: 767px) {
+	.cabinet-header {
+		background: #f6f6f6;
+	}
+}
 .bucket-item {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -8360,6 +8435,7 @@ p.product-warranty {
 @media (max-width: 767px) {
 	.bucket-big-price--text {
 		font-size: 1rem;
+		margin-right: 5px;
 	}
 }
 .bucket-big-price--number {
