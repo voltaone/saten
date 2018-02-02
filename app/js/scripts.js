@@ -194,7 +194,6 @@ $(document).ready(function () {
            $(this).toggleClass('active');
            $(this).siblings('.filter-top-catalog').slideToggle('fast');
         });
-
     }
 
 });

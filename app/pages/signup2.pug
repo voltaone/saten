@@ -2,7 +2,7 @@
 extend layouts/_layout.pug
 
 block title
-    | Корзина
+    | Регистрация
 
 block content
 
@@ -14,19 +14,20 @@ block content
                         li
                             a(href='./' title='') Главная
                         li
-                            a(href='bucket1.html' title='') Корзина
+                            a(href='bucket1.html' title='') Регистрация
 
     section.section-bucket.section-bucket-success
         .bucket-header
             .container
-                .row.row-heading.bucket-heading
+                .row.row-heading.sign-heading
                     .col-md-4.col-lg-3
-                        h1 Корзина
-                    .col-6.col-md-8.col-lg-9.back-bucket.back-bucket-success
+                        h1
+                            img(src='img/icon/signup.svg')
+                            | Зарегистрируйтесь
         .container.bucket-container.bucket-success
             .row.justify-content-center
                 .col-md-6
-                    img(src='img/icon/order.svg')
+                    img(src='img/icon/success.svg')
                     h2 Спасибо, Виталий
-                    p Наш менеджер свяжеться с Вами в ближайшее время
-                    a(href='catalog.html').button.button-blue Хорошо
+                    p Вам на почту будет отправлена ссылка с активацией вашего профиля
+                    a(href='signin.html').button.button-blue Хорошо
