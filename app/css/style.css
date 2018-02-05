@@ -5761,6 +5761,11 @@ footer {
 .goods-block--panel-hidden--content .line span {
 	color: #000;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+	.goods-block .link-more--arrow {
+		max-width: 55px;
+	}
+}
 .available {
 	font-size: 1.125rem;
 	font-weight: 500;
@@ -6068,6 +6073,46 @@ footer {
 	.goods-block .goods-block--panel .goods-block--panel-hidden, .goods-block.goods-block-small .goods-block--panel .goods-block--panel-hidden {
 		display: none;
 	}
+}
+.goods-block.goods-block-discount:after {
+	-webkit-box-shadow: 0 2px 17px 0 rgba(214,25,25,.15);
+	        box-shadow: 0 2px 17px 0 rgba(214,25,25,.15);
+}
+.goods-block.goods-block-discount .goods-block--visible-container {
+	-webkit-box-shadow: 0 2px 17px 0 rgba(214,25,25,.15);
+	        box-shadow: 0 2px 17px 0 rgba(214,25,25,.15);
+}
+.goods-block.goods-block-discount .goods-block--panel-price--number p {
+	color: #f96045;
+}
+.goods-block.goods-block-discount .goods-block--panel-price--hidden {
+	background: #f96045;
+}
+.goods-block.goods-block-discount .link-more--arrow {
+	background: #f96045;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.goods-block.goods-block-discount .goods-block--panel .goods-block--panel-price .goods-block--panel-price--button {
+		background: #f96045;
+	}
+}
+@media (max-width: 767px) {
+	.goods-block.goods-block-discount .goods-block--panel .goods-block--panel-price .goods-block--panel-price--button {
+		background: #f96045;
+	}
+}
+.goods-block.goods-block-discount:hover .goods-block--visible-container {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.goods-block.goods-block-discount:hover .goods-block--panel-price--button {
+	background: #f96045;
+}
+.goods-block.goods-block-discount:hover .link-more .link-more--text {
+	color: #f96045;
+}
+.goods-block.goods-block-discount:hover .link-more--arrow:before, .goods-block.goods-block-discount:hover .link-more--arrow:after {
+	background: #f96045;
 }
 .advantage {
 	padding-top: 128px;

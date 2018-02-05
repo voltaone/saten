@@ -1,38 +1,26 @@
 .goods-block
-
   max-width 263px
   width 100%
-
   position relative
   z-index: 10
-
   margin-bottom 39px
-
   +tablet()
-    max-width: 210px;
-
+    max-width: 210px
   &:after
     pseudo(none,absolute)
     top 0
     left 0
     right 0
-
     z-index 10
-
     height 558px
-
     box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.15);
 
   &--visible
     display block
-
     position relative
-
     z-index 12
 
-
     &-description
-
       padding: 25px 19px 7px
 
       h4
@@ -62,7 +50,6 @@
         padding-top: 100%;
         float: left;
 
-
     &-image
       display flex
       align-items center
@@ -76,10 +63,6 @@
           max-height 110px
         +landscape()
           max-height 130px
-
-
-
-
 
   &--panel
     position relative
@@ -111,12 +94,8 @@
         bottom 0
         opacity 0
 
-      //+mobile()
-      //  background $blue
-
       &--number
         padding 10px 0 12px 19px
-
         p
           color $blue
           font-size: $s22
@@ -124,9 +103,6 @@
           line-height: 1.36;
           letter-spacing: 1px;
           margin-bottom 0
-
-        //+mobile()
-        //  background $gray-back
 
       &--button
         background $trans
@@ -191,6 +167,10 @@
           margin-bottom 4px
           span
             color $black
+
+  .link-more--arrow
+    +tablet()
+      max-width 55px
 
 .available
   font-size $s18
@@ -400,4 +380,41 @@
             font-weight 500
       .goods-block--panel-hidden
         display none
+
+
+.goods-block.goods-block-discount
+  &:after
+    box-shadow: 0 2px 17px 0 rgba(214, 25, 25, 0.15)
+  .goods-block--visible-container
+    box-shadow: 0 2px 17px 0 rgba(214, 25, 25, 0.15)
+  .goods-block--panel-price--number p
+    color $red
+  .goods-block--panel-price--hidden
+    background $red
+  .link-more--arrow
+    background $red
+  +portrait()
+    .goods-block--panel .goods-block--panel-price .goods-block--panel-price--button
+      background $red
+  +mobile()
+    .goods-block--panel .goods-block--panel-price .goods-block--panel-price--button
+      background $red
+
+  &:hover
+    .goods-block--visible-container
+      box-shadow none
+    .goods-block--panel-price--button
+      background $red
+    .link-more .link-more--text
+      color $red
+    .link-more--arrow
+      &:before, &:after
+        background $red
+
+
+
+
+
+
+
 
