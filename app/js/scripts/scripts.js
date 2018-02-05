@@ -258,7 +258,7 @@ $(window).on('load resize', function () {
         $('#third').appendTo('#fourth');
         $('.login').appendTo('#login-here');
         $('.menu-user').appendTo('#panel .col-6');
-
+        $('.product-filter--brand').prependTo('.product-filter')
 
         // ----- TABS -----
         $(function () {

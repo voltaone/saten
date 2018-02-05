@@ -51,6 +51,46 @@
       padding-bottom 62px
       margin-bottom 49px
 
+
+.section-product--content.section-product--content-discount
+  .product-price-old
+    text-decoration line-through
+    color #BEBEBE
+    text-align center
+    letter-spacing .8px
+    margin-bottom 0
+    +mobile()
+      text-align left
+  .product-price
+    color $red
+  .product-filter .available
+    margin-bottom: 29px;
+  .product-buttons
+    margin-bottom: 48px;
+    .button-fast
+      border-color $red
+      &:after
+        background $red
+  .table-product tr td a
+    color $red
+    &:hover
+      color $black
+
+.section-product--content.section-product--content-discount2
+  .product-filter--brand
+    margin-bottom 38px
+  article
+    padding-bottom: 46px;
+
+.section-product--discount
+    .product-heading
+      &:after
+        +mobile()
+          height: 55px;
+
+
+
+
 .section-collection
   position relative
   padding-bottom 92px

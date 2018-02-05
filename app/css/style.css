@@ -480,8 +480,8 @@ body.open .menu-panel .menu-sub--hidden {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #dee8eb url('../img/icon/grid.svg') center center no-repeat;
-	background-size: 41px;
+	background: #fff url('../img/icon/grid.svg') center center no-repeat;
+	background-size: 123px;
 }
 .text-justify {
 	text-align: justify !important;
@@ -611,6 +611,11 @@ h4 {
 	line-height: 1.67;
 	margin-bottom: 0;
 }
+h4.h4-collection {
+	font-size: 1.5rem;
+	letter-spacing: 2.3px;
+	margin-bottom: 30px;
+}
 h5 {
 	font-family: 'AvenirNext', sans-serif;
 	font-size: .875rem;
@@ -643,6 +648,10 @@ hr {
 	width: 165px;
 	margin: 20px 0 33px;
 	text-align: left;
+}
+hr.hr-big {
+	width: 100%;
+	margin: 23px 0 6px;
 }
 .black {
 	color: #000;
@@ -1222,7 +1231,7 @@ button:focus {
 	color: #000;
 	padding-top: 7px;
 	padding-bottom: 8px;
-	margin-bottom: 62px;
+	margin-bottom: 0;
 }
 .button-bucket {
 	max-width: 100%;
@@ -5057,6 +5066,50 @@ footer {
 		margin-bottom: 49px;
 	}
 }
+.section-product--content.section-product--content-discount .product-price-old {
+	text-decoration: line-through;
+	color: #bebebe;
+	text-align: center;
+	letter-spacing: .8px;
+	margin-bottom: 0;
+}
+@media (max-width: 767px) {
+	.section-product--content.section-product--content-discount .product-price-old {
+		text-align: left;
+	}
+}
+.section-product--content.section-product--content-discount .product-price {
+	color: #f96045;
+}
+.section-product--content.section-product--content-discount .product-filter .available {
+	margin-bottom: 29px;
+}
+.section-product--content.section-product--content-discount .product-buttons {
+	margin-bottom: 48px;
+}
+.section-product--content.section-product--content-discount .product-buttons .button-fast {
+	border-color: #f96045;
+}
+.section-product--content.section-product--content-discount .product-buttons .button-fast:after {
+	background: #f96045;
+}
+.section-product--content.section-product--content-discount .table-product tr td a {
+	color: #f96045;
+}
+.section-product--content.section-product--content-discount .table-product tr td a:hover {
+	color: #000;
+}
+.section-product--content.section-product--content-discount2 .product-filter--brand {
+	margin-bottom: 38px;
+}
+.section-product--content.section-product--content-discount2 article {
+	padding-bottom: 46px;
+}
+@media (max-width: 767px) {
+	.section-product--discount .product-heading:after {
+		height: 55px;
+	}
+}
 .section-collection {
 	position: relative;
 	padding-bottom: 92px;
@@ -5227,7 +5280,7 @@ footer {
 .row-heading h1 {
 	font-weight: 500;
 	line-height: 1.15;
-	letter-spacing: 1px;
+	letter-spacing: 2.3px;
 	position: relative;
 	font-size: 2.75rem;
 }
@@ -5385,6 +5438,43 @@ footer {
 	.contacts-heading {
 		padding-bottom: 80px;
 	}
+}
+.discount-heading {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.discount-heading .sort {
+	padding-top: 15px;
+}
+@media (max-width: 767px) {
+	.discount-heading .sort {
+		padding-bottom: 15px;
+		-webkit-box-pack: end;
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+}
+@media (max-device-width: 767px) and (orientation: landscape) {
+	.discount-heading .sort {
+		padding-top: 0;
+	}
+}
+.discount-heading .form-sort .chosen-container .chosen-single {
+	background: #f6f6f6;
+}
+@media (max-width: 767px) {
+	.discount-heading .form-sort .chosen-container .chosen-single {
+		background: #f6f6f6;
+	}
+}
+@media (max-width: 767px) {
+	.discount-heading .form-sort select {
+		background: #f6f6f6;
+	}
+}
+.discount-heading .form-sort .chosen-container.chosen-with-drop .chosen-single {
+	background: #fff;
 }
 .volta {
 	float: right;
@@ -6999,11 +7089,6 @@ footer {
 	width: 100%;
 }
 @media (max-width: 767px) {
-	.sort.product-code .sort--code {
-		text-align: left;
-	}
-}
-@media (max-width: 767px) {
 	.sort.product-code .sort--heading {
 		display: block;
 	}
@@ -7616,6 +7701,9 @@ p.product-warranty {
 	max-width: 165px;
 	position: relative;
 	z-index: 200;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 @media (max-width: 767px) {
 	.product-filter--brand {
@@ -7640,6 +7728,23 @@ p.product-warranty {
 @media (max-width: 767px) {
 	.product-filter .available {
 		text-align: left;
+	}
+}
+.product-filter--discount-text {
+	color: #f96045;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	max-width: 165px;
+	letter-spacing: 2px;
+	margin-top: 37px;
+}
+@media (max-width: 767px) {
+	.product-filter--discount-text {
+		text-align: left;
+		max-width: unset;
+		font-size: 1.25rem;
+		margin-top: 20px;
 	}
 }
 .product-price {
@@ -7737,6 +7842,9 @@ p.product-warranty {
 	margin: 15px 0 11px;
 	background: #ececec;
 }
+.product-description hr.hr-big {
+	margin: 23px 0 6px;
+}
 .product-slider-container {
 	position: relative;
 	padding-top: 8px;
@@ -7751,6 +7859,9 @@ p.product-warranty {
 	.product-slider-container {
 		padding-top: 20px;
 	}
+}
+.product-buttons {
+	margin-bottom: 61px;
 }
 .product-buttons .button-blue {
 	position: relative;

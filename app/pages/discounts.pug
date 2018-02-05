@@ -1,0 +1,124 @@
+//- layouts/layout.pug
+extend layouts/_layout-noui.pug
+
+block title
+    | Каталог
+
+block content
+
+    header.header-breadcrumbs
+        .container
+            .row
+                .col-12
+                    ul.breadcrumbs
+                        li
+                            a(href='./' title='') Главная
+                        li
+                            a(href='catalog.html' title='') Акционные предложения
+
+    section
+        .container
+            .row.row-heading.discount-heading
+                .col-lg-6.col-md-12.col-sm-6
+                    h1 Акционные товары
+                .col-lg-6.col-md-12.col-sm-6
+                    .sort
+                        .sort--heading
+                            | Категории товаров:
+                        .sort--form
+                            form.form-sort
+                                .select-container
+                                    select.chosen-select
+                                        option От дорогих к дешевым1
+                                        option От дорогих к дешевым2
+                                        option От дорогих к дешевым3
+
+        .container.border-bottom
+            .row
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount1.png' title='' alt='')
+                        .discount-block--description
+                            h3 Распродажа коллекции плитки
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount2.png' title='' alt='')
+                        .discount-block--description
+                            h3 Скидка на ванны ARKTIK -50%
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount1.png' title='' alt='')
+                        .discount-block--description
+                            h3 Распродажа коллекции плитки
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount2.png' title='' alt='')
+                        .discount-block--description
+                            h3 Скидка на ванны ARKTIK -50%
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount1.png' title='' alt='')
+                        .discount-block--description
+                            h3 Распродажа коллекции плитки
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+                .col-sm-6
+                    a(href='catalog.html' title='').discount-block
+                        .discount-block--image
+                            img(src='img/discount/discount2.png' title='' alt='')
+                        .discount-block--description
+                            h3 Скидка на ванны ARKTIK -50%
+                            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+                        .discount-block--about
+                            .discount-block--about-date
+                                p Действует до  21.11.17
+                            .discount-block--about-more
+                                span.link-more
+                                    span.link-more--text Подробнее
+                                    span.link-more--arrow
+        include partials/_pagination
+
+    include partials/_bucket-modal
