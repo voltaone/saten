@@ -1,0 +1,25 @@
+.container-404
+  &:after
+    pseudo(block, absolute)
+    background $gray-back
+    +mobile()
+      width 95vw
+    +landscape()
+      width: 85vw;
+
+
+.img-404
+  position absolute
+  top: -100px;
+  left: -100px;
+  +tablet()
+    top -80px
+    left -80px
+  +portrait()
+    max-width 130%
+    top -30px
+    left -30px
+  +mobile()
+    position static
+    width 100%
+    margin 50px 0

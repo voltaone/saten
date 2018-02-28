@@ -2,13 +2,13 @@ $(document).ready(function () {
     "use strict";
 
     // ----- EDIT PROFILE -----
-    $('.link-edit').click(function(e) {
+    $('.link-edit').click(function (e) {
         e.preventDefault();
         $('.form-cabinet').addClass('form-cabinet-edit');
         $('.cabinet-data--text .form-group input').removeAttr('disabled');
     });
 
-    $('.cabinet-data--text .button').click(function(e) {
+    $('.cabinet-data--text .button').click(function (e) {
         e.preventDefault();
         $('.form-cabinet').removeClass('form-cabinet-edit');
         $('.cabinet-data--text .form-group input').attr('disabled', '');
@@ -42,10 +42,8 @@ $(document).ready(function () {
     });
 
     // ----- ACCORDION -----
-    $(function () {
-        $("#accordion3").accordion({
-            heightStyle: "content"
-        });
+    $("#accordion3").accordion({
+        heightStyle: "content"
     });
 
     // ----- MAIN SLIDER -----
@@ -187,8 +185,8 @@ $(document).ready(function () {
         });
 
         $('.filter-catalog-dropdown').click(function () {
-           $(this).toggleClass('active');
-           $(this).siblings('.filter-top-catalog').slideToggle('fast');
+            $(this).toggleClass('active');
+            $(this).siblings('.filter-top-catalog').slideToggle('fast');
         });
     }
 
@@ -208,20 +206,15 @@ $(window).on('load resize', function () {
         $('.product-filter--brand').appendTo('#productBrand');
 
 
-
         // ----- TABS -----
-        $(function () {
-            $("#accordion").accordion({
-                heightStyle: "content"
-            });
+        $("#accordion").accordion({
+            heightStyle: "content"
         });
 
-        $(function () {
-            $("#accordion2").accordion({
-                collapsible: true,
-                active: false,
-                heightStyle: "content"
-            });
+        $("#accordion2").accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: "content"
         });
 
         // SLICK SLIDER
@@ -246,10 +239,6 @@ $(window).on('load resize', function () {
         });
 
 
-
-
-
-
     } else if (window.matchMedia("(min-width: 768px)").matches) {
         // MENU
         $('#first').prependTo('#panel .row');
@@ -261,9 +250,7 @@ $(window).on('load resize', function () {
         $('.product-filter--brand').prependTo('.product-filter')
 
         // ----- TABS -----
-        $(function () {
-            $("#tabs").tabs();
-        });
+        $("#tabs").tabs();
 
         $('.menu-nav--dropdown-link').click(function (e) {
             e.preventDefault();
