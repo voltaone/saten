@@ -6,6 +6,17 @@
   &--main
     list-flex(col)
     margin-bottom 42px
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 15px;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+
+    &::-webkit-scrollbar { width: 0 !important }
+
     li
       margin-bottom 14px
       a
@@ -237,6 +248,12 @@
   display block
 
 .filter-top-catalog
+
+  //new
+  height: 400px;
+  overflow: hidden;
+
+
   +mobile()
     position relative
     display none
