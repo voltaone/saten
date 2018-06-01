@@ -761,6 +761,18 @@ a:focus {
 		bottom: 633px;
 	}
 }
+#modal-call {
+	max-width: 800px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+.modal-success {
+	text-align: center;
+	display: none;
+}
+.modal-success img {
+	margin-bottom: 20px;
+}
 .link-brand {
 	height: 100%;
 	display: block;
@@ -8059,10 +8071,10 @@ p.product-warranty {
 	font-weight: 500;
 	color: #c0d3d8;
 	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 33.3333%;
-	    -ms-flex: 1 1 33.3333%;
-	        flex: 1 1 33.3333%;
-	max-width: 33.3333%;
+	-webkit-flex: 1 1 100%;
+	    -ms-flex: 1 1 100%;
+	        flex: 1 1 100%;
+	max-width: 100%;
 	text-align: center;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
@@ -8677,11 +8689,14 @@ p.product-warranty {
 	font-weight: 600;
 	line-height: 1.88;
 	padding: 0 30px;
+	max-width: 155px;
+	width: 100%;
+	text-align: right;
+	white-space: nowrap;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.bucket-item--price {
 		padding: 0 15px;
-		text-align: right;
 	}
 }
 @media (max-width: 767px) {

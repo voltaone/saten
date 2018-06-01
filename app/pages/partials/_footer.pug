@@ -76,9 +76,22 @@ footer
 
 
 
-a(href='#' title='').link-call#button-call
+a(data-fancybox data-src="#modal-call" href="javascript:;").link-call#button-call
     i.fa.fa-phone
     span Перезвоните мне
+
+#modal-call(style='display: none;')
+    .container
+        .row.justify-content-center
+            .col-8
+                h2 Быстрый заказ
+                form.form-half-input
+                    input(type='text' placeholder='Имя и фамилия')
+                    input(type='text' placeholder='Номер телефона')
+                .modal-success
+                    img(src='img/icon/success2.svg')
+                    p Спасибо! Наш менеджер  перезвонит в ближайшее время
+
 
 script(type="text/javascript" src="js/jquery.js")
 script(type="text/javascript" src="js/vendor.js")
