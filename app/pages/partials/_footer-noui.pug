@@ -79,11 +79,11 @@ a(data-fancybox data-src="#modal-call" href="javascript:;").link-call#button-cal
 #modal-call(style='display: none;')
     .container
         .row.justify-content-center
-            .col-8
+            .col-md-7.col-10
                 h2 Быстрый заказ
-                form.form-half-input
-                    input(type='text' placeholder='Имя и фамилия')
+                form
                     input(type='text' placeholder='Номер телефона')
+                    button(type='submit').button Отправить
                 .modal-success
                     img(src='img/icon/success2.svg')
                     p Спасибо! Наш менеджер  перезвонит в ближайшее время
