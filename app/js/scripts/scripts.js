@@ -80,19 +80,19 @@ $(document).ready(function () {
 
     // ----- QUANTITY -----
 
-    $('.quantity-button--minus').click(function () {
-        var val = parseInt($(this).siblings('.quantity-input').val());
-        if (val != 1) {
-            val--;
-            $(this).siblings('.quantity-input').val(val);
-        }
-    });
-
-    $('.quantity-button--plus').click(function () {
-        var val = parseInt($(this).siblings('.quantity-input').val());
-        val++;
-        $(this).siblings('.quantity-input').val(val);
-    });
+    // $('.quantity-button--minus').click(function () {
+    //     var val = parseInt($(this).siblings('.quantity-input').val());
+    //     if (val != 1) {
+    //         val--;
+    //         $(this).siblings('.quantity-input').val(val);
+    //     }
+    // });
+    //
+    // $('.quantity-button--plus').click(function () {
+    //     var val = parseInt($(this).siblings('.quantity-input').val());
+    //     val++;
+    //     $(this).siblings('.quantity-input').val(val);
+    // });
 
     //  ----- SLIDER -----
 
