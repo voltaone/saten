@@ -56,6 +56,9 @@
     &:hover
         background $aqua-back
         color $black
+        +mobile()
+          background $white
+          color #b3c9cf
     &:before, &:after
       pseudo(block, absolute)
       width 16px
@@ -67,6 +70,8 @@
       border 0
       background $black
       transitions()
+      +mobile()
+        display none
     &:before
       transform rotate(45deg)
     &:after
@@ -74,8 +79,8 @@
     +mobile()
       display block
   .ui-state-active
-    background $aqua-back
-    color $black
+    background $aqua-back !important
+    color $black !important
     &:before, &:after
       opacity 1
   .ui-accordion-content

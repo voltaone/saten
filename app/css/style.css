@@ -4841,6 +4841,12 @@ footer .button:hover {
 	background: #dee8eb;
 	color: #000;
 }
+@media (max-width: 767px) {
+	#accordion2 .accordion-button:hover {
+		background: #fff;
+		color: #b3c9cf;
+	}
+}
 #accordion2 .accordion-button:before, #accordion2 .accordion-button:after {
 	content: '';
 	display: block;
@@ -4856,6 +4862,11 @@ footer .button:hover {
 	-webkit-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
+}
+@media (max-width: 767px) {
+	#accordion2 .accordion-button:before, #accordion2 .accordion-button:after {
+		display: none;
+	}
 }
 #accordion2 .accordion-button:before {
 	-webkit-transform: rotate(45deg);
@@ -4873,8 +4884,8 @@ footer .button:hover {
 	}
 }
 #accordion2 .ui-state-active {
-	background: #dee8eb;
-	color: #000;
+	background: #dee8eb !important;
+	color: #000 !important;
 }
 #accordion2 .ui-state-active:before, #accordion2 .ui-state-active:after {
 	opacity: 1;
